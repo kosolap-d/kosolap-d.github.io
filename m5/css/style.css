@@ -76,16 +76,23 @@ input {
     display: block;
 }
 
-.wrap{
-    background: url(../img/bg.png) no-repeat top center;
-    height: 100%;
-
+html{
+    min-width: 100%;
+    min-height: 100%;
+    background: url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 
 /*########################HEADER########################*/
-.nav ul{
+.header {
+    display: flex;
+    justify-content: flex-end;
     background: #085291;
+}
+
+.nav ul{
     text-align: right;
     font-size: 0;
 }
@@ -98,7 +105,8 @@ input {
 .nav ul li a {
     display: inline-block;
     color: #60b5ed;
-    padding: 10px 15px;
+    padding: 0px 15px;
+    line-height: 30px;
     text-decoration: none;
 }
 
@@ -131,23 +139,29 @@ input {
 /*########################MAIN########################*/
 
 .main {
-    margin: 10% auto;
-}
-
-.main:after{
-    content: '';
-    display: table;
-    clear: both;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    height: 90vh;
 }
 
 .container {
     width: 560px;
-    padding: 20px 100px;
-    margin: 3px auto;
-    background: rgba(0,0,0,.6);
+    margin: auto;
     color: rgba(255,255,255,.8);
     text-align: center;
+}
 
+.main_top {
+    background: rgba(0,0,0,.6);
+    padding: 20px 100px;
+    margin-bottom: 3px;
+}
+
+.main_bottom {
+    background: rgba(0,0,0,.6);
+    padding: 20px 100px;
+    margin-bottom: 3px;
 }
 
 input {
