@@ -386,6 +386,10 @@ html, body, div, figure,figcaption, span, applet, object, iframe,
     margin-bottom: 28px;
 }
 
+.article_product a {
+    text-decoration: none;
+}
+
 .name_product {
     display: block;
     font-size: 14.59px;
