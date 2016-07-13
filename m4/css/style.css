@@ -130,6 +130,14 @@ p.logo {
     margin-bottom: 20px;
 }
 
+.contact a{
+    display: block;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
 .country_item {
     display: inline-block;
 }
