@@ -84,6 +84,10 @@ html, body, div, figure,figcaption, span, applet, object, iframe,
     height: 126px;
 }
 
+h2,h3 {
+    font-weight: normal;
+}
+
 /*HEADER*/
 
 /*CONTAINER_NAV*/
@@ -94,6 +98,11 @@ html, body, div, figure,figcaption, span, applet, object, iframe,
 
 .contact {
     display: inline-block;
+}
+
+.contact .telefon{
+    display: inline-block;
+    text-decoration: none;
     font: 18px Arial, sans-serif;
     color: #5e696d;
     letter-spacing: .5px
@@ -384,9 +393,6 @@ html, body, div, figure,figcaption, span, applet, object, iframe,
     width: 27%;
     margin-right: 29px;
     margin-bottom: 28px;
-}
-
-.article_product a {
     text-decoration: none;
 }
 
