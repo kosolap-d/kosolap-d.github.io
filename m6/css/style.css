@@ -214,6 +214,41 @@ h2,h3 {
 
 .banner {
     margin-top: 9px;
+    background: url(../img/banner.png) no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.link_zazor {
+    text-decoration: none;
+    display: block;
+    width: 264px;
+    background: rgba(0,0,0,.5);
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.link_zazor:hover {
+    background: rgba(0,0,0,.7);
+}
+
+.container_zazor {
+    line-height: 100%;
+}
+
+.container_zazor span{
+    font-size: 25px;
+    color: #cccccc;
+}
+
+.container_zazor .h1 {
+    font-size: 50px;
+}
+
+.container_zazor h2{
+    color: #9c1603;
+    text-align: right;
 }
 
 /*NAVIGATION*/
