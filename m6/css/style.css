@@ -286,6 +286,246 @@ h2,h3 {
     vertical-align: -4px;
 }
 
+/*SEARCH FORMS-----------------*/
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.search .search_auto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 414px;
+    height: 100%;
+    border: 1px solid #9C9C9D;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px 0.00px rgba(104, 104, 104, 0.75);
+}
+
+.search .search_auto .search_auto_header {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search .search_auto .search_auto_header h4 {
+    color: #154468;
+    font: 900 10px Arial;
+}
+
+.search .search_auto .search_auto_header h3 {
+    color: #154467;
+    font: 900 12px Arial;
+}
+.search .search_auto content {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search .search_auto content ul li {
+    list-style-type: none;
+    height: 17px;
+    width: 176px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.search .search_auto content label {
+    color: #154468;
+    font: 700 10px / 28px Arial;
+    width: 71px;
+    line-height: 100%;
+}
+
+.search .search_auto content span {
+    color: #77858b;
+    font: 400 8px Arial;
+}
+
+.search .search_auto content select {
+    width: 101px;
+    border-bottom: none;
+}
+
+.search .search_auto .search_link {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+    color: #154467;
+    font: italic 14px Arial;
+}
+
+.search .search_tyre {
+    width: 192px;
+    height: 100%;
+    border: 1px solid #9C9C9D;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+}
+
+.search .search_tyre .search_tyre_header {
+    color: #114165;
+    font: 900 12px / 20px Arial;
+    margin: 0 0 3px 8px;
+}
+
+.search .search_tyre ul li {
+    list-style-type: none;
+    margin: 0 0 6px 8px;
+}
+
+.search .search_tyre ul label {
+    color: #000000;
+    font: 600 10px 'Lucida Sans Unicode';
+}
+
+.search .search_tyre ul select {
+    width: 53px;
+    border-bottom: none;
+}
+
+.search .search_tyre .serach_tyre_R {
+    margin-left: 40px;
+}
+
+.search .search_tyre .season_option {
+    display: flex;
+    align-items: flex-start;
+}
+
+.search .search_tyre .season {
+    display: inline-block;
+    color: #000000;
+    font: 400 12px 'Lucida Sans Unicode';
+    margin-left: 2px;
+    margin-bottom: -5px;
+}
+
+.search .search_tyre .season li {
+    height: 10px;
+    margin-bottom: 4px;
+}
+
+.search .search_tyre .season input {
+    display: none;
+}
+
+.search .search_tyre .season input + label {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    border: inset 1px solid #888;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 3px #aaa;
+}
+
+.search .search_tyre .season input:checked + label {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    border: inset 1px solid 888;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 3px #111;
+    background-color: #555;
+}
+
+.search .search_tyre .search_link {
+    display: block;
+    text-align: right;
+    padding-right: 15px;
+    color: #154467;
+    font: italic 14px Arial;
+}
+
+.search .search_disc {
+    width: 268px;
+    height: 100%;
+    border: 1px solid #9C9C9D;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+}
+
+.search .search_disc content {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.search .search_disc span {
+    color: #77858b;
+    font: 400 9px / 5px 'Lucida Sans Unicode';
+}
+
+.search .search_disc .search_disc_header {
+    color: #114165;
+    font: 900 12px Arial;
+    margin-left: 10px;
+}
+
+.search .search_disc .left_menu {
+    width: 180px;
+    border-right: 1px solid black;
+    padding-right: 3px;
+    margin-right: 10px;
+}
+
+.search .search_disc ul li {
+    list-style-type: none;
+    line-height: 0;
+}
+
+.search .search_disc .left_menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px 0;
+}
+
+.search .search_disc .left_menu label {
+    color: #0c3256;
+    font: 600 9px 'Lucida Sans Unicode';
+    width: 85px;
+    line-height: 8px;
+}
+
+.search .search_disc select {
+    width: 58px;
+    border-bottom: none;
+}
+
+.search .search_disc .right_menu {
+    width: 80px;
+    height: 100%;
+}
+
+.search .search_disc .right_menu label {
+    color: #0c3256;
+    font: 600 9px 'Lucida Sans Unicode';
+    width: 85px;
+}
+
+.search .search_disc .right_menu p {
+    color: #77858b;
+    font: 400 8px / 8px 'Lucida Sans Unicode';
+}
+
+.search .search_disc .search_link {
+    display: block;
+    text-align: right;
+    padding: 10px 15px 0 0;
+    color: #154467;
+    font: italic 14px Arial;
+}
+
 /*MAIN*/
 
 .main {
