@@ -1,0 +1,405 @@
+@font-face {
+    font-family: 'Helvetica-Light';
+    src: url(font/Helvetica-Light-Light.eot);
+    src: url(font/Helvetica-Light-Light.eot?#iefix) format('embedded-opentype'),
+         url(font/Helvetica-Light-Light.woff) format('woff'),
+         url(font/Helvetica-Light-Light.ttf) format('truetype'),
+         url(font/Helvetica-Light-Light.svg#Helvetica-Light-Light) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** Created by TTF.in.ua **/
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('font/Helvetica-Bold___.eot');
+    src: url('font/Helvetica-Bold___.eot?#iefix') format('embedded-opentype'),
+         url('font/Helvetica-Bold___.woff') format('woff'),
+         url('font/Helvetica-Bold___.ttf') format('truetype'),
+         url('font/Helvetica-Bold___.svg#Helvetica-Bold___') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, figure,figcaption, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, font, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li, menu,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td, canvas {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+ background: transparent;
+ }
+ 
+ body {
+ line-height: 1;
+ }
+ ol, ul, menu {
+ list-style: none;
+ }
+ blockquote, q {
+ quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+ content: '';
+ }
+ /* remember to define focus styles! */
+ :focus {
+ outline: 0;
+ }
+ /* tables still need 'cellspacing="0"' in the markup */
+ table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ }
+
+
+
+/*###########################NORMALIZA CSS*#######################################*/
+
+/*#############################MAIN CSS###########################################*/
+
+.container {
+	max-width: 945px;
+	/*min-width: 945px;*/
+	margin: 0 auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body{
+	min-width: 945px;
+}
+
+
+.wrap {
+	min-height: 100%;
+}
+
+/*HEADER TOP*/
+
+.header_top {
+	background: #68676a;
+}
+
+.wraper_container:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+.wraper_container{
+	padding: 0px;
+}
+
+.wraper_list_inner {
+	width: 64.6%;
+	float: left;
+}
+
+.wraper_form {
+	width: 35.4%;
+	float: left;
+}
+
+.wraper_list {
+	border-left: 1px solid #58575b;
+	border-right: 1px solid #848387;
+	font-size: 0;
+	display: inline-block;
+}
+.wraper_item{
+	font: 14px "PT Sans", Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+	display: inline-block;
+	padding: 14px 27px;
+	border-left: 1px solid #848387;
+	border-right: 1px solid #58575b;
+}
+
+.wraper_item a{
+	color: white;
+}
+
+.wraper_item:hover {
+	background: rgba(0,0,0,.2);
+	box-shadow: 0 0 40px #2e2d31 inset;
+	border-left: 1px solid #2d2d30;
+	border-right: 1px solid #2d2d30;
+}
+
+.input {
+	font: 11px Helvetica, Arial;
+	color: white;
+	background: rgba(0,0,0,.7);
+	border-radius: 25px;
+	padding: 9px 25px;
+	padding-right: 0px;
+	margin: 8px 0 0 0;
+	margin-right: 0px;
+	border: 0;
+	border-top: 1px solid #121213;
+	border-bottom: 1px solid #959496;
+}
+
+.input::-webkit-input-placeholder {color:white;}
+
+/*HEADER BOTTOM*/
+
+.header_bottom {
+	background: #f4f4f4;
+	border-bottom: 1px solid #fcfcfc;
+}
+
+.header_bottom_list {
+	font-size: 0;
+}
+
+.header_bottom_item {
+	font: bold 14px "PT Sans", Helvetica, sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	border-left: 1px solid #fafafa;
+	border-right: 1px solid #ebebeb;
+	margin: 25px 0;
+	padding: 0 9px;
+}
+
+.logo_item{
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 24px;
+	border: 0;
+	border-right: 1px solid #ebebeb;
+
+}
+
+.header_bottom_item:last-child {
+	border-right: 0;
+}
+
+.header_bottom_item:hover a, .logo:hover a{
+	color: #0073bf;
+}
+
+.header_bottom_item a{
+	display: block;
+	padding: 5px 15px;
+	color: #68676a;
+}
+
+.header_bottom_item a:after{
+	content: url("img/sidebar-a-bg.png");
+	margin-left: 9px;
+}
+
+/*BANNER*/
+.banner {
+	background:  url(img/banner.png) no-repeat right center #e9e6dd;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #f3f1ec;
+}
+
+.banner_caption_top {
+	font: 34px 'Helvetica-Light', "PT Sans", sans-serif;
+	color: #0073bf;
+	padding: 49px 0 2px 0;
+	letter-spacing: -1px;
+}
+
+.banner_caption_bottom {
+	font: 17px "Helvetica-Light", Helvetica, sans-serif;
+	color: #919191;
+	letter-spacing: -.5px;
+}
+
+.banner_aweasom_button {
+	display: inline-block;
+	padding: 16px 46px 16px 22px;
+	margin: 19px 3px;
+	color: #0073bf;
+	font: .82em "Helvetica-Light", Helvetica, sans-serif;
+	border-radius: 3px;
+	border: 1px solid #d3d1c8;
+	background: url("img/awesome.png") no-repeat 93% center #fdfdfc;
+}
+
+.banner_aweasom_button:hover {
+	background: url("img/awesome.png") no-repeat 93% center #3088e7;
+	color: #fdfdfc;
+}
+
+.sing_up {
+	display: inline-block;
+	background: #fdfdfc;
+	border-radius: 3px;
+	border: 1px solid #d3d1c8;
+	font: .82em "Helvetica-Light", Helvetica, sans-serif;
+	padding: 21px 0px 4px 0px;
+	margin: 0px 0px 103px 1px;
+	text-align: center;
+	color: #919191;
+	letter-spacing: -.19px;
+}
+
+.join_to_here {
+	font: 1.25em "PT Sans", Helvetica, sans-serif;
+	color: white;
+	position: relative;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#abd0f4+3,4799ea+4,207ce5+98 */
+	background: #4799ea; /* Old browsers */
+	background: -moz-linear-gradient(top,  #abd0f4 3%, #4799ea 4%, #207ce5 98%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #abd0f4 3%,#4799ea 4%,#207ce5 98%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #abd0f4 3%,#4799ea 4%,#207ce5 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abd0f4', endColorstr='#207ce5',GradientType=0 ); /* IE6-9 */
+	border: 1PX solid #0073bf;
+	padding: 8px 36px 8px 57px;
+	margin: 14px 29px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.join_to_here:after {
+	content: "asdasd "
+	background: url(img/to_join.png);
+}
+
+.join_to_here:hover {
+	background: #207ce5;
+}
+
+/*FEAtURE*/
+
+.feature {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9f9f9+0,efefef+100 */
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #efefef 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#efefef 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#efefef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+	padding-top: 22px;
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(78,78,78,1);
+	-moz-box-shadow: 0px 4px 0px 0px rgba(78,78,78,1);
+	box-shadow: 0px 4px 0px 0px rgba(78,78,78,1);
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d7d7d7;
+}
+
+.feature_section {
+	display: inline-block;
+	width: 32.7%;
+	color: #7e7e7e;
+}
+
+.feature_logo {
+	width: 40px;
+	height: 37px;
+}
+
+.feature_icon {
+	background: url(img/sprite.png) no-repeat center left;
+}
+
+.desing_icon {
+	background: url(img/sprite.png) no-repeat center center;
+}
+
+.simplicity_icon {
+	background: url(img/sprite.png) no-repeat center right;
+}
+
+.feature_caption {
+	font: 1.7em "Helvetica-Light", Helvetica, sans-serif;
+	margin: 10px 0;
+}
+
+.feature_paragraf {
+	font: .8em "Helvetica-Light", Helvetica, sans-serif;
+	line-height: 1.6em;
+}
+
+.feature_link {
+	display: inline-block;
+	font: 12px "Helvetica-Bold", "PT Sans", sans-serif;
+	color: #0073bf;
+	margin: 22px 0;
+}
+
+.feature_link:hover, .feature_item a:hover {
+	text-decoration: underline;
+}
+
+/*FEATURE NAV*/
+
+.feature_nav {
+	background: #ededed;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #8e8e8e;
+}
+
+.feature_item {
+	display: inline-block;
+	padding: 15px 30px 15px 0px;
+}
+
+.feature_link_bottom{
+	font: 12px "Helvetica-Bold", "PT Sans", sans-serif;
+	color: #605f63;
+}
+
+/*FOOTER*/
+/*Для того чтобы футер был всегда прибит к низу страницы*/
+.empty {
+	display: block;
+	height: 261px;
+}
+
+.footer {
+	margin-top: -261px;
+	height: 261px;
+	background: url(img/footer_pattern.png);
+	color: white;
+}
+
+.footer_item {
+	display: inline-block;
+}
+
+.footer_link {
+	display: block;
+	color: white;
+	font: 12px Helvetica, "PT Sans", sans-serif;
+	padding: 30px 14px 30px 0;
+}
+
+.footer_link:hover {
+	text-decoration: underline;
+
+}
+
+.footer_paragraf {
+	display: block;
+	font: 10px Helvetica, "PT Sans", sans-serif;
+	line-height: 2.3em;
+	width: 80%;
+}
