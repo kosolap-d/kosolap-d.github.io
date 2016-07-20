@@ -1,0 +1,223 @@
+
+header{
+	font-family: 'PT Sans Narrow';
+	font-size: 14px;
+	padding-top: 9px;
+	text-align: right;
+	background-color: #515F67;
+	color: white;
+}
+*{
+	font-family: 'MinionPro-Regular';
+}
+
+b{
+	font-family: 'Font Awesome';
+}
+
+#head{
+	padding-top: 60px;
+}
+#head a:hover{
+	background-color: rgba(0,0,0,0.1);
+}
+a.head{
+	display: inline-block;
+	font-family: 'PT Sans Narrow';
+	width: 120px;
+	padding: 10px;
+	
+}
+#product{
+	background-color: #0B75B6;
+	padding: 50px 0px 30px 0px;
+}
+.logo{
+	margin-top: -16px;
+}
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+.navigation{
+	list-style: none;
+	
+	font-family: 'MinionPro-Regular';
+
+}
+.navigation li {
+	text-align: center;
+	display: inline-block;
+	margin-top: 30px; 
+}
+.navigation a{
+	position: static;
+	display: block;
+	padding: 10px 50px;
+}
+.active a{
+	background: #0B75B6;
+	color: white;
+}
+#head .active a:hover{
+	cursor: default;
+	color: white;
+	background-color: #0B75B6;
+}
+
+a{
+	color: black;
+}a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:active{
+	text-decoration: none;
+}
+.block{
+	display: inline-block;
+	text-align: center;
+	color: white;
+	font-family: 'MinionPro-Regular';
+	width: 170px;
+	height: 190px;
+	margin-left: 10px;
+	-webkit-filter: grayscale(100%);
+}
+.block h6 {
+padding: 10px;
+font-size: 12px;
+border-bottom: solid 1px white;
+text-transform: uppercase;
+}
+.block:hover h6{
+	border-bottom: solid 1px black;
+}
+.block:hover{
+	-webkit-filter: grayscale(0%);
+	color: black;
+}
+p.detail{
+	color:rgba(0,0,0,0);
+	text-transform: uppercase;
+}
+.block:hover p.detail{
+	color:rgba(0,0,0,1);
+}
+
+h1{
+	font-family: 'PT Sans Narrow';
+	text-transform: uppercase;
+	padding: 25px;
+	font-size: 30px;
+
+}
+#info h5{
+	font-size: 13px;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+#info p{
+	margin: 10px 60px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#target{
+	background-color: #515f67;
+	color: white;
+	padding-bottom: 30px;
+}
+#target *{
+	font-family: 'PT Sans Narrow';
+}
+#target h5{
+	text-transform: uppercase;
+}
+#target p{
+	padding: 0px 10px ;
+	margin:  -10px 0px;
+	height: 130px;
+}
+#target hr{
+	width: 70%;
+}
+#target a{
+	color: white;
+}
+#target a:hover p{
+	border-left: 1px white solid;
+	border-right: 1px white solid;
+}
+
+#feedback{
+	background-color: #0B75B6;
+	color: white;
+}
+#feedback p{
+	font-size: 13px;
+	font-weight: bold;
+}
+#feedback input{
+	margin: 10px;
+	padding: 5px 15px;
+	font-size: 14px;
+	border: 3px white solid;
+	background-color: #0B75B6;
+	width: 100%;
+	color: white;
+	text-align: center;
+	outline: none;
+
+}
+#feedback .question{
+	text-align: left;
+	height: 145px; 
+}
+#feedback .subm{
+	background-color:  #4c4c4c;
+	border: none;
+	width: 160px;
+	height: 35px;
+	display: inline;
+	color: rgba(255,255,255,0.8);
+	margin: 30px;
+}
+#feedback .subm:hover{
+color: rgba(255,255,255,1);
+background-color: #64737C;
+}
+#info2{
+
+}
+#info2 p{
+	font-weight: bold;
+	padding: 30px 0px;
+	font-family: 'PT Sans Narrow';
+}
+footer{
+		background-color:  #4c4c4c;
+		padding: 10px;
+}
+footer *{
+	color: white;
+	font-family: 'PT Sans Narrow';
+
+}
+.big-text{
+	font-size: 19px;
+	text-transform: uppercase;
+}
+footer a{
+	font-size: 17px;
+	display: block;
+}
+footer a:hover{
+	color: white;
+	font-weight: bold;
+}
+
+
+
+
+
