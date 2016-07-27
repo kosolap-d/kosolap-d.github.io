@@ -1,0 +1,157 @@
+@media screen and (max-width: 959px) { 
+
+
+	.container--md {
+		flex-wrap: wrap;
+	}
+
+	.container {
+		max-width: 768px;
+		padding: 20px;
+	}
+
+	.logo {
+		margin-bottom: 20px;
+	}
+
+	.nav {
+		width: 100%;
+	}
+
+	.header-slider {
+		margin-top: 0px;
+	}
+
+	.carousel-bg {
+		padding: 20px 40px;
+		margin-top: 40px;
+	}
+
+	.owl-carousel__h1 {
+		font-size: 3rem;
+		text-transform: capitalize;
+		margin: 0;
+	}
+	.owl-carousel__h2 {
+		font-size: 1.5rem;
+		color: #edbfff;
+		margin: 0;
+	}
+	.owl-carousel__p {
+		font-size: 1rem;
+		margin-right: 0px;
+		margin-top: 15px;
+	}
+	.carousel__img {
+		margin-top: -65px;
+		margin-bottom: -52px;
+	}
+	.owl-theme .owl-controls {
+		margin-top: 35px;
+		padding-left: 300px;
+		margin-bottom: 88px;
+	}
+
+/*###############################################ABOUT###############################################*/
+.about {
+	padding: 35px 0 14px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.about-block {
+	margin-left: 20px;
+}
+
+.about-block__h3 {
+	font-size:  1.5rem;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.about-block__p {
+	margin: 5px 0;
+	font-size: 1rem;
+	/*padding-right: 50px;*/
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.about-block__link {
+	padding-right: 80px;
+	font-size: 1.125rem;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+/*###############################################BLOG###############################################*/
+
+.blog {
+	padding-top: 100px;
+	padding-bottom: 71px;
+}
+
+.blog-feedback__post {
+	width: 315px;
+	margin-left: 05px;
+}
+.blog-feedback__avatar {
+	vertical-align: -20px;
+	margin-right: 10px;
+}
+.blog-feedback__name {
+	font-size: 1.5rem;
+}
+.blog-feedback__some-text {
+	font-size: 1.5rem;
+	display: block;
+	margin-left: 62px;
+	margin-top: -18px;
+	margin-bottom: 10px;
+}
+
+/*###############################################PRODUCTS###############################################*/
+.products {
+	padding: 6px 0;
+}
+
+.products .container {
+	justify-content: space-between;
+}
+
+/*###############################################OTHER###############################################*/
+
+.other {
+	background: #ececec;
+	padding: 70px 0 50px 0;
+}
+
+.other__h2 {
+	font-size: 1.5rem;
+}
+
+.visible--md {
+	display: block;
+}
+
+/*###############################################FOOTER###############################################*/
+
+.footer {
+	padding: 7px 0;
+}
+
+.footer .container {
+	flex-wrap: wrap;
+}
+
+.nav--footer {
+}
+
+.designed {
+	width: 100%;
+	text-align: right;
+}
+
+	/*----------------------------------HIDDEN-----------------------------------------*/
+	.hidden--md {
+		display: none;
+	}
+
+
+}

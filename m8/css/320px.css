@@ -1,0 +1,27 @@
+@media screen and (max-width: 459px) { 
+
+	.container {
+		max-width: 320px;
+	}
+
+	.carousel-bg {
+		background: 0;
+	}
+
+	.owl-carousel__p {
+		display: none;
+	}
+
+	.carousel__img {
+		display: none;
+	}
+
+	.hidden--xs {
+		display: none;
+	}
+
+	.products__link {
+		margin: 40px 20px;
+	}
+
+}
