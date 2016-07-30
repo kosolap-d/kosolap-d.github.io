@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js"></script>
+	<title>Document</title>
+</head>
+<body>
+<div class="container">
+	<h1>JS1</h1> <div class="button" onclick="js1()">Start</div>
+	<pre>
+	function js1() {
+		while(true){
+			var a=parseFloat(prompt("Введите число"));
+			if(!isNaN(a)){
+				break;
+			}
+			alert("Некоректное число")
+			
+		}
+		while(true){
+			var b=parseFloat(prompt("Введите степень"));
+			if(!isNaN(a)){
+				break;
+			}
+			alert("Некоректное число")
+			
+		}
+		
+		var c=1;
+		for (var i = 0; i &lt; b ; i++) {
+			c*=a;
+		}
+		alert(c);
+	}
+	</pre>
+	
+
+	<h1>JS2</h1> <div class="button" onclick="js2()">Start</div>
+	<pre>
+	function js2() {
+		while(true) {
+			var count=parseFloat(prompt("Введите количество ячеек в массиве"));
+			if(!isNaN(count)){
+				break;
+			}
+			alert("Некоректное число")
+		}
+		var arr = ['a'];
+		for (var i = 0; i &lt;count; i++) {
+			var str=prompt("Введите Имя");
+			arr[i]=str;
+		}
+		var name=prompt("Введите ваше Имя");
+
+		for(var j=0; j&lt;arr.length;j++){
+			if(arr[j]== name){
+				alert(name+", вы успешно вошли!");
+				return;
+			}
+		}
+		alert("Пользователь с таким именем не найден!");
+	}
+	</pre>
+	</div>
+</body>
+</html>
