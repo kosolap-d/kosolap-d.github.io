@@ -54,7 +54,7 @@ a {
 
 .container {
 	padding: 0 10px;
-	max-width: 960px;
+	width: 960px;
 	margin: 0 auto;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -81,7 +81,7 @@ a {
 
 .header {
 	background-color: #987196;
-	background: url(../img/bg.png) no-repeat center;
+	background: url(../img/bg.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -317,6 +317,29 @@ a {
 	justify-content: space-around;
 }
 
+.products__link {
+	width: 80px;
+	height: 70px;
+	background: url(../img/logos.png) 0% 0% no-repeat;
+}
+
+.products__link--2 {
+	background: url(../img/logos.png) 19% 0% no-repeat;
+}
+.products__link--3 {
+	background: url(../img/logos.png) 38% 0% no-repeat;
+}
+.products__link--4 {
+	background: url(../img/logos.png) 57% 0% no-repeat;
+}
+.products__link--5 {
+	width: 110px;
+	background: url(../img/logos.png) 78% 0% no-repeat;
+}
+.products__link--6 {
+	background: url(../img/logos.png) 0% 0% no-repeat;
+}
+
 /*###############################################OTHER###############################################*/
 
 .other {
@@ -355,7 +378,7 @@ a {
 /*###############################################FOOTER###############################################*/
 
 .footer {
-	background: url(../img/bg_footer.png) center;
+	background: url(../img/bg_footer.jpg) center;
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding: 30px 0;
