@@ -1,52 +1,61 @@
 
-function main()
+function mainJs1()
 {
-
-	for (var i = 0; i <1 ; i++) {
+	var num1;
+	var num2;
+	while(true){
+		num1=parseFloat(prompt("Введите число"));
+		if(!isNaN(num1)){
+			break;
+		}
+		alert("Некоректное число")
 		
-		pow();
 	}
+	while(true){
+		var num2=parseFloat(prompt("Введите степень"));
+		if(!isNaN(num2)){
+			break;
+		}
+		alert("Некоректное число")
+		
+	}
+	pow(num1, num2);
 }
 
-function js1() {
-	while(true){
-		var a=parseFloat(prompt("Введите число"));
-		if(!isNaN(a)){
-			break;
-		}
-		alert("Некоректное число")
-		
-	}
-	while(true){
-		var b=parseFloat(prompt("Введите степень"));
-		if(!isNaN(a)){
-			break;
-		}
-		alert("Некоректное число")
-		
-	}
-	
+function pow(a,b) {
 	var c=1;
-	for (var i = 0; i <b ; i++) {
-		c*=a;
+	if(b<0){
+		b=0-b;
+		for (var i = 0; i <b ; i++) {
+			c*=a;
+		}
+		c=1/c;
 	}
-	alert(c);
+	else {
+		for (var i = 0; i <b ; i++) {
+			c*=a;
+		}
+	}
+	alert(a+' ^ '+b+' = '+c);
 }
 
-function js2() {
+function mainJs2() {
+	var count;
+	var arr = [];
+	var name;
 	while(true) {
-		var count=parseFloat(prompt("Введите количество ячеек в массиве"));
+		count=parseFloat(prompt("Введите количество ячеек в массиве"));
 		if(!isNaN(count)){
 			break;
 		}
 		alert("Некоректное число")
 	}
-	var arr = ['a'];
+	
 	for (var i = 0; i <count; i++) {
 		var str=prompt("Введите Имя");
 		arr[i]=str;
 	}
-	var name=prompt("Введите ваше Имя");
+	name=prompt("Введите ваше Имя");
 
 	for(var j=0; j<arr.length;j++){
 		if(arr[j]== name){
