@@ -30,13 +30,15 @@ function pow(a,b) {
 			c*=a;
 		}
 		c=1/c;
+		alert(a+' ^ -'+b+' = '+c);
 	}
 	else {
 		for (var i = 0; i <b ; i++) {
 			c*=a;
 		}
+		alert(a+' ^ '+b+' = '+c);
 	}
-	alert(a+' ^ '+b+' = '+c);
+	
 }
 
 function mainJs2() {
