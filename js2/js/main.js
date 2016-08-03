@@ -5,7 +5,7 @@ var obj = {
 	countCheckbox: 1,
 
 	addContainer: function() {
-		document.body.appendChild(this.container);
+		document.body.insertBefore(this.container, document.body.firstChild);
 		this.container.className = "container";
 
 		var h1 =document.createElement('h1');
