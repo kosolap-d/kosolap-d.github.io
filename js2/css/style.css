@@ -117,7 +117,7 @@ input {
 
 }
 
-label, .btn {
+input, label, .btn {
     cursor: pointer;
 }
 
