@@ -1,6 +1,7 @@
 /*###########################NORMALIZA CSS*#######################################*/
 * {
     box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 @font-face {
@@ -69,46 +70,64 @@ html, body, div, figure,figcaption, span, applet, object, iframe,
 /*###########################NORMALIZA CSS*#######################################*/
 
 body {
-    background: #4B1E1E;
+    background: #808080;
 }
 
 .container {
-    width: 960px;
-    margin: 10px auto;
+    width: 800px;
+    margin: 30px auto;
+    padding: 50px;
+    background: white;
+    border: 3px solid black;
+    border-radius: 3px;
 }
 
-.button {
-    cursor: pointer;
-    display: inline-block;
-    color: #f4f4f4;
-    padding: 10px 20px;
-    vertical-align: bottom;
-        background: #f47e7e;
-        font-weight: bold;
-        margin-left: 5px;
-        font-family: Arial,sans-serif;
-        border-radius: 4px;
-        border: solid 0 #e3edf4;
-        border-bottom: 2px solid #e76969;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
+
+form i{
+    color: #BCBCBC;
+    font-weight: normal;
+    font-size: 12px;
 }
 
 h1 {
-    display: inline-block;
-    font-family: Arial;
-    font-size: 2em;
-    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-pre {
-    font-size: 16px;
-    padding: 10px 20px;
-    color: #DFDCDA;
-    text-shadow: 0px 0px 25px #2DC3FE;
-    background: #161616;
-    border: 5px solid #161616;
-    border-radius: 2px;
-    margin-bottom: 30px;
+h2 {
+    margin: 10px 0;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: #9BD2D1;
+    font-size: 14px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+input {
+    margin: 5px;
+    margin-left: 30px;
+
+}
+
+label, .btn {
+    cursor: pointer;
+}
+
+.github {
+    position: absolute;
+    background: #7ECCCB;
+    padding: 10px;
+    margin: 0 30px;
+    text-decoration: none;
+    color: #E1E1E1;
+    border: 1px solid #E1E1E1;
+    border-radius: 
 }
