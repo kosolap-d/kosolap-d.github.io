@@ -1,0 +1,228 @@
+/*###########################NORMALIZA CSS*#######################################*/
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Helvetica-Light';
+    src: url(font/Helvetica-Light-Light.eot);
+    src: url(font/Helvetica-Light-Light.eot?#iefix) format('embedded-opentype'),
+         url(font/Helvetica-Light-Light.woff) format('woff'),
+         url(font/Helvetica-Light-Light.ttf) format('truetype'),
+         url(font/Helvetica-Light-Light.svg#Helvetica-Light-Light) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** Created by TTF.in.ua **/
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('font/Helvetica-Bold___.eot');
+    src: url('font/Helvetica-Bold___.eot?#iefix') format('embedded-opentype'),
+         url('font/Helvetica-Bold___.woff') format('woff'),
+         url('font/Helvetica-Bold___.ttf') format('truetype'),
+         url('font/Helvetica-Bold___.svg#Helvetica-Bold___') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, figure,figcaption, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, font, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li, menu,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td, canvas {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+ background: transparent;
+ }
+ 
+ body {
+ line-height: 1;
+ background-color: #18506F;
+ }
+ ol, ul, menu {
+ list-style: none;
+ }
+ blockquote, q {
+ quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+ content: '';
+ }
+ /* remember to define focus styles! */
+ :focus {
+ outline: 0;
+ }
+ /* tables still need 'cellspacing="0"' in the markup */
+ table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ }
+/*###########################NORMALIZA CSS*#######################################*/
+
+pre {
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #DFDCDA;
+    text-shadow: 0px 0px 25px #2DC3FE;
+    background: #161616;
+    border: 5px solid #161616;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+/*.iphone {
+    margin: 0 auto;
+    width: 340px;
+    height: 598px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: #676767;
+}
+*/
+.display {
+    margin: 15px auto;
+    background: white;
+    width: 320px;
+    height: 568px;
+    background: #f0eff4;
+    border: 1px solid #989898;
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,.6);
+}
+
+.title {
+    height: 65px;
+    border-bottom: 1px solid #dcdcde;
+    padding: 1px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #f8f8f8;
+}
+.operator {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.operator:before {
+    content: '••••• ';
+    font-size: 22px;
+    vertical-align: -3px;
+}
+.time {
+    display: inline-block;
+    margin-right: 0px;
+}
+.battery{
+    width: 50px;
+    display: inline-block;
+    float: right;
+}
+.btr {
+    width: 20px;
+    vertical-align: -5.5px;
+}
+.title h1 {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+.spotwatch {
+    background: white;
+}
+.lap {
+    text-align: right;
+    color: #7f7f7f;
+    padding-top: 25px;
+    font-size: 26px;
+    padding-right: 18px;
+    margin-bottom: -1px;
+    letter-spacing: -1.5px;
+}
+.timer {
+    text-align: center;
+    font-size: 72px;
+    letter-spacing: -2px;
+    padding-bottom: 58px;
+    border-bottom: 1px solid #b6b6b6;
+}
+.timer.milSeconds, .timer.minutes, .timer.seconds {
+    display: inline-block;
+    width: 100px;
+}
+
+.lap.milSeconds, .lap.minutes, .lap.seconds{
+    display: inline-block;
+    width: 32px;
+}
+
+.container-down {
+    /*height: 271px;*/
+    border-bottom: 1px solid #b6b6b6;
+    /*overflow-y: auto;*/
+}
+
+.container-button {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px;
+    border-bottom: 1px solid #E1E1E2;
+}
+
+.btn {
+    width: 74px;
+    height: 74px;
+    text-align: center;
+    line-height: 71px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.btn-black {border: 2px solid black; color: black;}
+.btn-green {border: 2px solid #4cdc60; color: #4cdc60;}
+.btn-grey {border: 2px solid #9a9a9c; color: #9a9a9c;}
+.btn-red {border: 2px solid #F73F3F; color: #F73F3F;}
+
+.lap_list {
+    height: 155px;
+    margin: 0px 20px;
+    font-size: 14px;
+    overflow-y: auto;
+}
+.lap_list li {
+    padding: 10px;
+    border-bottom: 1px solid #E1E1E2;
+}
+
+.lap-count {
+    color: #949191;
+}
+.lap-time {
+    float: right;
+    font-size: 16px;
+}
+
+.container-clock {
+    background: #f8f8f8;
+    height: 50px;
+}
