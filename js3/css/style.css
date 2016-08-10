@@ -79,6 +79,7 @@ pre {
     border: 5px solid #161616;
     border-radius: 2px;
     margin-bottom: 30px;
+
 }
 
 /*.iphone {
@@ -98,6 +99,8 @@ pre {
     background: #f0eff4;
     border: 1px solid #989898;
     box-shadow: 5px 5px 15px 1px rgba(0,0,0,.6);
+    border-radius: 3px;
+
 }
 
 #displayAlarm, #displayWorldTime, #displayTimer {display: none;}
@@ -174,9 +177,7 @@ pre {
 }
 
 .container-down {
-    /*height: 271px;*/
     border-bottom: 1px solid #b6b6b6;
-    /*overflow-y: auto;*/
 }
 
 .container-button {
@@ -264,3 +265,31 @@ pre {
 .nav--active .stopwatch-icon {width: 36px;background: url(../img/sprite.png) no-repeat 66% 100%;background-size: 424%;}
 .nav--active .timer-icon {background: url(../img/sprite.png) no-repeat 100% 100%;background-size: 389%;}
 .nav--active p {color: #ef1515;}
+
+.iphone {display: none;}
+
+.login {
+    position: relative;
+    width: 250px;
+    margin: 100px auto;
+    background: #D1D1D1;
+    padding: 20px;
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,.6);
+    border-radius: 3px;
+}
+
+.login input {
+    display: block;
+    margin: 20px auto;
+}
+
+.login label {
+    left: 55px;
+    top: 63px;
+    position: absolute;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    height: 0;
+    display: block;
+    margin: 0 auto;
+}

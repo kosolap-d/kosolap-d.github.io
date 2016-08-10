@@ -161,6 +161,8 @@ function lapFunc() {
 }
 
 
+// jQuery 1
+
 var $lastActiveNav = $('#stopwatch-nav');
 	$lastActiveNav.toggleClass(' nav--active');
 
@@ -176,7 +178,6 @@ function navClick(e) {
 			$lastDisplay.css('display', 'none');
 			$lastDisplay=$('#displayAlarm');
 			$lastDisplay.css('display', 'block');
-			console.log($titleName);
 			$titleName.innerHTML ='Будильник';
 		}
 		else if($lastActiveNav[0].id=='world-nav')
@@ -206,3 +207,28 @@ function navClick(e) {
 		
 		// $lastActiveNav[0].className+=' nav--active';
 	}
+
+// jQuery 2
+
+var $labelFN = $('.firstname');
+$labelFN.hover(
+  function() {
+    $('.firstname-label').css('height', '14px');
+    // console.log($('.firstname-label'));
+  }, function() {
+    $('.firstname-label').css('height', '0');
+  }
+);
+var $labelLN = $('.lastname');
+$labelLN.hover(
+  function() {
+    $('.lastname-label').css('height', '14px');
+  }, function() {
+    $('.lastname-label').css('height', '0');
+  }
+);
+
+function hiddenModal(){
+	var log= $('.login').css('display', 'none');
+	$('.iphone').css('display', 'block');
+}
