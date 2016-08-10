@@ -94,11 +94,14 @@ pre {
     margin: 15px auto;
     background: white;
     width: 320px;
-    height: 568px;
+    height: 580px;
     background: #f0eff4;
     border: 1px solid #989898;
     box-shadow: 5px 5px 15px 1px rgba(0,0,0,.6);
 }
+
+#displayAlarm, #displayWorldTime, #displayTimer {display: none;}
+#world-time_id_img, #alarm_id_img, #timer_id_img {width: 100%;}
 
 .title {
     height: 65px;
@@ -204,7 +207,7 @@ pre {
 .btn-red {border: 2px solid #F73F3F; color: #F73F3F;}
 
 .lap_list {
-    height: 155px;
+    height: 157px;
     margin: 0px 20px;
     font-size: 14px;
     overflow-y: auto;
@@ -224,5 +227,40 @@ pre {
 
 .container-clock {
     background: #f8f8f8;
-    height: 50px;
+    height: 58px;
+    padding-top: 3px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
 }
+
+.container-clock div{
+    display: inline-block;
+    margin: 0 auto;
+    
+    cursor: pointer;
+}
+
+.icon {
+    display: block;
+    width: 39px;
+    height: 39px;
+    margin: 0 auto;
+    background: url(../img/sprite.png) no-repeat 0% 0%;
+    background-size: 391%;
+    margin-bottom: 3px;
+}
+.world-clock-icon {background: url(../img/sprite.png) no-repeat 0% 0%;background-size: 391%;}
+.alarm-icon {width: 37px;background: url(../img/sprite.png) no-repeat 35% 0%;background-size: 414%;}
+.stopwatch-icon {width: 36px;background: url(../img/sprite.png) no-repeat 66% 0%;background-size: 424%;}
+.timer-icon {background: url(../img/sprite.png) no-repeat 100% 0%;background-size: 389%;}
+
+.nav--active .world-clock-icon {background: url(../img/sprite.png) no-repeat 0% 100%;background-size: 391%;}
+.nav--active .alarm-icon {width: 37px;background: url(../img/sprite.png) no-repeat 35% 100%;background-size: 414%;}
+.nav--active .stopwatch-icon {width: 36px;background: url(../img/sprite.png) no-repeat 66% 100%;background-size: 424%;}
+.nav--active .timer-icon {background: url(../img/sprite.png) no-repeat 100% 100%;background-size: 389%;}
+.nav--active p {color: #ef1515;}

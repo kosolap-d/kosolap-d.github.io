@@ -159,54 +159,50 @@ function lapFunc() {
 
 	lapList.insertBefore(li, lapList.firstChild);
 }
-// var container = document.createElement("div");
-// container.className = 'container';
-// document.body.appendChild(container);
 
 
-// var hour=document.createElement("span");
-// var minutes=document.createElement("span");
-// var second=document.createElement("span");
+var $lastActiveNav = $('#stopwatch-nav');
+	$lastActiveNav.toggleClass(' nav--active');
 
-// var sec=0;
-// var min=0;
-// var hr=0;
+var $lastDisplay = $("#displayStopwatch");
 
-// hour.innerHTML=minutes.innerHTML='00:';
-// second.innerHTML='00';
+var $titleName = $('.titleName')[0];
 
-// container.appendChild(hour);
-// container.appendChild(minutes);
-// container.appendChild(second);
-
-// setInterval(addSecond, 100);
-
-// function addSecond() {
-// 	sec=parseInt(second.innerHTML);
-// 	sec++;
-// 	if(sec>=10&&sec<60) {
-// 		second.innerHTML=sec;
-// 	}
-// 	else if(sec==60){
-// 		second.innerHTML='00';
-// 		sec=0;
-
-// 		// min=parseInt(minutes.innerHTML);
-// 		alert(minutes.innerHTML);
-// 		min++;
-// 			if(min>=10&&min<60)
-// 			{
-// 				alert(minutes.innerHTML);
-// 				minutes.innerHTML='0'+min+':';
-// 			}
-// 	}
-// 	else {
-// 		second.innerHTML='0'+sec;
-// 		min++;
-// 			if(min>=10&&min<60)
-// 			{
-// 				alert(minutes.innerHTML);
-// 				minutes.innerHTML='0'+min+':';
-// 			}
-// 	}
-// }
+function navClick(e) {
+		$lastActiveNav.toggleClass();
+		$lastActiveNav= $(e);
+		if($lastActiveNav[0].id=='alarm-nav')
+		{
+			$lastDisplay.css('display', 'none');
+			$lastDisplay=$('#displayAlarm');
+			$lastDisplay.css('display', 'block');
+			console.log($titleName);
+			$titleName.innerHTML ='Будильник';
+		}
+		else if($lastActiveNav[0].id=='world-nav')
+		{
+			$lastDisplay.css('display', 'none');
+			$lastDisplay=$('#displayWorldTime');
+			$lastDisplay.css('display', 'block');
+			$titleName.innerHTML ='Мировые часы';
+		}
+		else if($lastActiveNav[0].id=='stopwatch-nav')
+		{
+			$lastDisplay.css('display', 'none');
+			$lastDisplay=$('#displayStopwatch');
+			$lastDisplay.css('display', 'block');
+			$titleName.innerHTML ='Секундомер';
+		}
+		else if($lastActiveNav[0].id=='timer-nav')
+		{
+			$lastDisplay.css('display', 'none');
+			$lastDisplay=$('#displayTimer');
+			$lastDisplay.css('display', 'block');
+			$titleName.innerHTML ='Таймер';
+		}
+		
+		$lastActiveNav.toggleClass(' nav--active');
+		
+		
+		// $lastActiveNav[0].className+=' nav--active';
+	}

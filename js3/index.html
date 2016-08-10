@@ -10,36 +10,61 @@
 	<div class="container">
 		<div class="iphone">
 			<div class="display">
-				<div class="title">
-					<div class="operator">mts ukr</div>
-					<div class="time"></div>
-					<div class="battery">1%<img class="btr" src="img/i.png" alt=""></div>
-
-					<h1 class="">Секундомер</h1>
+			<div class="title">
+				<div class="operator">mts ukr</div>
+				<div class="time"></div>
+				<div class="battery">1%<img class="btr" src="img/i.png" alt=""></div>
+				<h1 class="titleName">Секундомер</h1>
+			</div>
+				<div id="displayWorldTime">
+				<img src="img/wt.png" alt="" id="world-time_id_img">
 				</div>
-				
-				<div class="spotwatch">
-					<p class="lap">
-						<span class="minutes">00:</span><span class="seconds">00,</span><span class="milSeconds">00</span>
-					</p>
-					<p class="timer">
-						<span class="minutes">00:</span><span class="seconds">00,</span><span class="milSeconds">00</span>
-					</p>
+				<div id="displayAlarm">
+				<img src="img/al.png" alt="" id="alarm_id_img">
 				</div>
-				<div class="container-down">
-					<div class="container-button">
-						<div class="btn btn-green">Старт</div>
-						<div class="btn btn-grey">Круг</div>
+				<div id="displayStopwatch">
+					<div class="spotwatch">
+						<p class="lap">
+							<span class="minutes">00:</span><span class="seconds">00,</span><span class="milSeconds">00</span>
+						</p>
+						<p class="timer">
+							<span class="minutes">00:</span><span class="seconds">00,</span><span class="milSeconds">00</span>
+						</p>
 					</div>
-					<ul class="lap_list">
-					</ul>
+					<div class="container-down">
+						<div class="container-button">
+							<div class="btn btn-green">Старт</div>
+							<div class="btn btn-grey">Круг</div>
+						</div>
+						<ul class="lap_list">
+						</ul>
+					</div>
+				</div>
+				<div id="displayTimer">
+				<img src="img/t.png" alt="" id="timer_id_img">
 				</div>
 				<div class="container-clock">
-					
+					<div onclick="navClick(this);" id="world-nav">
+						<span class="icon world-clock-icon"></span>
+						<p>Мировые часы</p>
+					</div>
+					<div onclick="navClick(this);" id="alarm-nav">
+						<span class="icon alarm-icon"></span>
+						<p>Будильник</p>
+					</div>
+					<div onclick="navClick(this);" id="stopwatch-nav">
+						<span class="icon stopwatch-icon"></span>
+						<p>Секундомер</p>
+					</div>
+					<div onclick="navClick(this);" id="timer-nav">
+						<span class="icon timer-icon"></span>
+						<p>Таймер</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
