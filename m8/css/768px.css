@@ -59,7 +59,7 @@
 }
 
 .about-block {
-	margin-left: 20px;
+	margin: 10px;
 }
 
 .about-block__h3 {
@@ -70,12 +70,10 @@
 .about-block__p {
 	margin: 5px 0;
 	font-size: 1rem;
-	/*padding-right: 50px;*/
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
 .about-block__link {
-	padding-right: 80px;
 	font-size: 1.125rem;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
