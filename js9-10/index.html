@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://sorgalla.com/jcarousel/vendor/jquery/jquery.js"></script>
+    <!-- Карусель -->
+    <link rel="stylesheet" type="text/css" href="http://sorgalla.com/jcarousel/examples/responsive/jcarousel.responsive.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="http://sorgalla.com/jcarousel/examples/responsive/jcarousel.responsive.js"></script>
+    <!-- Селектор -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://code.octopuscreative.com/fancyselect/fancySelect.css">
+    <script src="http://code.octopuscreative.com/fancyselect/fancySelect.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <ul class="content clearfix">
+                <li><a href="#">Nav 1</a></li>
+                <li><a href="#">Nav 2</a></li>
+                <li class="dropdown">
+                    <a href="#">Nav 3 ▼</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Nav 3.1</a></li>
+                        <li><a href="#">Nav 3.2</a></li>
+                        <li><a href="#">Nav 3.3</a></li>
+                        <li class="dropdown">
+                            <a href="#">Nav 3.4 ►</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Nav 3.4.1</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Nav 3.4.2 ►</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Nav 3.4.2.1</a></li>
+                                        <li><a href="#">Nav 3.4.2.2</a></li>
+                                        <li><a href="#">Nav 3.4.2.3</a></li>
+                                        <li><a href="#">Nav 3.4.2.4</a></li>
+                                        <li><a href="#">Nav 3.4.2.5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Nav 3.4.3</a></li>
+                                <li><a href="#">Nav 3.4.4</a></li>
+                                <li><a href="#">Nav 3.4.5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 3.5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav 4</a></li>
+                <li><a href="#">Nav 5</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrapper">
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                    <li><img src="img/1.jpg" alt="Image 1"></li>
+                    <li><img src="img/2.jpg" alt="Image 2"></li>
+                    <li><img src="img/3.jpg" alt="Image 3"></li>
+                    <li><img src="img/1.jpg" alt="Image 4"></li>
+                    <li><img src="img/2.jpg" alt="Image 5"></li>
+                    <li><img src="img/3.jpg" alt="Image 6"></li>
+                </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            <p class="jcarousel-pagination"></p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <select class="basic">
+            <option value="">Select something…</option>
+            <option>Lorem</option>
+            <option>Ipsum</option>
+            <option>Dolor</option>
+            <option>Sit</option>
+            <option>Amet</option>
+        </select>
+    </div>
+    <div class="wrapper checkBox-css">
+        <h1>Chechbox with CSS</h1>
+        <div>
+            <input type="checkbox" id="c1" name="cc" />
+            <label for="c1"><span></span>Check Box 1</label>
+        </div>
+        <div>
+            <input type="checkbox" id="c2" name="cc" checked/>
+            <label for="c2"><span></span>Check Box 2</label>
+        </div>
+        <div>
+            <input type="checkbox" id="c3" name="cc" disabled />
+            <label for="c3"><span></span>Check Box 3</label>
+        </div>
+    </div>
+    <div class="wrapper checkBox-jQ">
+        <h1>Chechbox with jQuery</h1>
+        <div>
+            <input type="checkbox" id="j1" name="jQ" />
+            <label for="j1"><span></span>Check Box 1</label>
+        </div>
+        <div>
+            <input type="checkbox" id="j2" name="jQ" checked/>
+            <label for="j2"><span></span>Check Box 2</label>
+        </div>
+        <div>
+            <input type="checkbox" id="j3" name="jQ" disabled />
+            <label for="j3"><span></span>Check Box 3</label>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

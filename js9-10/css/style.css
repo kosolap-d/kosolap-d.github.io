@@ -1,0 +1,224 @@
+/*###########################NORMALIZA CSS*#######################################*/
+* {
+    /*box-sizing: border-box;*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Helvetica-Light';
+    src: url(font/Helvetica-Light-Light.eot);
+    src: url(font/Helvetica-Light-Light.eot?#iefix) format('embedded-opentype'),
+         url(font/Helvetica-Light-Light.woff) format('woff'),
+         url(font/Helvetica-Light-Light.ttf) format('truetype'),
+         url(font/Helvetica-Light-Light.svg#Helvetica-Light-Light) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** Created by TTF.in.ua **/
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('font/Helvetica-Bold___.eot');
+    src: url('font/Helvetica-Bold___.eot?#iefix') format('embedded-opentype'),
+         url('font/Helvetica-Bold___.woff') format('woff'),
+         url('font/Helvetica-Bold___.ttf') format('truetype'),
+         url('font/Helvetica-Bold___.svg#Helvetica-Bold___') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, figure,figcaption, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, font, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li, menu,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td, canvas {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+ background: transparent;
+ }
+ 
+ body {
+ line-height: 1;
+ }
+ ol, ul, menu {
+ list-style: none;
+ }
+ blockquote, q {
+ quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+ content: '';
+ }
+ /* remember to define focus styles! */
+ :focus {
+ outline: 0;
+ }
+ /* tables still need 'cellspacing="0"' in the markup */
+ table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ }
+/*###########################NORMALIZA CSS*#######################################*/
+
+pre {
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #DFDCDA;
+    text-shadow: 0px 0px 25px #2DC3FE;
+    background: #161616;
+    border: 5px solid #161616;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+img {
+    /*width: 300px;*/
+}
+
+body { background: #7A8498; }
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.checkBox-css input[type="checkbox"] {
+    display:none;
+}
+.checkBox-css label:before {
+    content: '';
+    display:inline-block;
+    width:19px;
+    height:19px;
+    background:url(../img/sprite.png) left top no-repeat;
+    cursor: pointer;
+    vertical-align: -3.5px;
+}
+.checkBox-css input[type="checkbox"]:checked + label:before {
+    background:url(../img/sprite.png) -19px top no-repeat;
+}
+.checkBox-css input[type="checkbox"]:disabled + label {
+    color: #2C2C2C;
+}
+.checkBox-css input[type="checkbox"]:disabled + label:before {
+    background: #D1C7C7;
+    border-radius: 3px;
+    width:16px;
+    height:16px;
+    margin-right: 3px;
+    box-shadow: inset 0px 0px 12px 3px rgba(0,0,0,0.75);
+}
+
+
+.custom-checkbox{
+    width:19px;
+    height:19px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    top: 3px;
+    background: url("../img/sprite.png")left top no-repeat;
+}
+.custom-checkbox.selected{
+    background: url("../img/sprite.png")-19px top  no-repeat;
+}
+.custom-checkbox.disabled{
+    background: #D1C7C7;
+    border-radius: 3px;
+    width:16px;
+    height:16px;
+    margin-right: 3px;
+    box-shadow: inset 0px 0px 12px 3px rgba(0,0,0,0.75);
+}
+.custom-checkbox input[type="checkbox"]{
+    margin: 0;
+    position: absolute;
+    z-index: 2;            
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+}
+
+nav {
+    background: #99a5be;
+    border-radius: 3px;
+    border-top: 1px solid rgba(255,255,255,.2);
+    border-bottom: 1px solid rgba(0,0,0,.3);
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+     z-index: 10;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+nav li ul {    
+    background-color:#62c8bf;
+    position:absolute;
+    left:0;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:rgb(50,50,50);
+}
+
+/* style sub level links */
+nav li li a {
+    color: #2B8686;
+    margin:0 10px;
+    padding:0;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+ul.sub-menu {
+    display:none;
+}
