@@ -60,6 +60,15 @@ $(function(window, document) {
     };
 
 
+    function startInterval () {
+    	idIntervalSpotwatch = setInterval(timerStart, 10);
+    	idIntervalLap = setInterval(lapStart, 10);
+    }
+
+    function killInterval() {
+    	clearInterval(idIntervalSpotwatch);
+    	clearInterval(idIntervalLap);
+    }
 
     function startBtnFunc() {
         btn.className = 'btn btn-red';
@@ -70,9 +79,7 @@ $(function(window, document) {
         lapBtn.className = 'btn btn-black';
         lapBtn.addEventListener('click', addLap);
 
-        //start timer
-        idIntervalSpotwatch = setInterval(timerStart, 10);
-        idIntervalLap = setInterval(lapStart, 10);
+        startInterval();
     }
 
     function pauseBtnFunc() {
@@ -85,9 +92,7 @@ $(function(window, document) {
         lapBtn.removeEventListener('click', addLap);
         lapBtn.addEventListener('click', resetBtnFunc);
 
-        //clear timer
-        clearInterval(idIntervalSpotwatch);
-        clearInterval(idIntervalLap);
+        killInterval();
     }
 
     function continueBtnFunc() {
@@ -100,9 +105,7 @@ $(function(window, document) {
         lapBtn.removeEventListener('click', resetBtnFunc);
         lapBtn.addEventListener('click', addLap);
 
-        //start timer
-        idIntervalSpotwatch = setInterval(timerStart, 10);
-        idIntervalLap = setInterval(lapStart, 10);
+        startInterval();
     }
 
     function resetBtnFunc() {
