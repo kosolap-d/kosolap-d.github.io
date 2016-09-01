@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
+
 <body>
-	<div class="container">
-	<form action="" class="login">
-		<div class="firstname">
-			<input id="firstname" name="form-login">
-			<label for="firstname" class="firstname-label">Ведите имя</label>
-		</div>
-		<div class="lastname">
-			<input id="lastname" name="form-login">
-			<label for="lastname" class="lastname-label">Ведите фамилию</label>
-		</div>
-		<input type="button" value="Продолжить" onclick="hiddenModal();">
-	</form>
-		<div class="iphone">
-			<div class="display">
-			<div class="title">
-				<div class="operator">mts ukr</div>
-				<div class="time"></div>
-				<div class="battery">1%<img class="btr" src="img/i.png" alt=""></div>
-				<h1 class="titleName">Секундомер</h1>
-			</div>
-				<div id="displayWorldTime">
-				<img src="img/wt.png" alt="" id="world-time_id_img">
-				</div>
-				<div id="displayAlarm">
-				<img src="img/al.png" alt="" id="alarm_id_img">
-				</div>
-				<div id="displayStopwatch">
-					<div class="spotwatch">
-						<p class="lap">
-							<span class="minutes">00:</span><span class="seconds">00,</span><span class="milSeconds">00</span>
-						</p>
-						<p class="timer">
-							<span class="minutes">00:</span><span class="seconds">00,</span><span class="milSeconds">00</span>
-						</p>
-					</div>
-					<div class="container-down">
-						<div class="container-button">
-							<div class="btn btn-green">Старт</div>
-							<div class="btn btn-grey">Круг</div>
-						</div>
-						<ul class="lap_list">
-						</ul>
-					</div>
-				</div>
-				<div id="displayTimer">
-				<img src="img/t.png" alt="" id="timer_id_img">
-				</div>
-				<div class="container-clock">
-					<div onclick="navClick(this);" id="world-nav">
-						<span class="icon world-clock-icon"></span>
-						<p>Мировые часы</p>
-					</div>
-					<div onclick="navClick(this);" id="alarm-nav">
-						<span class="icon alarm-icon"></span>
-						<p>Будильник</p>
-					</div>
-					<div onclick="navClick(this);" id="stopwatch-nav">
-						<span class="icon stopwatch-icon"></span>
-						<p>Секундомер</p>
-					</div>
-					<div onclick="navClick(this);" id="timer-nav">
-						<span class="icon timer-icon"></span>
-						<p>Таймер</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+    <div class="container">
+        <form action="" class="login">
+            <div class="firstname">
+                <input id="firstname" name="form-login">
+                <label for="firstname" class="firstname-label">Ведите имя</label>
+            </div>
+            <div class="lastname">
+                <input id="lastname" name="form-login">
+                <label for="lastname" class="lastname-label">Ведите фамилию</label>
+            </div>
+            <input type="button" value="Продолжить" class="hiddenModalClass">
+        </form>
+        <div class="iphone">
+            <div class="display">
+                <div class="title">
+                    <div class="operator">mts ukr</div>
+                    <div class="time"></div>
+                    <div class="battery">1%<img class="btr" src="img/i.png" alt=""></div>
+                    <h1 class="titleName">Секундомер</h1>
+                </div>
+                <div id="displayWorldTime">
+                    <img src="img/wt.png" alt="" id="world-time_id_img">
+                </div>
+                <div id="displayAlarm">
+                    <img src="img/al.png" alt="" id="alarm_id_img">
+                </div>
+                <div id="displayStopwatch">
+                    <div class="spotwatch">
+                        <p class="lap">
+                            <span class="minutes">00:</span><span class="seconds">00,</span><span class="milSeconds">00</span>
+                        </p>
+                        <p class="timer">
+                            <span class="minutes">00:</span><span class="seconds">00,</span><span class="milSeconds">00</span>
+                        </p>
+                    </div>
+                    <div class="container-down">
+                        <div class="container-button">
+                            <div class="btn btn-green">Старт</div>
+                            <div class="btn btn-grey">Круг</div>
+                        </div>
+                        <ul class="lap_list">
+                        </ul>
+                    </div>
+                </div>
+                <div id="displayTimer">
+                    <img src="img/t.png" alt="" id="timer_id_img">
+                </div>
+                <div class="container-clock">
+                    <div onclick="navClick(this);" id="world-nav">
+                        <span class="icon world-clock-icon"></span>
+                        <p>Мировые часы</p>
+                    </div>
+                    <div onclick="navClick(this);" id="alarm-nav">
+                        <span class="icon alarm-icon"></span>
+                        <p>Будильник</p>
+                    </div>
+                    <div onclick="navClick(this);" id="stopwatch-nav">
+                        <span class="icon stopwatch-icon"></span>
+                        <p>Секундомер</p>
+                    </div>
+                    <div onclick="navClick(this);" id="timer-nav">
+                        <span class="icon timer-icon"></span>
+                        <p>Таймер</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
