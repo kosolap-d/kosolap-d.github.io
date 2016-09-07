@@ -14,7 +14,6 @@ body {
     margin: 0 auto;
 }
 
-
 .carousel {
     max-width: 50%;
     position: relative;
@@ -33,12 +32,10 @@ body {
 
 .carousel li img {
     width: 100%;
-
 }
 
 .left {
     transform: translateX(-60%) scale(.7);
-    height: 100%;
 }
 
 .center {
@@ -47,7 +44,6 @@ body {
 
 .right {
     transform: translateX(60%) scale(.7);
-    height: 100%;
 }
 
 .carousel .first {
@@ -65,7 +61,6 @@ body {
     margin: 0 auto;
 }
 
-.btn-left,
 .btn {
     display: inline-block;
     width: 25px;
@@ -78,4 +73,35 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     z-index: 100;
+}
+
+#red,
+#green,
+#blue,
+#yellow,
+#some {
+    width: 500px;
+    height: 250px;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#red {
+    background: #F00;
+}
+
+#green {
+    background: #0f0;
+}
+
+#blue {
+    background: #00f;
+}
+
+#yellow {
+    background: #ff0;
+}
+
+#some {
+    background: #00FFFF;
 }
