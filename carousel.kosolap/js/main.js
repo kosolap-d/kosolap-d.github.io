@@ -1,4 +1,4 @@
-(function() {
+
     var carousel = {
         containerCarousel: document.querySelector('.carousel'),
         listCarousel: document.querySelectorAll('.carousel li'),
@@ -14,7 +14,6 @@
             var left = document.querySelector('.left');
             var center = document.querySelector('.center');
             var right = document.querySelector('.right');
-
 
             left.innerHTML = this.itemCarousel[this.countLeft++];
             if (this.countLeft === this.itemCarousel.length) this.countLeft = 0;
@@ -100,4 +99,3 @@
 carousel.start();
 
 
-})();
