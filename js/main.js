@@ -106,7 +106,7 @@
         {
             $.ajax({
                 type: "POST",
-                url: 'kosolap.dmitriy@yandex.ru',
+                url: 'mail.php',
                 data: {con_name: con_name, con_email: con_email, con_message: con_message},
                 success: function(data)
                 {
