@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Document</title>
+</head>
+<body>
+	<ul id="results">
+		
+	</ul>
+
+	<div class="modal">
+		<div class="modal-content">
+			
+			
+		</div>
+	</div>
+
+	<script type="text/html" id="item_tmpl">
+		<div class="container">
+			<h1>Тест по JavaScript</h1>
+			<% for ( var i = 0; i < questions.length; i++ ) { %>
+				<form action="#">
+					<h2><%=questions[i].question%></h2>
+					
+					<% for ( var j = 0; j < questions[i].answers.length; j++ ) { %>
+						<p>
+							<input type="checkbox" id="<%=questions[i].id+i+j%>">
+							<label for="<%=questions[i].id+i+j%>"><%=questions[i].answers[j]%></label>
+						</p>
+					<% } %>
+				</form>
+			<% } %>
+			<button class="btn">Проверить мои результаты</button>
+		</div>
+	</script>
+
+	<script src="js/template.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
