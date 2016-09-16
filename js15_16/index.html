@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <link rel="stylesheet" scr="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.min.css"></link>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+    <header>
+        <div class="container-fluid">
+            <a href="#" class="logo"></a>
+            <div class="search clearfix">
+                <input type="text" name="search" placeholder="Photos, people">
+                <input type="button" value="Search">
+            </div>
+        </div>
+    </header>
+    <main>
+        <script type="text/html" id="item_tmpl">
+            <div class="container">
+                <h1><%=title.replace('Recent Uploads tagged','')%></h1>
+                <% for ( var i = 0; i < items.length; i++ ) { %>
+                    <aside>
+                        <a href=<%='"' +items[i].link+ '"'%> style="background: url('<%=items[i].media.m.replace('_m','_b')%>'); background-size: cover;"></a>
+                        <article>
+                            <span class="name">
+                                <%=items[i].author.substring((items[i].author.indexOf('(')+1),items[i].author.indexOf(')'))%>
+                            </span>
+                            <span class="date">
+                                <%=(items[i].published.replace('T',' ').substring(0,items[i].published.length-4))%>
+                            </span>
+                            <p class="title">
+                                <%=items[i].title%>
+                            </p>
+                        </article>
+                    </aside>
+                    <% } %>
+            </div>
+        </script>
+    </main>
+    <script src="js/template.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

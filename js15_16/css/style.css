@@ -1,80 +1,133 @@
-/*###########################NORMALIZA CSS*#######################################*/
+
 * {
-    box-sizing: border-box;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-@font-face {
-    font-family: 'Helvetica-Light';
-    src: url(font/Helvetica-Light-Light.eot);
-    src: url(font/Helvetica-Light-Light.eot?#iefix) format('embedded-opentype'),
-         url(font/Helvetica-Light-Light.woff) format('woff'),
-         url(font/Helvetica-Light-Light.ttf) format('truetype'),
-         url(font/Helvetica-Light-Light.svg#Helvetica-Light-Light) format('svg');
-    font-weight: normal;
-    font-style: normal;
+body {
+    background: #f3f5f6;
 }
 
-/** Created by TTF.in.ua **/
-@font-face {
-    font-family: 'Helvetica-Bold';
-    src: url('font/Helvetica-Bold___.eot');
-    src: url('font/Helvetica-Bold___.eot?#iefix') format('embedded-opentype'),
-         url('font/Helvetica-Bold___.woff') format('woff'),
-         url('font/Helvetica-Bold___.ttf') format('truetype'),
-         url('font/Helvetica-Bold___.svg#Helvetica-Bold___') format('svg');
-    font-weight: normal;
-    font-style: normal;
+header {
+    position: fixed;
+    width: 100%;
+    background: #212123;
+    padding: 10px;
 }
 
-html, body, div, figure,figcaption, span, applet, object, iframe,
- h1, h2, h3, h4, h5, h6, p, blockquote, pre,
- a, abbr, acronym, address, big, cite, code,
- del, dfn, em, font, img, ins, kbd, q, s, samp,
- small, strike, strong, sub, sup, tt, var,
- b, u, i, center,
- dl, dt, dd, ol, ul, li, menu,
- fieldset, form, label, legend,
- table, caption, tbody, tfoot, thead, tr, th, td, canvas {
- margin: 0;
- padding: 0;
- border: 0;
- outline: 0;
- font-size: 100%;
- vertical-align: baseline;
- background: transparent;
- }
- 
- body {
- line-height: 1;
- }
- ol, ul, menu {
- list-style: none;
- }
- blockquote, q {
- quotes: none;
- }
- blockquote:before, blockquote:after,
- q:before, q:after {
- content: '';
- }
- /* remember to define focus styles! */
- :focus {
- outline: 0;
- }
- /* tables still need 'cellspacing="0"' in the markup */
- table {
- border-collapse: collapse;
- border-spacing: 0;
- }
-/*###########################NORMALIZA CSS*#######################################*/
+.search {
+    float: right;
+    display: block;
+    position: relative;
+    width: 220px;
+    height: 33px;
+}
 
-pre {
-    font-size: 16px;
-    padding: 10px 20px;
-    color: #DFDCDA;
-    text-shadow: 0px 0px 25px #2DC3FE;
-    background: #161616;
-    border: 5px solid #161616;
-    border-radius: 2px;
-    margin-bottom: 30px;
+header input[type="text"] {
+    position: absolute;
+    height: 33px;
+    width: 220px;
+    margin: 0;
+    padding: 0 5px 0 38px;
+    border: 0px solid #ccc;
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    line-height: 33px\9;
+    outline: none;
+    border-radius: 3px;
+    z-index: 1001;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header input[type="button"] {
+    text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 4px;
+        height: 100%;
+        width: 32px;
+        padding: 0;
+        background-image: url('https://cdn0.iconfinder.com/data/icons/octicons/1024/search-128.png');
+        background-repeat: no-repeat;
+        background-size: 18px;
+        background-color: transparent;
+        background-position: center center;
+        opacity: 0.6;
+        z-index: 1002;
+        cursor: pointer;
+        border: none;
+}
+
+
+.logo {
+    display: inline-block;
+    margin: 3px;
+    width: 72px;
+    height: 23px;
+    background-image: url(https://s.yimg.com/pw/images/flickr_logo_gn_styleguide_1x.png);
+    
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container-fluid {
+    width: 1070px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*main*/
+
+main {
+    padding-top: 53px;
+}
+
+main h1 {
+    text-align: center;
+    margin: 30px 0;
+    text-transform: capitalize;
+}
+
+main aside {
+    margin: 20px 0;
+}
+
+main article {
+    background: white;
+    padding: 20px 25px;
+    padding-left: 100px;
+}
+
+main a {
+    display: block;
+    width: 100%;
+    height: 450px;
+}
+
+.name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.date {
+        color: #898989;
+}
+.title {
+    font-size: 1.2em;
 }

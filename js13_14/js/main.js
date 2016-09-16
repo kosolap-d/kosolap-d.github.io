@@ -1,4 +1,4 @@
-(function() {
+(function(window, document) {
     'use strict;'
     var containerQuestions;
     var userAnswer = [];
@@ -65,4 +65,4 @@
         location.href = location.href;
     }
 
-})();
+})(window, document);
