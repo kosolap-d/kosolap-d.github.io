@@ -1,0 +1,36 @@
+// COLORS
+// bg
+$bg-darkGrey: #2a2d32;
+$bg-lightGrey: #f7f7f7;
+
+// nav
+$bg-nav: $bg-darkGrey;
+$link-nav: #fff;
+$hover-nav: #f4b60d;
+$input-nav: #35383c;
+
+// html
+$dark-h1-color: #2a2b2e;
+$light-h1-color: $link-nav;
+$p-color: #8a8a8a;
+$dark-a-color: $dark-h1-color;
+$blue-color: #248cec;
+$yellow-color: $hover-nav;
+
+// accordion
+$accordion-color: $hover-nav;
+
+// FONT-FAMILY
+$ubuntu-font: 'Ubuntu', Helvetica, sans-serif;
+$arial-font: Arial, Helvetica, sans-serif;
+
+// FONT-SIZE
+$h1-size: 24px;
+$h2-size: 20px;
+$h3-size: 16px;
+$link-size: 14px;
+$p-size: 13px;
+
+$path-img: "../img/";
+
+
