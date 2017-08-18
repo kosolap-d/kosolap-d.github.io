@@ -1,0 +1,139 @@
+/*###########################NORMALIZA CSS*#######################################*/
+
+a, h1, h2, h3 {
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+}
+h2,h3 {
+	text-transform: uppercase;
+}
+body {
+	font: 16px Arial, sans-serif;
+	font-weight: 300;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.title {
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+.title-centre {
+	text-align: center;
+}
+
+/*###############################################HEAD###############################################*/
+
+.logo {
+	width: 70px;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+/*NAV-BAR*/
+.nav-bar {
+	flex-basis: 100%;
+	justify-content: flex-end;
+}
+.nav-bar__item {
+	padding: .5rem;
+}
+.nav-bar__link {
+	text-transform: uppercase;
+	font-size: .9em;
+	padding: 3px 0;
+	/*color: black;*/
+    border-bottom: 2px rgba(0,0,0,0) solid;
+}
+.nav-bar__link:hover {
+	text-decoration: none;
+	border-bottom: 2px #f4ce42 solid;
+	color: black;
+}
+
+/*ICON*/
+.icon {
+	width: 17px;
+	height: 17px;
+	margin: 0;
+	padding: 0;
+	filter: grayscale(100%); 
+}
+.icon:hover {
+	filter: grayscale(0%); 
+}
+.icon__ua {
+	background: url(../img/ua.svg);
+}
+
+.icon__en {
+	background: url(../img/en.svg);
+}
+
+.icon_active {
+	filter: grayscale(0%); 
+}
+
+
+.carousel-control-next, .carousel-control-prev {
+	align-items: flex-end;
+	padding: 25px;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/*###############################################FOOTER###############################################*/
+
+.copyright {
+	font-size: .8em;
+	color: rgba(0,0,0,.5)
+}
+
+@media (max-width: 1200px) {
+
+	.nav-bar__item {
+		padding: .4rem;
+	}
+	.nav-bar__link {
+		font-size: .77em;
+	}
+}
+
+@media (max-width: 991px) {
+	.nav-bar__link {
+		font-size: 2em;
+	}
+	.nav-bar__item {
+		margin: 0 auto;
+	}
+	.icon {
+		width: 40px;
+		height: 40px;
+	}
+}
