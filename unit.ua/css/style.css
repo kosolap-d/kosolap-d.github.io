@@ -1,5 +1,7 @@
 /*###########################NORMALIZA CSS*#######################################*/
 
+@font-face{font-family:'fontdd3d9ca53a246950706e94726bb1403e';src:url('https://nomail.com.ua/files/eot/dd3d9ca53a246950706e94726bb1403e.eot?#iefix') format('embedded-opentype'),url('https://nomail.com.ua/files/woff/dd3d9ca53a246950706e94726bb1403e.woff') format('woff'),url('https://nomail.com.ua/files/woff2/dd3d9ca53a246950706e94726bb1403e.woff2') format('woff2');}@font-face{font-family:'GothamPro-Medium';src:local('GothamPro-Medium'),url('https://nomail.com.ua/files/woff/dd3d9ca53a246950706e94726bb1403e.woff') format('woff');}#gothampromedium{font-family:'GothamPro-Medium';}.fontdd3d9ca53a246950706e94726bb1403e{font-family:'fontdd3d9ca53a246950706e94726bb1403e';}
+
 a, h1, h2, h3 {
 	font-family: Arial, sans-serif;
 	font-weight: normal;
@@ -44,7 +46,7 @@ a {
 /*###############################################HEAD###############################################*/
 
 .logo {
-	width: 70px;
+	width: 170px;
 }
 
 h1 {
@@ -52,6 +54,16 @@ h1 {
 }
 
 /*NAV-BAR*/
+
+.bg-light {
+
+}
+
+.navbar {
+
+	z-index: 3;
+}
+
 .nav-bar {
 	flex-basis: 100%;
 	justify-content: flex-end;
@@ -61,15 +73,100 @@ h1 {
 }
 .nav-bar__link {
 	text-transform: uppercase;
-	font-size: .9em;
+	font-family: 'GothamPro-Medium', Arial;
+	font-size: 12px;
 	padding: 3px 0;
-	/*color: black;*/
+	color: #383839;
     border-bottom: 2px rgba(0,0,0,0) solid;
 }
 .nav-bar__link:hover {
 	text-decoration: none;
 	border-bottom: 2px #f4ce42 solid;
-	color: black;
+	color: #383839;
+}
+
+/*JUMBOTRON*/
+
+.relative {
+	position: relative;
+}
+
+.unit-jumbotrone {
+	width: 42%;
+	height: 100%;
+	padding: 10px;
+	background: rgba(255, 224, 0, 0.0);
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	top: 0;
+}
+
+.unit-jumbotrone__obj{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	transform: rotate(45deg);
+	position: absolute;
+	top: -35%;
+	right: -39%;
+
+}
+.unit-jumbotrone__obj:after {
+	display: block;
+	content: "";
+	width: 100%;
+	position: absolute;
+	height: 76%;
+	top: 62%;
+	border-radius: 50%;
+	background: #ffffff url(../img/bg1.png) no-repeat top;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.unit-jumbotrone__text {
+	position: absolute;
+	text-align: center;
+	color: #686667;
+	bottom: 35%;
+	/*left: -2%;*/
+	z-index: 2;
+}
+
+.unit-jumbotrone__h1 {
+	font-family: 'GothamPro-Medium', Arial;
+	font-size: 2em;
+	
+}
+.unit-jumbotrone__h1 span{
+	color: #fbba00;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	z-index: 2;
+}
+
+.btn-primary {
+	font-family: 'GothamPro-Medium', Arial;
+	background: #fbba00;
+	border: 1px #fbba00 solid;
+	border-radius: 5px;
+	width: 150px;
+	padding: 10px;
+	font-size: 14px;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.66);
+	-moz-box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.66);
+	box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.66);
+}
+
+.btn-primary:hover {
+	background: #fbba00;
+	border: 1px #fbba00 solid;
+	-webkit-box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.81);
+	-moz-box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.81);
+	box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.81);
 }
 
 /*ICON*/
