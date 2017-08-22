@@ -33,6 +33,10 @@ a {
 	color: black;
 }
 
+img {
+	width: 100%;
+}
+
 .clearfix:after {
 	content: '';
 	display: table;
@@ -61,7 +65,8 @@ h1 {
 
 
 .container {
-	margin: 30px auto;
+	margin-top: 15px;
+	margin-bottom: 30px;
 }
 
 .bg_pattern {
@@ -100,10 +105,6 @@ h1 {
 	color: #383839;
 }
 
-.carousel:hover {
-	cursor: pointer;
-}
-
 /*JUMBOTRON*/
 
 .relative {
@@ -112,17 +113,18 @@ h1 {
 
 .unit-jumbotrone {
 	width: 42%;
-	height: 100%;
+	height: 86%;
 	padding: 10px;
 	background: rgba(255, 224, 0, 0.0);
 	position: absolute;
 	z-index: 1;
 	right: 0;
 	top: 0;
+	overflow: hidden;
 }
 
 .unit-jumbotrone__obj{
-	width: 100%;
+	width: 88%;
 	height: 100%;
 	background: #fff;
 	transform: rotate(45deg);
@@ -149,7 +151,7 @@ h1 {
 	text-align: center;
 	color: #686667;
 	bottom: 35%;
-	/*left: -2%;*/
+	left: 14%;
 	z-index: 2;
 }
 
@@ -162,6 +164,11 @@ h1 {
 	color: #fbba00;
 }
 
+@media (max-width: 768px) {
+
+	
+}
+
 .carousel-control-next, .carousel-control-prev {
 	z-index: 2;
 }
@@ -170,7 +177,7 @@ h1 {
 	font-family: 'GothamPro-Medium', Arial;
 	background: #fbba00;
 	border: 1px #fbba00 solid;
-	border-radius: 5px;
+	border-radius: 10px;
 	width: 150px;
 	padding: 10px;
 	font-size: 14px;
@@ -185,7 +192,7 @@ h1 {
 	border: 1px #fbba00 solid;
 	-webkit-box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.81);
 	-moz-box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.81);
-	box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.81);
+	box-shadow: 0px 10px 7px -6px rgba(0,0,0,0.66);
 }
 
 /*WHO ARE WE*/
@@ -203,14 +210,41 @@ h1 {
 
 /*MODAL*/
 
-@media (min-width: 576px) {
+
+.modal-content {
+	border: none;
+	background: 0;
+}
+
 .modal-dialog {
-	    max-width: 70%;
+	    max-width: 100%;
+	}
+
+iframe {
+	width: 960px;
+	height: 626px;
+	margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+	iframe {
+		width: 734px;
+		height: 500px;
 	}
 }
 
-.modal-content {
-    height: 80vh;
+@media (max-width: 768px) {
+	iframe {
+		width: 428px;
+		height: 334px;
+	}
+}
+
+@media (max-width: 441px) {
+	iframe {
+		width: 300px;
+		height: 200px;
+	}
 }
 
 /*TABS*/
@@ -286,7 +320,18 @@ h1 {
 		padding: .4rem;
 	}
 	.nav-bar__link {
-		font-size: .77em;
+		font-size: .66em;
+	}
+	.unit-jumbotrone__text{
+		left: 19%;
+	}
+	.unit-jumbotrone__h1 {
+		font-size: 1.5em;
+	}
+	.btn-primary {
+		width: 130px;
+	    padding: 8px;
+	    font-size: 12px;
 	}
 }
 
@@ -300,5 +345,14 @@ h1 {
 	.icon {
 		width: 40px;
 		height: 40px;
+	}
+	.unit-jumbotrone__h1 {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 768px) {
+	.unit-jumbotrone__h1 {
+		font-size: 1.2em;
 	}
 }
