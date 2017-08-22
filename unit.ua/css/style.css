@@ -16,6 +16,11 @@ body {
 
 * {
 	box-sizing: border-box;
+	font-family: 'Helvetica';
+}
+
+p {
+	font-size: 14px;
 }
 
 li {
@@ -37,6 +42,7 @@ a {
 .title {
 	font-weight: lighter;
 	text-transform: uppercase;
+	margin: 40px 0;
 }
 
 .title-centre {
@@ -51,6 +57,15 @@ a {
 
 h1 {
 	text-transform: uppercase;
+}
+
+
+.container {
+	margin: 30px auto;
+}
+
+.bg_pattern {
+	background: #ffffff url(../img/bg1.png) no-repeat top;
 }
 
 /*NAV-BAR*/
@@ -83,6 +98,10 @@ h1 {
 	text-decoration: none;
 	border-bottom: 2px #f4ce42 solid;
 	color: #383839;
+}
+
+.carousel:hover {
+	cursor: pointer;
 }
 
 /*JUMBOTRON*/
@@ -167,6 +186,55 @@ h1 {
 	-webkit-box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.81);
 	-moz-box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.81);
 	box-shadow: 0px 13px 27px -10px rgba(0,0,0,0.81);
+}
+
+/*WHO ARE WE*/
+
+.who-are-we__link {
+	display: block;
+	margin: 0px auto;
+}
+
+/*What do we offer*/
+
+.what-do-we-offer {
+	background: url(../img/bg2.png);
+}
+
+/*MODAL*/
+
+@media (min-width: 576px) {
+.modal-dialog {
+	    max-width: 70%;
+	}
+}
+
+.modal-content {
+    height: 80vh;
+}
+
+/*TABS*/
+.nav {
+	justify-content: space-around;
+}
+
+.nav-link {
+	background: #d9d9d9;
+	padding: 40px 50px;
+	margin: 20px;
+	-webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.38);
+	-moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.38);
+	box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.38);
+}
+
+.nav-link:hover {
+	-webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.45);
+}
+
+.nav-pills .nav-link.active, .show>.nav-pills .nav-link {
+	background: #fbba00;
 }
 
 /*ICON*/

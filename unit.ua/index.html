@@ -78,12 +78,26 @@
 	<div class="who-are-we" id="who-are-we">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
-					<a href="#" class="who-are-we__link">link</a>
+				<div class="col-lg-6">
+				<!-- Button trigger modal -->
+				<a class="who-are-we__link" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+				  <img src="img/who_are_we.png" alt="">
+				</a>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DZmz0n4yzhM" frameborder="0" allowfullscreen></iframe>
+				    </div>
+				  </div>
 				</div>
-				<div class="col-md-6">
+					<!-- <a href="#" class="who-are-we__link">/a> -->
+				</div>
+				<div class="col-lg-6 bg_pattern">
 					<h1 class="title">Who are we?</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus expedita officia doloremque totam recusandae architecto tenetur minima minus dicta, provident nobis mollitia quam illum odit excepturi autem perferendis molestiae hic, ipsum animi sit esse ad! Ducimus perspiciatis quibusdam ipsa hic est officia incidunt ex iusto tempore totam. Quis provident ad, ratione numquam tempora, eos quia laboriosam quibusdam. Inventore commodi unde hic, repudiandae nihil facere natus. Eum quis perferendis harum odio voluptatem necessitatibus inventore reprehenderit fugit repellat, reiciendis debitis magnam dolorum unde impedit sequi dolore. Laboriosam eaque facilis sequi animi nemo praesentium vel accusantium iusto nihil, nam esse, numquam soluta provident. Officiis unde, nesciunt labore accusantium repudiandae error omnis necessitatibus minus natus corrupti laudantium veritatis ea nobis quam ducimus dolorum, assumenda qui in. Nihil sint accusantium qui sed tempore.</p>
+					<p>UNIT Factory (Ukrainian National IT Factory) — Ukraine's only educational institution that works by innovative standards of French School “42”. Here you can learn how to code, enhance your team working skills and advance your creativity by looking for unique solutions.
+We don’t have teachers, work-books or lectures. Your academic degree or your grades are not taken into account during the application. Everything depends only on your abilities and motivation. And the education is completely free for all students.</p>
 				</div>
 			</div>
 		</div>
@@ -94,38 +108,55 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="title">What do we offer?</h1>
-					<div class="toggle">
-						<p>
-						  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="true" aria-controls="multiCollapseExample1">World</a>
-						</p>
-						<div class="row">
-						  <div class="col">
-						    <div class="collapse multi-collapse" id="multiCollapseExample1">
-						      <div class="card card-body">
-						      <div class="container">
-						      	<div class="row">
-						      	<div class="col-md-6">
-									<h3>For the country</h3>
-									<p>	
-										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-									</p>
-						      	</div>
-						      	<div class="col-md-6">
-						      		<div class="img">img</div>
-						      	</div>
-						      	</div>
-						      </div>
-						      </div>
-						    </div>
-						  </div>
-						  <div class="col">
-						    <div class="collapse multi-collapse" id="multiCollapseExample2">
-						      <div class="card card-body">
-						        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-						      </div>
-						    </div>
-						  </div>
+					<h1 class="title title-centre">What do we offer?</h1>
+					<div class="col-md-12">
+						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						  <li class="nav-item">
+						    <a class="nav-link active" id="country-tab" data-toggle="pill" href="#country" role="tab" aria-controls="country" aria-expanded="true"><img src="img/icon/earth.png" alt=""></a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="company-tab" data-toggle="pill" href="#company" role="tab" aria-controls="company" aria-expanded="true"><img src="img/icon/computer.png" alt=""></a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="people-tab" data-toggle="pill" href="#people" role="tab" aria-controls="people" aria-expanded="true"><img src="img/icon/student.png" alt=""></a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="people-tab" data-toggle="pill" href="#people" role="tab" aria-controls="people" aria-expanded="true"><img src="img/icon/family.png" alt=""></a>
+						  </li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="country" role="tabpanel" aria-labelledby="country-tab">
+								<div class="col-md-6">								
+									<h2>FOR THE COUNTRY</h2>
+									<p>One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+									<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
+								</div>
+								<div class="col-md-6"></div>
+							</div>
+							<div class="tab-pane fade" id="company" role="tabpanel" aria-labelledby="company-tab">
+								<div class="col-md-6">								
+									<h2>FOR IT-COMPANIES</h2>
+									<p>One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+									<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
+								</div>
+								<div class="col-md-6"></div>
+							</div>
+							<div class="tab-pane fade" id="people" role="tabpanel" aria-labelledby="people-tab">
+								<div class="col-md-6">								
+									<h2>FOR YOUNG PEOPLE</h2>
+									<p>One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+									<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
+								</div>
+								<div class="col-md-6"></div>
+							</div>
+							<div class="tab-pane fade" id="people" role="tabpanel" aria-labelledby="people-tab">
+								<div class="col-md-6">								
+									<h2>FOR PARENTS</h2>
+									<p>One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+									<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
+								</div>
+								<div class="col-md-6"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -260,5 +291,20 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript">
+		$(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});
+	</script>
 </body>
 </html>
