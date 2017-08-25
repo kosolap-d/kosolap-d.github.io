@@ -1,0 +1,336 @@
+/*###########################NORMALIZA CSS*#######################################*/
+a, h1, h2, h3 {
+	font-family: 'Gotham SSm A', sans-serif;
+	font-weight: normal;
+}
+h2,h3 {
+	/*text-transform: uppercase;*/
+}
+body {
+	font: 16px 'Gotham SSm A', sans-serif;
+	font-weight: 300;
+	color: black;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.white {
+	color: white;
+}
+
+.black {
+	color: black;
+}
+
+.container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	width: 1140px;
+	margin: 0px auto;
+}
+
+.row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.row_revers {
+	justify-content: space-between;
+}
+
+
+.shadow {
+	text-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title {
+	margin: 40px auto;
+}
+
+/*###############################################NAVBAR###############################################*/
+.nav-bar {
+	background: #000;
+	padding: 10px;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.nav-bar__link {
+	padding: 0 15px;
+}
+
+.nav-bar__link:hover {
+	color: rgba(255,255,255,.8);
+}
+
+.responsive {
+    height: 100vh;
+}
+
+.cover {
+	background: url(../img/bg1.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.cover__container {
+	position: absolute;
+	top: 60%;
+
+}
+
+.cover__h1 {
+	font-weight: 900;
+	font-size: 4em;
+	margin: 30px 0;
+}
+
+.cover__h2 {
+	font-weight: 900;
+	font-size: 2.5em;
+	margin: 30px;
+}
+
+.cover__link {
+	text-transform: uppercase;
+	display: block;
+	font-size: 16px;
+	padding-bottom: 10px;
+	font-weight: 900;
+	color: #fff10f;
+	border-bottom: 5px #fff10f solid;
+	transition: all 0.3s ease-in-out;
+}
+
+.cover__link:hover {
+	color: white;
+	border-bottom: 5px rgba(0,0,0,0) solid;
+}
+
+/*###############################################SHARES###############################################*/
+
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+	padding: 10px;
+	min-width: 380px;
+	flex: 1;
+	text-align: center
+}
+
+.flex-item{
+	transition:All 1s ease;
+	-webkit-transition:All 1s ease;
+	-moz-transition:All 1s ease;
+	-o-transition:All 1s ease;
+	transform: rotate(0deg) scale(0.95) translate(0px);
+	-webkit-transform: rotate(0deg) scale(0.95) translate(0px);
+	-moz-transform: rotate(0deg) scale(0.95) translate(0px);
+	-o-transform: rotate(0deg) scale(0.95) translate(0px);
+	-ms-transform: rotate(0deg) scale(0.95) translate(0px);
+}
+.flex-item:hover {
+	transform: rotate(0deg) scale(1) translate(0px);
+	-webkit-transform: rotate(0deg) scale(1) translate(0px);
+	-moz-transform: rotate(0deg) scale(1) translate(0px);
+	-o-transform: rotate(0deg) scale(1) translate(0px);
+	-ms-transform: rotate(0deg) scale(1) translate(0px);
+}
+
+.shares__title {
+	margin-top: -3vh;
+	background: white;
+}
+
+.shares_h2 {
+	text-align: left;
+	margin: 10px 20px;
+	font-size: 24px;
+}
+
+.shares_h4 {
+	text-align: left;
+	margin: 10px 20px;
+	font-size: 17px;
+}
+
+.shares_h4:hover{
+	text-decoration: underline;
+}
+/*###############################################GALLERY###############################################*/
+
+.gallery-head {
+	background: #eecabb;
+	padding: 50px 0;
+}
+
+.gallery { 
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+.gallery a {  
+	margin: 5px;
+
+	max-width: 635px;
+	max-height: 500px;
+
+	min-width: 300px;
+	min-height: 270px;
+
+	flex: 1;
+	text-align: center;
+	transition: .8s opacity;
+} 
+
+.gallery a:nth-child(3n+3) {
+    max-width: 300px;
+    max-height: 735px;
+
+    min-width: 170px;
+    min-height: 420px;
+    }
+
+.gallery:hover a { opacity: 0.6; }
+.gallery:hover a:hover { opacity: 1; } 
+
+/* fallback for earlier versions of Firefox */
+
+@supports not (flex-wrap: wrap) {
+  .gallery { display: block; }
+  .gallery a {  
+  display: inline-block;
+  vertical-align: top;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*###############################################MEDIA###############################################*/
+@media (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+	.cover__h1 {
+		font-size: 3.5em;
+		margin: 20px 0;
+	}
+
+	.cover__h2 {
+		font-size: 2em;
+		margin: 20px;
+	}
+
+	.cover__link {
+		font-size: 14px;
+		padding-bottom: 8px;
+	}
+
+@media (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		width: 460px;
+	}
+	.cover__h1 {
+		font-weight: 600;
+		font-size: 2.7em;
+		margin: 20px 0;
+	}
+
+	.cover__h2 {
+		font-size: 1.3em;
+		margin: 20px;
+	}
+
+	.cover__link {
+		font-size: 12px;
+		padding-bottom: 6px;
+	}
+}
+@media (max-width: 479px) {
+	.container {
+		width: 100%;
+	}
+	.cover__h1 {
+		font-size: 1.5em;
+		margin: 15px 0;
+	}
+
+	.cover__h2 {
+		font-size: 1em;
+		margin: 15px;
+	}
+
+	.cover__link {
+		font-size: 10px;
+		padding-bottom: 6px;
+	}
+}
+
