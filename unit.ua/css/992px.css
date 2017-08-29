@@ -1,0 +1,20 @@
+@media (max-width: 1200px) {
+
+	.nav-bar__item {
+		padding: .4rem;
+	}
+	.nav-bar__link {
+		font-size: .66em;
+	}
+	.unit-jumbotrone__text{
+		left: 19%;
+	}
+	.unit-jumbotrone__h1 {
+		font-size: 1.5em;
+	}
+	.btn-primary {
+		width: 130px;
+	    padding: 8px;
+	    font-size: 12px;
+	}
+}

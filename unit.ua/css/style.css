@@ -23,6 +23,10 @@ p {
 	font-size: 14px;
 }
 
+h1 {
+	text-transform: uppercase;
+}
+
 li {
 	list-style: none;
 	display: inline-block;
@@ -53,20 +57,15 @@ img {
 	text-align: center;
 }
 
+.container {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
 /*###############################################HEAD###############################################*/
 
 .logo {
 	width: 170px;
-}
-
-h1 {
-	text-transform: uppercase;
-}
-
-
-.container {
-	margin-top: 15px;
-	margin-bottom: 30px;
 }
 
 .bg_pattern {
@@ -74,10 +73,6 @@ h1 {
 }
 
 /*NAV-BAR*/
-
-.bg-light {
-
-}
 
 .navbar {
 
@@ -164,11 +159,6 @@ h1 {
 	color: #fbba00;
 }
 
-@media (max-width: 768px) {
-
-	
-}
-
 .carousel-control-next, .carousel-control-prev {
 	z-index: 2;
 }
@@ -202,11 +192,6 @@ h1 {
 	margin: 0px auto;
 }
 
-/*What do we offer*/
-
-.what-do-we-offer {
-	background: url(../img/bg2.png);
-}
 
 /*MODAL*/
 
@@ -226,25 +211,10 @@ iframe {
 	margin: 0 auto;
 }
 
-@media (max-width: 991px) {
-	iframe {
-		width: 734px;
-		height: 500px;
-	}
-}
+/*What do we offer*/
 
-@media (max-width: 768px) {
-	iframe {
-		width: 428px;
-		height: 334px;
-	}
-}
-
-@media (max-width: 441px) {
-	iframe {
-		width: 300px;
-		height: 200px;
-	}
+.what-do-we-offer {
+	background: url(../img/bg2.png);
 }
 
 /*TABS*/
@@ -269,6 +239,11 @@ iframe {
 
 .nav-pills .nav-link.active, .show>.nav-pills .nav-link {
 	background: #fbba00;
+}
+
+.tab-container {
+	width: 50px;
+	height: 50px;
 }
 
 /*ICON*/
@@ -314,45 +289,4 @@ iframe {
 	color: rgba(0,0,0,.5)
 }
 
-@media (max-width: 1200px) {
 
-	.nav-bar__item {
-		padding: .4rem;
-	}
-	.nav-bar__link {
-		font-size: .66em;
-	}
-	.unit-jumbotrone__text{
-		left: 19%;
-	}
-	.unit-jumbotrone__h1 {
-		font-size: 1.5em;
-	}
-	.btn-primary {
-		width: 130px;
-	    padding: 8px;
-	    font-size: 12px;
-	}
-}
-
-@media (max-width: 991px) {
-	.nav-bar__link {
-		font-size: 2em;
-	}
-	.nav-bar__item {
-		margin: 0 auto;
-	}
-	.icon {
-		width: 40px;
-		height: 40px;
-	}
-	.unit-jumbotrone__h1 {
-		font-size: 1.2em;
-	}
-}
-
-@media (max-width: 768px) {
-	.unit-jumbotrone__h1 {
-		font-size: 1.2em;
-	}
-}
