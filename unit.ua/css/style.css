@@ -3,14 +3,14 @@
 @font-face{font-family:'fontdd3d9ca53a246950706e94726bb1403e';src:url('https://nomail.com.ua/files/eot/dd3d9ca53a246950706e94726bb1403e.eot?#iefix') format('embedded-opentype'),url('https://nomail.com.ua/files/woff/dd3d9ca53a246950706e94726bb1403e.woff') format('woff'),url('https://nomail.com.ua/files/woff2/dd3d9ca53a246950706e94726bb1403e.woff2') format('woff2');}@font-face{font-family:'GothamPro-Medium';src:local('GothamPro-Medium'),url('https://nomail.com.ua/files/woff/dd3d9ca53a246950706e94726bb1403e.woff') format('woff');}#gothampromedium{font-family:'GothamPro-Medium';}.fontdd3d9ca53a246950706e94726bb1403e{font-family:'fontdd3d9ca53a246950706e94726bb1403e';}
 
 a, h1, h2, h3 {
-	font-family: Arial, sans-serif;
-	font-weight: normal;
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
 }
 h2,h3 {
 	text-transform: uppercase;
 }
 body {
-	font: 16px Arial, sans-serif;
+	font: 16px Helvetica, sans-serif;
 	font-weight: 300;
 }
 
@@ -60,6 +60,10 @@ img {
 .container {
 	margin-top: 15px;
 	margin-bottom: 30px;
+}
+
+.m40 {
+	margin: 40px auto;
 }
 
 /*###############################################HEAD###############################################*/
@@ -224,17 +228,19 @@ iframe {
 
 .nav-link {
 	background: #d9d9d9;
-	padding: 40px 50px;
-	margin: 20px;
+	padding: 30px 40px;
+	/* margin: 20px; */
 	-webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.38);
 	-moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.38);
 	box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.38);
+	color: #464646;
 }
 
 .nav-link:hover {
 	-webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.45);
 	-moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.45);
 	box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.45);
+	color: black;
 }
 
 .nav-pills .nav-link.active, .show>.nav-pills .nav-link {
@@ -242,8 +248,9 @@ iframe {
 }
 
 .tab-container {
-	width: 50px;
-	height: 50px;
+/*	width: 50px;
+	height: 50px;*/
+	font-size: 60px;
 }
 
 /*ICON*/
