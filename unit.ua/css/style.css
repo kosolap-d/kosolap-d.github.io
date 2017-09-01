@@ -57,10 +57,10 @@ img {
 	text-align: center;
 }
 
-.container {
+/*.container {
 	margin-top: 15px;
 	margin-bottom: 30px;
-}
+}*/
 
 .mt40 {
 	margin-top: 40px;
@@ -161,7 +161,7 @@ img {
 .unit-jumbotrone__h1 {
 	font-family: 'GothamPro-Medium', Arial;
 	font-size: 2em;
-	
+
 }
 .unit-jumbotrone__h1 span{
 	color: #fbba00;
@@ -203,6 +203,9 @@ img {
 
 /*MODAL*/
 
+.hidden-lg {
+	display: none;
+}
 
 .modal-content {
 	border: none;
@@ -214,9 +217,19 @@ img {
 	}
 
 iframe {
+	display: block;
 	width: 960px;
 	height: 626px;
 	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.7);
+    padding-top: 40px;
+}
+
+.close {
+	position: relative;
+	left: 89%;
+	top: 35px;
+	font-size: 35px;
 }
 
 /*What do we offer*/
@@ -231,7 +244,7 @@ iframe {
 
 /*TABS*/
 .nav {
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .nav-link {
@@ -267,10 +280,10 @@ iframe {
 	height: 17px;
 	margin: 0;
 	padding: 0;
-	filter: grayscale(100%); 
+	filter: grayscale(100%);
 }
 .icon:hover {
-	filter: grayscale(0%); 
+	filter: grayscale(0%);
 }
 .icon__ua {
 	background: url(../img/ua.svg);
@@ -281,7 +294,7 @@ iframe {
 }
 
 .icon_active {
-	filter: grayscale(0%); 
+	filter: grayscale(0%);
 }
 
 
@@ -298,6 +311,11 @@ iframe {
 }
 
 /*Who may enroll*/
+
+.who-may-entry-steps {
+	display: block;
+	background: url(../img/bg3.png) no-repeat;
+}
 
 .who-may-enroll p{
 	width: 80%;
@@ -324,7 +342,6 @@ iframe {
 
 .entry__item span {
 	display: inline-block;
-	/*height: 40px;*/
 	font-size: 12px;
 }
 
@@ -332,7 +349,6 @@ iframe {
 	display: flex;
 	position: relative;
 	margin-right: 70px;
-	/*vertical-align: middle;*/
 }
 
 .entry__icon {
@@ -417,11 +433,44 @@ iframe {
 	top: 8px;
 }
 
+
+/*#######Study Principles###########*/
+
+.study-principles {
+	background: url(../img/bg4.png) no-repeat 125% top;
+}
+
+/*#######CURRICULUM###########*/
+
+.curriculum{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(233, 233, 233, 1);
+}
+
+.left-curriculum{
+	padding: 10% 10px;
+}
+
+.right-curriculum{
+	display: inline-block;
+	padding: 10% 10px;
+}
+
+
+
+
+
+
+
+
+
+/*#######END CURRICULUM###########*/
+
+
 /*###############################################FOOTER###############################################*/
 
 .copyright {
 	font-size: .8em;
 	color: rgba(0,0,0,.5)
 }
-
-

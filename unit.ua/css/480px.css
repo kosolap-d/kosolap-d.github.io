@@ -5,9 +5,15 @@
 	.unit-jumbotrone__h1 {
 		font-size: .9em;
 	}
+	.hidden-lg {
+		display: block;
+	}
+	.hidden-md {
+		display: none;
+	}
 	iframe {
-		width: 428px;
-		height: 334px;
+		width: 100%;
+		height: 40vh;
 	}
 	.nav-link {
 		margin: 0px;
