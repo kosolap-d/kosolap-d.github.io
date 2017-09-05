@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="initial-scale=1.0">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/icomoon/style.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/992px.css">
 	<link rel="stylesheet" href="css/768px.css">
@@ -124,7 +126,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="title title-centre">What do we offer?</h1>
+						<h1 class="title title-center">What do we offer?</h1>
 						<div class="col-md-12">
 							<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
 							  <li class="nav-item">
@@ -250,13 +252,13 @@
 	<div class="study-principles" id="study-principles">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 m40">
+				<div class="col-md-6 m40 hidden-md">
 					<div class="m40">
 					<img class="m40" src="img/study_pronciples.png" alt="">
 					</div>
 				</div>
-				<div class="col-md-6">
-					<h1 class="title">Study principles</h1>
+				<div class="col-md-6 m40">
+					<h1 class="title m40">Study principles</h1>
 					<p>UNIT Factory is open for graduates and students and for those who already have a profession, but want to change it. There is only one requirement: age. You must be from 17 to 30 years old to enroll. Education is completely free of charge for all students.</p>
 					<p>Our goal is to find the most talented and motivated students who may become high-level professionals. During the application process academic criteria (grades, academic degree etc.) are not taken into account. Programming skills also don’t have any decisive role. According to the experience of School 42 those students who had never developed software but had high potential quickly caught up with those who were already familiar with programming.</p>
 				</div>
@@ -281,25 +283,64 @@
 	</div>
 
 	<!-- Result -->
-	<div class="result" id="result">
+	<div class="result p40" id="result">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h1 class="title title-centre">Result</h1>
-					<p class="p-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta asperiores aut veritatis minus minima rerum est, atque voluptate nemo! Dolores expedita dicta itaque neque quidem impedit facere autem ducimus architecto aut possimus modi eius sed debitis ab aspernatur corrupti numquam quas, fuga amet corporis esse.</p>
+				<div class="col-lg-12 col-xl-3 title-center">
+					<h1 class="title">Result</h1>
+					<p class="p-center">Education at UNIT Factory takes up to three years.
+After graduating from UNIT Factory you will have the knowledge, skills and portfolio necessary to work at such positions:</p>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<ul class="ul-result">
-						<li class="ul-result__item"><span class="ul-result__icon"></span>Lorem ipsum.</li>
-						<li class="ul-result__item"><span class="ul-result__icon"></span>Lorem ipsum.</li>
-						<li class="ul-result__item"><span class="ul-result__icon"></span>Lorem ipsum.</li>
-						<li class="ul-result__item"><span class="ul-result__icon"></span>Lorem ipsum.</li>
-						<li class="ul-result__item"><span class="ul-result__icon"></span>Lorem ipsum.</li>
-						<li class="ul-result__item"><span class="ul-result__icon"></span>Lorem ipsum.</li>
-						<li class="ul-result__item"><span class="ul-result__icon"></span>Lorem ipsum.</li>
-						<li class="ul-result__item"><span class="ul-result__icon"></span>Lorem ipsum.</li>
+				<div class="col-lg-12 col-xl-9">
+					<ul class="result__list">
+						<li class="result__item">
+							<div href="#" class="result__link">
+								<span class="result__icon icon-software"></span>
+								<p>Software Architect</p>
+							</div>
+						</li>
+						<li class="result__item">
+							<div href="#" class="result__link">
+								<span class="result__icon icon-network"></span>
+								<p>Networks Architect</p>
+							</div>
+						</li>
+						<li class="result__item">
+							<div href="#" class="result__link">
+								<span class="result__icon icon-admin"></span>
+								<p>Network Systems Administrator</p>
+							</div>
+						</li>
+						<li class="result__item">
+							<div href="#" class="result__link">
+								<span class="result__icon icon-lead"></span>
+								<p>Technical Lead</p>
+							</div>
+						</li>
+						<li class="result__item">
+							<div href="#" class="result__link">
+								<span class="result__icon icon-software"></span>
+								<p>Software Architect</p>
+							</div>
+						</li>
+						<li class="result__item">
+							<div href="#" class="result__link">
+								<span class="result__icon icon-network"></span>
+								<p>Networks Architect</p>
+							</div>
+						</li>
+						<li class="result__item">
+							<div href="#" class="result__link">
+								<span class="result__icon icon-admin"></span>
+								<p>Network Systems Administrator</p>
+							</div>
+						</li>
+						<li class="result__item">
+							<div href="#" class="result__link">
+								<span class="result__icon icon-lead"></span>
+								<p>Technical Lead</p>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -310,11 +351,13 @@
 	<div class="faq" id="faq">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6"></div>
-				<div class="col-md-6">
+				<div class="col-md-6 left-faq" >
+						<img src="img/bg_faq.jpg" alt="FAQ" >
+				</div>
+				<div class="col-md-6 right-faq">
 					<h1 class="title">Should i know to swim to get to unit factory throught "pool"?</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae fugiat tempore at rem cum recusandae soluta quos eveniet, officiis, tempora exercitationem. Repellat asperiores hic recusandae aspernatur porro, eius modi facere.</p>
-					<a href="#" class="btn btn-primary">more detailed</a>
+					<a href="#" class="btn btn-primary">more<span class="hidden-md"> detailed</span></a>
 				</div>
 			</div>
 		</div>
@@ -323,25 +366,38 @@
 	<!-- Contacts -->
 	<div class="contacts" id="contacts">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="contact">
-						<ul class="ul-contacts">
-							<li class="ul-contacts__item">
-								<a href="#" class="ul-contacts__link">link</a>
-								<a href="#" class="ul-contacts__link">link</a>
-								<a href="#" class="ul-contacts__link">link</a>
-							</li>
-						</ul>
-						<div class="map"></div>
-					</div>
-				</div>
+			<div class="contact-form">
+				<h3>Contacts</h3>
+				<ul class="contacts__list">
+					<li class="contacts__item">
+						<a href="#" class="contacts__link"><i class="fa fa-phone-square" aria-hidden="true"></i>+38(068)248-16-32</a>
+					</li>
+					<li class="contacts__item">
+						<a href="" class="contacts__link"><i class="fa fa-envelope" aria-hidden="true"></i>born2code@unit.ua</a>
+					</li>
+					<li class="contacts__item">
+						<a href="" class="contacts__link"><i class="fa fa-map-marker" aria-hidden="true"></i>Ukraine, Kyiv, Sim'i Khokhlovykh St, 8 (campus entrance near Dorohozhytska Str, 1).</a>
+					</li>
+
+				</ul>
+				<div class="br"></div>
+				<ul class="social-link">
+					<li class="social-link__item">
+						<a href="#" class="social-link__link"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+						<a href="#" class="social-link__link"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+						<a href="#" class="social-link__link"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+						<a href="#" class="social-link__link"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+						<a href="#" class="social-link__link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</li>
+				</ul>
 			</div>
 		</div>
+		<div id="map" class="map_class"></div>
+
 	</div>
 
 	<!-- Footer -->
-	<footer class="footer" id="footer">
+<!-- 	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-1"></div>
@@ -351,7 +407,40 @@
 				<div class="col-md-1"></div>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
+	<script>
+
+		function initMap() {
+			// Styles a map in night mode.
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 50.468818, lng: 30.4600373},
+				zoom: 15,
+				styles:
+				[
+				{
+				     "featureType": "administrative.country",
+				     "elementType": "geometry.fill",
+				     "stylers": [
+				         {
+				             "visibility": "on"
+				         }
+				     ]
+				 }
+]
+
+			});
+			// var image = ('img/logo.png');
+			// var markerFactory = new google.maps.Marker({
+			// 	position: {lat: 50.519454, lng: 30.5108188},
+			// 	map: map,
+			// 	icon: image,
+			// });
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPxwqnU8fNnPKpmyCMmY0x_-5XoJeBWjA&callback=initMap"
+			async defer></script>
+
+
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>

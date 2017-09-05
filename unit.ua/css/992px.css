@@ -1,5 +1,9 @@
 @media (max-width: 1200px) {
 
+	h1 {
+		font-size: 2rem;
+	}
+
 	.nav-bar__item {
 		padding: .4rem;
 	}
@@ -22,5 +26,10 @@
 	}
 	.close {
 		left: 96%;
+	}
+
+	.contact-form {
+	    width: 400px;
+	    top: 10vh;
 	}
 }

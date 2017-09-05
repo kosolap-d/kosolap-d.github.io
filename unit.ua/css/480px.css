@@ -1,4 +1,18 @@
 @media (max-width: 767px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+	.m40 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.p40 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.hidden-md {
+		display: none;
+	}
 	.nav-bar__link {
 		font-size: 1.5em;
 	}
@@ -22,4 +36,17 @@
 	.tab-container {
 		font-size: 30px;
 	}
+	.map_class {
+		display: none;
+	}
+	
+	.contact-form {
+	    position: relative;
+	    width: auto;
+	    margin: 0;
+	    top: 0;
+	    border-radius: 0;
+	    box-shadow: none;
+	}
+
 }

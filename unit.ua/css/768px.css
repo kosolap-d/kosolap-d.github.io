@@ -1,4 +1,8 @@
 @media (max-width: 991px) {
+	h1 {
+		font-size: 1.8rem;
+	}
+
 	.nav-bar__link {
 		font-size: 2em;
 	}
@@ -23,4 +27,30 @@
 	.tab-container {
 		font-size: 40px;
 	}
+	.result__item {
+		margin: auto;
+	}
+	.result__link {
+	    text-align: center;
+	    width: 152px;
+	    height: 124px;
+	    background: #e9edf2;
+	    display: inline-block;
+	    margin: 5px auto;
+	    padding: 10px;
+	    border-radius: 7px;
+	    color: #fbba00;
+	    -webkit-box-shadow: inset 0px 0px 300px -62px rgba(0,0,0,0.3);
+	    -moz-box-shadow: inset 0px 0px 300px -62px rgba(0,0,0,0.3);
+	    box-shadow: inset 0px 0px 300px -62px rgba(0,0,0,0.3);
+	    transform: scale(0.95);
+	    transition: all .1s;
+	}
+
+	.result__icon {
+	    margin-top: 15px;
+	}
+	.result__link p {
+	    font-size: .8em;
+    }
 }
