@@ -8,12 +8,12 @@
     <meta name="author" content="dibridge.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
 	<!-- <link rel="stylesheet" href=" js/dist/photoswipe.css"> -->
 	<!-- <link rel="stylesheet" href=" js/dist/default-skin/default-skin.css"> -->
     <link rel="stylesheet" href=" css/font/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href=" css/owl.carousel.min.css">
-	<link rel="stylesheet" href=" css/owl.theme.default.min.css">
+	<link rel="stylesheet" href=" css/slider.css">
+    <link rel="stylesheet" href=" css/style.css"/>
 	
     
 </head>
@@ -44,38 +44,42 @@
 			<div class="item">
 				<div class="slide">
 					<div class="slide__img"  style="background: url('img/photo/s1.jpg') no-repeat center center; background-size: cover;"></div>
+					<div class="slide__text">
+						<div class="slide__text-container slider-right">
+							<h1 class="slide__h1"><span>SHOP THE CITY COMPETITION</span></h1>
+							<a href="#" class="slide__readmore">watch now</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="item">
 				<div class="slide">
 					<div class="slide__img" style="background: url('img/photo/s2.jpg') no-repeat center center; background-size: cover;"></div>
+					<div class="slide__text">
+						<div class="slide__text-container slider-center">
+							<h1 class="slide__h1"><span>THROUGH THE STREETS</span></h1>
+							<a href="#" class="slide__readmore">watch now</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="item">
 				<div class="slide">
 					<div class="slide__img" style="background: url('img/photo/s3.jpg') no-repeat center center; background-size: cover;"></div>
+					<div class="slide__text">
+						<div class="slide__text-container">
+							<div class="slide__text-container slider-left">
+								<h1 class="slide__h1"><span>MFW PREMIUM RUNWAYS</span></h1>
+								<a href="#" class="slide__readmore">watch now</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 	    </div>
     </div>
-<!--     <div class="cover background_main" style="background: url(img/bg1_2cf22su.jpg) no-repeat center/cover;">
-            <div class="container responsive">
-                <div class="cover__container">
-                    <h1 class="cover__h1 white ">Салон красоты</h1>
-                    <h2 class="cover__h2 white "> Julizon</h2>
-                     
-                       <div class="cover__link shadow">
-                        <p>
-                            г. Киев, проспект Героев Сталинграда 49
-                        </p>
-                        </div>
-                    
-
-                </div>
-            </div>
-    </div> -->
 </header>
-<!-- <div class="shares" id="shares">
+<div class="shares" id="shares">
     <div class="container about__title">
          <h2 class="about_h2 black">О НАС</h2>
         <div class="row">
@@ -139,6 +143,7 @@
         </div>
     </div>
 </div>
+
 <div class="gallery-head" id="gallery">
     <div class="container">
         <div id="demo-test-gallery" class="gallery">
@@ -175,7 +180,7 @@
             
         </div>
     </div>
-</div> -->
+</div>
 
 <!-- <div class="price" id="price">
     <div class="container">
@@ -511,17 +516,13 @@ $(document).ready(function() {
 		itemsDesktopSmall : false,
 		itemsTablet: false,
 		itemsMobile : false,
-		mouseDrag: false,
-		touchDrag: false,
-		pullDrag: false,
-		freeDrag: false,
 		animateOut: 'fadeOut',
-		// dots: false,
 
 		loop:true,
 		autoplay:true,
-		autoplayTimeout:10000,
-		autoplayHoverPause:false
+		autoplayTimeout:8000,
+		autoplayHoverPause:false,
+	    smartSpeed:450
  	});
  	// $('.play').on('click',function(){
  	//     owl.trigger('play.owl.autoplay',[5000])
