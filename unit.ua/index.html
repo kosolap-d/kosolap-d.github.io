@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/480px.css">
 	<link rel="stylesheet" href="css/320px.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/canvas.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Document</title>
 </head>
@@ -46,7 +47,9 @@
 			</div>
 		</nav>
 
-		<div class="container-fluid wow fadeIn relative">
+<!-- SLIDER -->
+
+		<!-- <div class="container-fluid wow fadeIn relative">
 			    <div id="owl-carousel" class="owl-carousel owl-theme">
 					<div class="item">
 						<div class="slide">
@@ -82,7 +85,20 @@
 						</div>
 					</div>
 			    </div>
+		</div> -->
+
+		<div class="cotainer">
+			<div class="col-12">
+				<div class="unit-canvas">
+					<div class="container unit-canvas__container">
+						<div class="unit-canvas__h2">UNIT FACTORY UKRAINE</div>
+						<div class="unit-canvas__h1">BORN<span>2</span>CODE</div>
+					</div>
+					<canvas class='connecting-dots'></canvas>
+				</div>
+			</div>
 		</div>
+
 	</header>
 
 	<!-- Who we are -->
@@ -124,7 +140,6 @@
 
 	<!-- What do we offer -->
 	<div class="what-do-we-offer wow fadeIn" id="what-do-we-offer">
-		<div class="filter">
 			<div class="container fadeIn">
 				<div class="row">
 					<div class="col-md-12">
@@ -189,7 +204,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
 		</div>
 	</div>
 
@@ -366,10 +380,11 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 	</div>
 
 	<!-- Contacts -->
-	<div class="contacts wow fadeIn" id="contacts">
-		<div class="container">
-			<div class="contact-form">
-				<h3>Contacts</h3>
+	<div class="contacts" id="contacts" >
+		<div class="container p40">
+			<div class="row">
+			<div class="col-md-4">
+				<h3 class="m40">Contacts</h3>
 				<ul class="contacts__list">
 					<li class="contacts__item">
 						<a href="#" class="contacts__link"><i class="fa fa-phone-square" aria-hidden="true"></i>+38(068)248-16-32</a>
@@ -380,9 +395,7 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 					<li class="contacts__item">
 						<a href="" class="contacts__link"><i class="fa fa-map-marker" aria-hidden="true"></i>Ukraine, Kyiv, Sim'i Khokhlovykh St, 8 (campus entrance near Dorohozhytska Str, 1).</a>
 					</li>
-
 				</ul>
-				<div class="br"></div>
 				<ul class="social-link">
 					<li class="social-link__item">
 						<a href="#" class="social-link__link"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
@@ -393,23 +406,22 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 					</li>
 				</ul>
 			</div>
+			<div class="col-md-8">
+				<div id="map" class="map_class wow fadeIn"></div>
+			</div>
+			</div>
+					
 		</div>
-		<div id="map" class="map_class wow fadeIn"></div>
-
 	</div>
 
 	<!-- Footer -->
-<!-- 	<footer class="footer" id="footer">
+	<footer class="footer" id="footer">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-10">
-					<span class="copyright">Copyright @ 2017 | All rights reserved</span>
-				</div>
-				<div class="col-md-1"></div>
+			<div class="col-12 right">
+				<span class="copyright ">Copyright @ 2017 | All rights reserved</span>
 			</div>
 		</div>
-	</footer> -->
+	</footer>
 	<script>
 
 		function initMap() {
@@ -439,7 +451,7 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 			// });
 		}
 	</script>
-	
+
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPxwqnU8fNnPKpmyCMmY0x_-5XoJeBWjA&callback=initMap"
 			async defer></script>
 
@@ -462,12 +474,12 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 	<script src="js/owl.carousel.min.js"></script>
 	<script>
 	$(document).ready(function() {
-	 
-		$("#owl-carousel").owlCarousel({
-	 
-			// navigation : true, // показывать кнопки next и prev 
 
-			items : 1, 
+		$("#owl-carousel").owlCarousel({
+
+			// navigation : true, // показывать кнопки next и prev
+
+			items : 1,
 			itemsDesktop : false,
 			itemsDesktopSmall : false,
 			itemsTablet: false,
@@ -489,12 +501,13 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 	});
 	</script>
 	<script src="js/main.js"></script>
+	<script src="js/canvas.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 	<script>
 		// $(document).ready(function() {
 	 //        $(window).scroll(function () {
 	 //        	var height = $(window).height();
-	 //           	var height = height / 2; 
+	 //           	var height = height / 2;
 	 //            var dst_prod = $('.what-do-we-offer').offset().top - height;// При прокрутке попадаем в эту функцию
 	 //            console.log(height);
 	 //            if ($(this).scrollTop() > dst_prod)

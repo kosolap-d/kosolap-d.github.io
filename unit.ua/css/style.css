@@ -74,6 +74,10 @@ img {
 	padding-bottom: 40px;
 }
 
+.right {
+	text-align: right;
+}
+
 /*###############################################HEAD###############################################*/
 
 .logo {
@@ -218,7 +222,7 @@ iframe {
 
 .what-do-we-offer {
 	/*opacity: 0;*/
-	background: url(../img/bg2.png);
+	background: rgba(233, 233, 233, 1);
 }
 
 .filter {
@@ -522,7 +526,13 @@ iframe {
 /*#######END FAQ###########*/
 /*#######Contacts###########*/
 
-.contacts{
+#contacts{
+	position: relative;
+}
+
+.contact-map{
+	width: 50%;
+	height: 50%;
 	position: relative;
 }
 
@@ -530,7 +540,7 @@ iframe {
 	position: absolute;
 	background: white;
 	padding: 30px;
-	width: 500px;
+	width: 70%;
 	border-radius: 10px;
 	box-shadow: 6px 6px 20px 2px rgba(0,0,0,.3);
 	z-index: 1;
@@ -570,64 +580,9 @@ iframe {
 }
 
 .map_class{
-	position: absolute;
-	width: 100%;
-	height: 50vh;
-	top: 0;
-}
-
-.contact_form{
-	z-index: 10;
-	position: absolute;
-	width: 40%;
-	height: 40%;
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 0 15px rgba(0,0,0,0.5);
-	top: 20%;
-	left: 10%;
-	padding: 10px;
-}
-
-.contact_form a{
-	text-decoration: none;
-}
-
-.contact_form a:hover{
-	color: #f4ce42;
-}
-
-.contacts-line{
-	border-bottom: 1px;
-	border-top: 0;
-	border-left: 0;
-	border-right: 0;
-	border-color: #383839;
-	border-style: solid;
-	width: 100%;
-}
-
-.ul-contacts__item{
-	display: block;
-	padding: 5px;
-}
-
-.ul-contacts__icon{
-	color: #f4ce42;
-	font-size: 25px;
-	/*padding: 0 10px;*/
-	width: 45px;
-}
-
-.social-links{
-	padding-top: 30px;
-	/*text-align: center;*/
-	padding-left: 7%;
 	position: relative;
-}
-
-.contact_form_text{
-	font-size: 12px;
+	width: 100%;
+	height: 100%;
 }
 
 
