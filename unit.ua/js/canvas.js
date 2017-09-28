@@ -1,13 +1,13 @@
 var canvasDots = function() {
     var canvas = document.querySelector('canvas'),
         ctx = canvas.getContext('2d'),
-        colorDot = '#000',
-        color = '#999';
+        colorDot = '#888',
+        color = '#888';
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     canvas.style.display = 'block';
     ctx.fillStyle = colorDot;
-    ctx.lineWidth = .3;
+    ctx.lineWidth = .2;
     ctx.strokeStyle = color;
 
     var mousePosition = {
@@ -16,9 +16,9 @@ var canvasDots = function() {
     };
 
     var dots = {
-        nb: 800,
-        distance: 80,
-        d_radius: 200,
+        nb: 600,
+        distance: 100,
+        d_radius: 300,
         array: []
     };
 

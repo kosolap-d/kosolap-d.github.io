@@ -41,6 +41,11 @@ img {
 	width: 100%;
 }
 
+.container{
+	min-height: 75vh;
+	padding: 10% 0;
+}
+
 .clearfix:after {
 	content: '';
 	display: table;
@@ -78,6 +83,7 @@ img {
 	text-align: right;
 }
 
+
 /*###############################################HEAD###############################################*/
 
 .logo {
@@ -85,7 +91,7 @@ img {
 }
 
 .bg_pattern {
-	background: #ffffff url(../img/bg1.png) no-repeat top;
+	/*background: #ffffff url(../img/bg1.png) no-repeat top;*/
 }
 
 /*NAV-BAR*/
@@ -178,6 +184,18 @@ img {
 	margin: 0px auto;
 }
 
+.who-are-we{
+	overflow: hidden;
+	z-index: 5;
+	position: relative;
+}
+
+.canvas2_who-we-are{
+	z-index: 5;
+	position: absolute;
+	left: 60%;
+
+}
 
 /*MODAL*/
 
@@ -301,7 +319,16 @@ iframe {
 
 .who-may-entry-steps {
 	display: block;
-	background: url(../img/bg3.png) no-repeat;
+	position: relative;
+	overflow: hidden;
+	/*background: url(../img/bg3.png) no-repeat;*/
+}
+
+.canvas2_who-may{
+	position: absolute;
+	left: 60%;
+	z-index: 0;
+
 }
 
 .entry__list {
@@ -446,8 +473,25 @@ iframe {
 /*#######RESULT###########*/
 
 .result {
-	background: url("../img/bg5.png") no-repeat left top;
+	z-index: 5;
+	position: relative;
+	overflow: hidden;
+	/*min-height: 75vh;*/
+	/*background: url("../img/bg5.png") no-repeat left top;*/
 }
+
+.canvas2_class{
+	z-index: 0;
+	position: absolute;
+	right: 60%;
+}
+
+
+/*.title-center_canvas{*/
+	/*z-index: 3;*/
+	/*position: relative;*/
+/*}*/
+
 
 .result__list {
 	display: -webkit-flex;
