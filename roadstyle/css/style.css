@@ -1,67 +1,67 @@
 * {
-	color: white;
+    color: white;
 }
 
 body {
-	font: 16px 'Exo 2', sans-serif;
-	background: rgba(0,0,0,.99);
+    font: 16px 'Exo 2', sans-serif;
+    background: rgba(0,0,0,.99);
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Krona One', sans-serif;
+    font-family: 'Krona One', sans-serif;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
-	color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.7);
 }
 
 ul {
-	padding: 0px;
-	margin: 0;
+    padding: 0px;
+    margin: 0;
 }
 
 li {
-	padding: 0;
-	list-style-type: none;
+    padding: 0;
+    list-style-type: none;
 }
 
 .list {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-between;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .relative {
-	position: relative;
+    position: relative;
 }
 
 .overflow-hidden {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .black {
-	color: black;
+    color: black;
 }
 
 .cursor {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 
 /*flow-right*/
 
 .flow-right {
-	position: relative;
+    position: relative;
     overflow: hidden;
 }
 
@@ -74,11 +74,13 @@ li {
     position: relative;
     margin: 0 auto;
     left: -100%;
-	transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .flow-right:hover:after {
-	left: 0;
+    left: 0;
 }
 
 
@@ -96,11 +98,11 @@ li {
 }
 
 .navbar__link:hover {
-	color: red;	
+    color: red; 
 }
 
 .navbar-mobile-open, .navbar-search-open {
-	display: none;
+    display: none;
 }
 
 .navbar-mobile-close {
@@ -110,25 +112,26 @@ li {
 }
 
 .navbar-mobile {
-	display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-	position: fixed;
-	z-index: 10;
-	background-color: #fff;
-	top: 0;
-	left: -100%;
-	width: 100%;
-	transition: all 0.3s ease-in-out;
-	height: 100vh;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 100vh;
 }
-
-
 .navbar-mobile.in {
-	position: absolute;
-	left: 0;
+    position: absolute;
+    left: 0;
 }
 
 .navbar-mobile__list {
@@ -143,25 +146,29 @@ li {
     font-size: 1.5em;
 }
 .navbar-mobile__link:hover {
-	/*color: rgba(0,0,0,.7);*/
-	color: red;
+    /*color: rgba(0,0,0,.7);*/
+    color: red;
 }
 
 .navbar-search {
-	display: flex;
-	position: fixed;
-	z-index: 10;
-	background-color: #fff;
-	top: 0;
-	right: -100%;
-	width: 100%;
-	transition: all 0.3s ease-in-out;
-	height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 100vh;
 }
 
 .navbar-search.in {
-	position: absolute;
-	right: 0;
+    position: absolute;
+    right: 0;
 }
 
 .navbar-search__list {
@@ -188,14 +195,13 @@ li {
     text-transform: uppercase;
     font-family: Helvetica;
 }
-
 .btn-search {
     background: 0;
     border: 0;
 }
 
 .input-search {
-	background: 0;
+    background: 0;
     border: 0;
     border-bottom: 1px white solid;
 }
@@ -207,11 +213,11 @@ li {
 /*TITLE*/
 
 .roadstyle-title {
-	display: block;
-	width: 100%;
-	text-align: center;
-	position: relative;
-	text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
 
 }
 
@@ -221,9 +227,10 @@ li {
     height: 3px;
     width: 100%;
     background: aliceblue;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0000+0,ff0000+100&1+1,0+45,0+55,1+100 */
-    background: -moz-linear-gradient(left, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 1%, rgba(255,0,0,0) 45%, rgba(255,0,0,0) 55%, rgba(255,0,0,1) 100%); /* FF3.6-15 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0000+0,ff0000+100&1+1,0+45,0+55,1+100 */ /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(255,0,0,1) 0%,rgba(255,0,0,1) 1%,rgba(255,0,0,0) 45%,rgba(255,0,0,0) 55%,rgba(255,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255,0,0,1)),color-stop(1%, rgba(255,0,0,1)),color-stop(45%, rgba(255,0,0,0)),color-stop(55%, rgba(255,0,0,0)),to(rgba(255,0,0,1)));
+    background: -o-linear-gradient(left, rgba(255,0,0,1) 0%,rgba(255,0,0,1) 1%,rgba(255,0,0,0) 45%,rgba(255,0,0,0) 55%,rgba(255,0,0,1) 100%);
     background: linear-gradient(to right, rgba(255,0,0,1) 0%,rgba(255,0,0,1) 1%,rgba(255,0,0,0) 45%,rgba(255,0,0,0) 55%,rgba(255,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#ff0000',GradientType=1 ); /* IE6-9 */
     margin-top: -21px;
@@ -239,6 +246,8 @@ li {
     height: 100%;
     position: relative;
     padding: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -303,25 +312,28 @@ li {
 .achivments__circle-draw:hover{
     background: rgba(255, 255, 255, 1) ;
     border: 1px solid black;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
 .achivments__circle-draw:hover .achivments__text{
     color: black;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
-
 
 
 /**************** MODELS ********************/
 
 .models {
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .models__item {
@@ -331,14 +343,17 @@ li {
     text-align: center;
     max-width: 260px;
     background: #7d7e7d;
-    background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
     background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#7d7e7d),to(#0e0e0e));
+    background: -o-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%);
     background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
 }
 
 .models-wheel-img {
     width: 100%;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -367,19 +382,28 @@ li {
     width: 30px;
     height: 30px;
     background: url(../img/arrows.png) no-repeat center;
-    -webkit-background-size: cover;
     background-size: cover;
     margin: 0 auto;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
 .models__item:hover .models-wheel-img{
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
 .models__item:hover .models__arrow{
-    transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+        -ms-transform: translateX(15px);
+            transform: translateX(15px);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -446,7 +470,7 @@ li {
 }
 
 .my_button__left-top{
-	position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 5px;
@@ -455,7 +479,7 @@ li {
     border-top: 1px solid;
 }
 .my_button__left-bottom{
-	position: absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 5px;
@@ -466,7 +490,7 @@ li {
 
 
 .my_button__right-top{
-	position: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     width: 7px;
@@ -475,7 +499,7 @@ li {
     border-top: 1px solid;
 }
 .my_button__right-bottom{
-	position: absolute;
+    position: absolute;
     bottom: 0;
     right: 0;
     width: 7px;
@@ -528,8 +552,8 @@ form{
 }
 
 .form-field-wrapper {
-	margin-top: 5px;
-	margin-border: 5px;
+    margin-top: 5px;
+    margin-border: 5px;
     width: 100%;
     border-bottom: 1px solid;
 }
@@ -543,7 +567,7 @@ form{
 }
 
 .form-4 {
-	display: flex;
+    display: flex;
 }
 
 .btn-custom {
