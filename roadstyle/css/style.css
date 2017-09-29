@@ -2,6 +2,10 @@
     color: white;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     font: 16px 'Exo 2', sans-serif;
     background: rgba(0,0,0,.99);
@@ -143,7 +147,7 @@ li {
     font-family: 'Krona One';
     margin: 10px;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .navbar-mobile__link:hover {
     /*color: rgba(0,0,0,.7);*/
@@ -178,7 +182,7 @@ li {
 .navbar-search-close {
     font-size: 30px;
     text-align: right;
-    width: 120%;
+    width: 110%;
 }
 
 .input-mobile-search {
@@ -407,35 +411,31 @@ li {
     transition: .5s;
 }
 
+/*MODEL DOP*/
 
-
-/*.models__bottom{
-    background-color: black;
+.models-label {
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-.models__other{
-    padding: 3%;
-    text-align: center;
+.models-label__item {
+    max-width: 235px;
 }
 
-.models-label>li{
-    display: inline;
-    padding: 5%;
+.models-label__img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.models-label2>li{
-    display: inline;
-    padding: 6%;
-}*/
+.models-label__text {
+    display: none;
+}
 
-/*********** CONTAINER *************/
-
-/*.contacts-container{*/
-    /*padding-top: 200px;*/
-    /*background: url("../img/car-black-bg.png") no-repeat center;*/
-    /*width: 100%;*/
-    /*!*height: 50vh;*!*/
-/*}*/
 
 #contacts{
     padding-top: 20vh;
@@ -618,7 +618,6 @@ form{
 }
 
 input:placeholder-shown {
-  /*border: 5px solid red;*/
     border: none;
     background-color: transparent;
 }
@@ -648,6 +647,18 @@ input:placeholder-shown {
 
 @media (max-width: 767px) {
 
+    .logo {
+        display: none;
+    }
+
+    .container-border {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
     .border {
         display: none;
     }
@@ -674,13 +685,32 @@ input:placeholder-shown {
         margin: 5px;
         max-width: 140px;
     }
+
     .models__select-text, .models__arrow {
         display: none;
+    }
+
+    .models-label__item {
+        max-width: 80%; 
+        text-align: center;
+        margin: 10px auto;
+        border: 1px solid red;
+        padding: 10px;
+        color: grey;
+    }
+
+    .models-label__text {
+        display: inline;
+        color: grey;
+    }
+
+    .models-label__item:hover .models-label__text{
+        color: white;
     }
 }
 
 @media (max-height: 480px) {
     .navbar-mobile, .navbar-search {
         height: 480px;
-    } 
+    }
 }
