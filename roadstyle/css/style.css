@@ -678,3 +678,9 @@ input:placeholder-shown {
         display: none;
     }
 }
+
+@media (max-height: 480px) {
+    .navbar-mobile, .navbar-search {
+        height: 480px;
+    } 
+}
