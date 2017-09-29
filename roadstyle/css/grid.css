@@ -1,0 +1,155 @@
+/*normalize.css v7.0.0*/
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	width: 1140px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex: 1 100%;
+	flex-wrap: wrap;
+}
+
+.fw-w {
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.jc-sb {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.jc-c {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.jc-fe {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.ai-c {
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.flex-xl-1 {
+	flex: 1 285px;
+}
+.flex-xl-2 {
+	flex: 2 570px;
+}
+.flex-xl-3 {
+	flex: 3 855px;
+}
+.flex-xl-4 {
+	flex: 4 1140px;
+}
+
+.flex-lg-1 {
+	flex: 1 240px;
+}
+.flex-lg-2 {
+	flex: 2 480px;
+}
+.flex-lg-3 {
+	flex: 3 720px;
+}
+.flex-lg-4 {
+	flex: 4 960px;
+}
+
+.flex-md-1 {
+	flex: 1 180px;
+}
+.flex-md-2 {
+	flex: 2 360px;
+}
+.flex-md-3 {
+	flex: 3 540px;
+}
+.flex-md-4 {
+	flex: 4 720px;
+}
+
+.flex-sm-1 {
+	flex: 1 25%;
+}
+.flex-sm-2 {
+	flex: 2 50%;
+}
+.flex-sm-3 {
+	flex: 3 75%;
+}
+.flex-sm-4 {
+	flex: 4 100%;
+}
+
+.min200 {
+	flex-basis: 200px;
+}
+.min400 {
+	flex-basis: 400px;
+}
+.min600 {
+	flex-basis: 600px;
+}
+
+@media (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+}
+
+@media (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		width: 540px;
+	}
+}
+
+@media (max-width: 575px) {
+	.container {
+		width: 100%;
+		padding: 10px;
+	}
+}
