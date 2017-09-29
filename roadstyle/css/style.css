@@ -36,6 +36,9 @@ li {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .relative {
@@ -102,13 +105,16 @@ li {
 
 .navbar-mobile-close {
     font-size: 30px;
-    /* margin-right: 0; */
     text-align: right;
     width: 120%;
 }
 
 .navbar-mobile {
-	display: flex;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
 	position: fixed;
 	z-index: 10;
 	background-color: #fff;
