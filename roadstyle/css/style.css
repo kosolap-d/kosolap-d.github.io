@@ -436,11 +436,17 @@ li {
     display: none;
 }
 
+/*CONTACT*/
 
 #contacts{
-    padding-top: 20vh;
-    background: url("../img/car-black-bg.png") no-repeat center;
     width: 100%;
+}
+
+.contacnts__img-car {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 50px;
 }
 
 .contacts-text{
@@ -448,25 +454,14 @@ li {
     display: inline;
     font-size: 18px;
     padding: 0 10%;
-    /*padding-top: 5%;*/
-    /*margin-top: 5%;*/
 }
 
-.contacts_cont{
-    margin-top: 5%;
-    padding: 0 20%  ;
-
-}
-
-.my_button{
+.my_button {
+    display: inline-block;
     position: relative;
-    padding: 10%;
+    padding: 10px;
+    margin: 20px auto;
     text-align: center;
-    transition: 1s;
-}
-
-.my_button div{
-    min-height: 0;
 }
 
 .my_button__left-top{
@@ -508,118 +503,62 @@ li {
     border-bottom: 1px solid;
 }
 
-.my_button:hover  .my_button__left-top,
-.my_button:hover  .my_button__left-bottom,
-.my_button:hover  .my_button__right-top,
-.my_button:hover  .my_button__right-bottom,
-.my_button:hover  .btn
-{
-    color: rgba(255,0,0,0.8);
-    transition: 1s;
+.my_button:hover  .btn {
+    color: red;
 }
 
-.contact__list>li{
-    padding: 0.5%;
+.contact__link {
+    display: block;
+    padding: 5px 0;
 }
 
-.contact__item:hover >a{
-    color: rgba(255,0,0,0.8);
-    transition: 1s;
+.contact__link:hover {
+    color: red;
 }
 
 
-#contact_touch {
+/*#contact_touch {
     padding-bottom: 150px;
-}
+}*/
 
 form{
     background-color: transparent;
 }
-
-.contact_touch input{
+.input-md {
+    border: 0;
+    background: 0;
+    color: white;
+    margin: 10px auto;
+    border-bottom: 3px solid white;
     width: 100%;
-    margin: 0 auto;
-    font-size: 16px;
-    padding: 5px 10px;
-    margin: 10px 0px;
-
-}
-
-.button-send-gen{
-    text-align: center;
-    margin: 0 auto;
-    /*width: 50%;*/
-}
-
-.form-field-wrapper {
-    margin-top: 5px;
-    margin-border: 5px;
-    width: 100%;
-    border-bottom: 1px solid;
-}
-
-.form-full {
-    font-size: 16px;
-    width: 100%;
-    padding: 10px;
-    background: transparent;
-    border: none;
-}
-
-.form-4 {
-    display: flex;
 }
 
 .btn-custom {
-    padding: 1%;
     border: none;
     background: 0;
     cursor: pointer;
-    transition: all 1s ease-in-out;
 }
-
-
 
 .button-send{
-    position: absolute;
-    margin-top: 2%;
-    width: 18%;
-    transition: 1s;
+    position: relative;
+    padding: 10px;
 }
 
-.button-send div{
-    min-height: 0;
+.button-send:hover, .btn-custom:hover {
+    cursor: pointer;
+    color: red;
 }
 
-
-.button-send:hover  .my_button__left-top,
-.button-send:hover  .my_button__left-bottom,
-.button-send:hover  .my_button__right-top,
-.button-send:hover  .my_button__right-bottom,
-.button-send:hover  .btn
-{
-    color: rgba(255,0,0,0.8);
-    transition: 1s;
+/*FOTTER*/
+.footer {
+    margin-top: 20px;
+    border-top: 1px grey solid;
+    text-align: right;
+    font-size: 12px;
 }
 
-
-
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: rgba(255, 255, 255, 0.9);
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: rgba(255, 255, 255, 0.9);
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: rgba(255, 255, 255, 0.9);
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: rgba(255, 255, 255, 0.9);
-}
-
-input:placeholder-shown {
-    border: none;
-    background-color: transparent;
+.footer p {
+    color: grey;
 }
 
 @media (max-width: 1200px) {
@@ -707,10 +646,45 @@ input:placeholder-shown {
     .models-label__item:hover .models-label__text{
         color: white;
     }
+    .my_button {
+        padding: 5px;
+        margin: 10px;
+    }
+    .button-send {
+        width: 100%;
+        position: relative;
+        padding: 10px;
+        text-align: center;
+    }
+
 }
 
 @media (max-height: 480px) {
     .navbar-mobile, .navbar-search {
         height: 480px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hidden-lg {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .hidden-md {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidden-sm {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .hidden-xs {
+        display: none;
     }
 }
