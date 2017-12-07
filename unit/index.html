@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Greeting App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <style>
+     	.container-bg {
+     	  /*position: absolute;*/
+     	  height: 100vh;
+     	  width: 100%;
+     	  min-height: 548px;
+     	}
+     	.container-text {
+     		display: -webkit-flex;
+     		display: -moz-flex;
+     		display: -ms-flex;
+     		display: -o-flex;
+     		display: flex;
+     		position: absolute;
+     		top: 0px;
+     		left: 0px;
+     		bottom: 0px;
+     		right: 0px;
+     	}
+     </style>
+  </head>
+  <body>
+  	<section class="clear">
+	  	<header class="mdc-toolbar mdc-elevation--z3">
+	  	  <div class="mdc-toolbar__row">
+	  	    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+	  	    	<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+	  	    </section>
+	  	    <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">
+	  	      <nav id="dynamic-tab-bar" class="mdc-tab-bar mdc-tab-bar--indicator-accent" role="tablist">
+	  	        <a role="tab" aria-controls="panel-1"
+	  	           class="mdc-tab mdc-tab--active" href="#panel-1">who are we?</a>
+	  	        <a role="tab" aria-controls="panel-2"
+	  	           class="mdc-tab" href="#panel-2">what do we offer?</a>
+	  	        <a role="tab" aria-controls="panel-3" class="mdc-tab" href="#panel-3">PRINCIPLES</a>
+	  	        <a role="tab" aria-controls="panel-4" class="mdc-tab" href="#panel-4">CURRICULUM</a>
+	  	        <a role="tab" aria-controls="panel-5" class="mdc-tab" href="#panel-5">RESULT</a>
+	  	        <a role="tab" aria-controls="panel-6" class="mdc-tab" href="#panel-6">HOW TO ENROLL?</a>
+	  	        <a role="tab" aria-controls="panel-7" class="mdc-tab" href="#panel-7">step 1</a>
+	  	        <a role="tab" aria-controls="panel-8" class="mdc-tab" href="#panel-8">FAQ</a>
+	  	        <a role="tab" aria-controls="panel-9" class="mdc-tab" href="#panel-9">CONTACTS</a>
+	  	        <span class="mdc-tab-bar__indicator"></span>
+	  	      </nav>
+	  	    </section>
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">
+				<button class="mdc-button unit-btn mdc-elevation--z1">Apply</button>
+			</section>
+	  	  </div>
+	  	</header>
+	  	<div class="mdc-toolbar-clear"></div>
+		<div id="container-bg" class="container-bg">
+			<div class="container-text">
+				<div class="container-text-center">
+					<div class="static-text">
+						<div class="static-text__top">Ukraine National IT Factory</div>
+						<div class="static-text__down">UNIT Factory</div>
+					</div>
+					<div class="auto-text">
+						<p>pear-2-pear. 27/7. without teacher</p>
+						<p>are you <b>BORN<b class="yellow">2</b>CODE?</b><span>|</span></p> 
+					</div>
+				</div>
+			</div>
+
+		  <div id="output" class="container-bg">
+		  </div>
+		</div>
+  	</section>
+	<section>
+	  <div class="panels">
+	    <p class="panel active" id="panel-1" role="tabpanel" aria-hidden="false">Item One</p>
+	    <p class="panel" id="panel-2" role="tabpanel" aria-hidden="true">Item Two</p>
+	    <p class="panel" id="panel-3" role="tabpanel" aria-hidden="true">Item Three</p>
+	  </div>
+	  <div class="dots">
+	    <a class="dot active" data-trigger="panel-1" href="#panel-1"></a>
+	    <a class="dot" data-trigger="panel-2" href="#panel-2"></a>
+	    <a class="dot" data-trigger="panel-3" href="#panel-3"></a>
+	  </div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script>window.mdc.autoInit();</script>
+    <script src="main.js"></script>
+    <script src="bakground.js"></script>
+  </body>
+</html>
