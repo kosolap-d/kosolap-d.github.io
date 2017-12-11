@@ -37,6 +37,21 @@ dynamicTabBar.listen('MDCTabBar:change', function ({detail: tabs}) {
 
 
 var typed = new Typed('#typed', {
-  strings: ["lalka", "peer-2-peer.^500 27/7.^1000 without teacher.^1000<br>are you <b>BORN<b class='yellow'>2</b>CODE?</b>"],
-  typeSpeed: 40
+  strings: ["pear-2-", "peer-2-peer.^500 27/7.^1000 without teacher.^1000<br>are you <b>BORN<b class='yellow'>2</b>CODE?</b>"],
+  typeSpeed: 40,
+  backSpeed: 80
 });
+
+
+// var drawerEl = document.querySelector('.mdc-persistent-drawer');
+//         var MDCPersistentDrawer = mdc.drawer.MDCPersistentDrawer;
+//         var drawer = new MDCPersistentDrawer(drawerEl);
+//         document.querySelector('.demo-menu').addEventListener('click', function() {
+//           drawer.open = !drawer.open;
+//         });
+//         drawerEl.addEventListener('MDCPersistentDrawer:open', function() {
+//           console.log('Received MDCPersistentDrawer:open');
+//         });
+//         drawerEl.addEventListener('MDCPersistentDrawer:close', function() {
+//           console.log('Received MDCPersistentDrawer:close');
+//         });

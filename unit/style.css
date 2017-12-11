@@ -1,7 +1,38 @@
   /*HEADER*/
 
+html {
+	width: 100%;
+}
+
 body {
 	font: 14px Arial;
+}
+
+.demo-body {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.demo-content {
+  display: inline-flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.demo-main {
+  padding-left: 16px;
+}
+
+.mobile {
+	display: none;
 }
 
 .logo {
@@ -10,13 +41,21 @@ body {
 
 .logo img{
 	padding: 10px;
-	width: 120%;
+	width: 100%;
+	font-size: 1em;
+}
+
+/*head*/
+
+.fa-bars {
+	font-size: 24pt;
+	color: #444;
 }
 
 .mdc-toolbar {
     background: #eee;
     color: #5c5c5c;
-    padding: 0 25px;
+    padding: 0 10px;
     position: fixed;
     z-index: 10;
     top: 0px;
@@ -30,7 +69,7 @@ body {
     min-height: auto;
 }
 .mdc-toolbar .mdc-tab-bar .mdc-tab {
-	font-size: 14px;
+	font-size: 13px;
     color: #5c5c5c;
     font-weight: bold;
 }
@@ -48,7 +87,7 @@ body {
 }
 
 .mdc-tab {
-	padding: 20px 15px;
+	padding: 20px 10px;
     min-width: 50px;
 }
 
@@ -58,7 +97,40 @@ body {
 	font-weight: bold;
 }
 
+/*moblie*/
+.mdc-persistent-drawer .mdc-list-item {
+	font-family: 'Arial';
+	font-weight: 900;
+	color: #444;
+}
+
+.mdc-persistent-drawer .mdc-persistent-drawer--selected {
+    color: #fdb813;
+}
+
+/*head*/
 /*tuping*/
+
+#container-bg {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  min-height: 548px;
+  overflow: hidden;
+}
+
+.container-text {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+}
 
 .container-text {
   position: relative;
@@ -86,9 +158,6 @@ body {
   font-family: "Courier";
   font-size: 32px;
   margin: auto;
-/*  white-space: nowrap;
-  overflow: hidden;
-  width: 21em;*/
   text-align: center;
 }
 
@@ -119,6 +188,8 @@ body {
   font-size: 40px;
   font-weight: 800;
 }
+
+/*tuping*/
 
 
 /*.my-card-container .mdc-card {
@@ -180,45 +251,46 @@ body {
 
 }
 
-/*.mdc-layout-grid {
-  background-color: gray;
+@media (max-width: 1200px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+
 }
 
+@media screen and (max-width: 959px) { 
+	body {
+		font-size: 12px;
+	}
 
-.mdc-layout-grid__inner{
-  background-color: yellow;
+	.static-text{
+		font-size: 2.8em;
+	}
+
+	.auto-text  p{
+	  font-size: 22px;
+	}
 }
 
-.mdc-layout-grid__cell{
-  background-color: blue;
+@media screen and (max-width: 459px) {
+	.logo {
+		display: none;
+	}
+
+	body {
+		font-size: 10px;
+	}
+
+	.static-text{
+		font-size: 2.2em;
+	}
+
+	.auto-text  p{
+	  font-size: 14px;
+	}
 }
-
-.mdc-layout-grid__cell--span-12{
-  background-color: rgba(200, 200, 200, 0.7);
-}
-
-.mdc-layout-grid__cell--span-8{
-  background-color: rgba(180, 180, 180, 0.7);
-}
-.mdc-layout-grid__cell--span-6{
-  background-color: rgba(160, 160, 160, 0.7);
-}
-.mdc-layout-grid__cell--span-4{
-  background-color: rgba(140, 140, 140, 0.7);
-}
-
-.mdc-layout-grid__cell--span-2{
-  background-color: rgba(120, 120, 120, 0.7);
-}
-
-*/
-
-
-
-
-
-
-
-
 
 
