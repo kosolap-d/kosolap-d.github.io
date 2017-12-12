@@ -1,186 +1,232 @@
 <!DOCTYPE html>
 <html class="mdc-typography">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Greeting App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-
-
-     <link rel="stylesheet" type="text/css" href="css/font/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-	<link rel="stylesheet" href="css/slider.css">
-     <link rel="stylesheet" type="text/css" href="style.css">
-     <style>
-     	#container-bg {
-     	  position: relative;
-     	  height: 100vh;
-     	  width: 100%;
-     	  min-height: 548px;
-     	  overflow: hidden;
-     	}
-     	.container-text {
-     		display: -webkit-flex;
-     		display: -moz-flex;
-     		display: -ms-flex;
-     		display: -o-flex;
-     		display: flex;
-     		position: absolute;
-     		top: 0px;
-     		left: 0px;
-     		bottom: 0px;
-     		right: 0px;
-     	}
-     	.demo-content {
-     	  display: inline-flex;
-     	  flex-direction: column;
-     	  flex-grow: 1;
-     	  height: 100%;
-     	  box-sizing: border-box;
-     	}
-
-     	.demo-main {
-     	  padding-left: 16px;
-     	}
-
-     	#output2 {
-     		height: 100%;
-     	    background: url(img/bg.png) no-repeat center;
-     	    -webkit-background-size: cover;
-     	    background-size: cover;
-     	}
-
-     	.fa-bars {
-     		font-size: 24pt;
-     		color: #444;
-     	}
-     </style>
-  </head>
-  <body class="demo-body">
-  	<!-- <section class="clear"></section> -->
-	  	<aside class="mdc-persistent-drawer">
-	  	      <nav class="mdc-persistent-drawer__drawer">
-	  	        <div class="mdc-persistent-drawer__toolbar-spacer"></div>
-	  	        <div class="mdc-list-group">
-	  	          <nav class="mdc-list">
-	  	            <a class="mdc-list-item mdc-persistent-drawer--selected" href="#panel-1">WHO ARE WE?</a>
-	  	            <a class="mdc-list-item" href="#panel-2">WHAT DO WE OFFER?</a>
-	  	            <a class="mdc-list-item" href="#panel-3">PRINCIPLES</a>
-	  	            <a class="mdc-list-item" href="#panel-4">CURRICULUM</a>
-	  	            <a class="mdc-list-item" href="#panel-5">RESULT</a>
-	  	            <a class="mdc-list-item" href="#panel-6">HOW TO ENROLL?</a>
-	  	            <a class="mdc-list-item" href="#panel-7">STEP 1</a>
-	  	            <a class="mdc-list-item" href="#panel-8">FAQ</a>
-	  	            <a class="mdc-list-item" href="#panel-9">CONTACTS</a>
-
-	  	          </nav>
-	  	          </div>
-	  	      </nav>
-	  	    </aside>
-	  	<main class="demo-content">
-  		<!-- DESKTOP -->
-  			  	<header class="desktop mdc-toolbar mdc-elevation--z3">
-  			  	  <div class="mdc-toolbar__row">
-  			  	    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-  			  	    	<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-  			  	    </section>
-  			  	    <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">
-  			  	      <nav id="dynamic-tab-bar" class="mdc-tab-bar mdc-tab-bar--indicator-accent" role="tablist">
-  			  	        <a role="tab" aria-controls="panel-1"
-  			  	           class="mdc-tab mdc-tab--active" href="#panel-1">who are we?</a>
-  			  	        <a role="tab" aria-controls="panel-2"
-  			  	           class="mdc-tab" href="#panel-2">what do we offer?</a>
-  			  	        <a role="tab" aria-controls="panel-3" class="mdc-tab" href="#panel-3">PRINCIPLES</a>
-  			  	        <a role="tab" aria-controls="panel-4" class="mdc-tab" href="#panel-4">CURRICULUM</a>
-  			  	        <a role="tab" aria-controls="panel-5" class="mdc-tab" href="#panel-5">RESULT</a>
-  			  	        <a role="tab" aria-controls="panel-6" class="mdc-tab" href="#panel-6">HOW TO ENROLL?</a>
-  			  	        <a role="tab" aria-controls="panel-7" class="mdc-tab" href="#panel-7">step 1</a>
-  			  	        <a role="tab" aria-controls="panel-8" class="mdc-tab" href="#panel-8">FAQ</a>
-  			  	        <a role="tab" aria-controls="panel-9" class="mdc-tab" href="#panel-9">CONTACTS</a>
-  			  	        <span class="mdc-tab-bar__indicator"></span>
-  			  	      </nav>
-  			  	    </section>
-  					<section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">
-  						<button class="mdc-button unit-btn mdc-elevation--z1">Apply</button>
-  					</section>
-  			  	  </div>
-  			  	</header>
-  		<!-- DESKTOP -->
-	  	<!-- MOBILE -->
-	  		     <header class="mobile mdc-toolbar mdc-elevation--z4">
-	  		       <div class="mdc-toolbar__row">
-	  		       	<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-	  		           <button class="demo-menu material-icons mdc-toolbar__menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
-	  		       		<!-- <a href="#" class="logo"><img src="img/logo.png" alt=""></a> -->
-	  		       	</section>
-  			  	    <section class="mdc-toolbar__section">
-  			  	    	<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-	  		       	</section>
-	  		       	<section class="mdc-toolbar__section mdc-toolbar__section--align-end">
-	  		       		<button class="mdc-button unit-btn mdc-elevation--z1">Apply</button>
-	  		       	</section>
-	  		       </div>
-	  		     </header>
-	  	<!-- MOBILE -->
-		  	<div class="mdc-toolbar-clear"></div>
-			<div id="container-bg" class="container-bg">
-				<div class="container-text">
-					<div class="container-text-center">
-						<div class="static-text">
-							<div class="static-text__top">Ukraine National IT Factory</div>
-							<div class="static-text__down">UNIT Factory</div>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Greeting App</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="css/font/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+		<link rel="stylesheet" href="css/slider.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body class="demo-body">
+		<aside class="mdc-persistent-drawer">
+			<nav class="mdc-persistent-drawer__drawer">
+				<div class="mdc-persistent-drawer__toolbar-spacer"></div>
+				<div class="mdc-list-group">
+					<nav class="mdc-list">
+						<a class="mdc-list-item mdc-persistent-drawer--selected" href="#panel-1">WHO ARE WE?</a>
+						<a class="mdc-list-item" href="#panel-2">WHAT DO WE OFFER?</a>
+						<a class="mdc-list-item" href="#panel-3">PRINCIPLES</a>
+						<a class="mdc-list-item" href="#panel-4">CURRICULUM</a>
+						<a class="mdc-list-item" href="#panel-5">RESULT</a>
+						<a class="mdc-list-item" href="#panel-6">HOW TO ENROLL?</a>
+						<a class="mdc-list-item" href="#panel-7">STEP 1</a>
+						<a class="mdc-list-item" href="#panel-8">FAQ</a>
+						<a class="mdc-list-item" href="#panel-9">CONTACTS</a>
+					</nav>
+				</div>
+			</nav>
+		</aside>
+		<main class="demo-content">
+			<!-- DESKTOP -->
+			<header class="desktop mdc-toolbar mdc-elevation--z3">
+				<div class="mdc-toolbar__row">
+					<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+						<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+					</section>
+					<section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">
+						<nav id="dynamic-tab-bar" class="mdc-tab-bar mdc-tab-bar--indicator-accent" role="tablist">
+							<a role="tab" aria-controls="panel-1"
+								class="mdc-tab mdc-tab--active" href="#panel-1">who are we?</a>
+							<a role="tab" aria-controls="panel-2"
+								class="mdc-tab" href="#panel-2">what do we offer?</a>
+							<a role="tab" aria-controls="panel-3" class="mdc-tab" href="#panel-3">PRINCIPLES</a>
+							<a role="tab" aria-controls="panel-4" class="mdc-tab" href="#panel-4">CURRICULUM</a>
+							<a role="tab" aria-controls="panel-5" class="mdc-tab" href="#panel-5">RESULT</a>
+							<a role="tab" aria-controls="panel-6" class="mdc-tab" href="#panel-6">HOW TO ENROLL?</a>
+							<a role="tab" aria-controls="panel-7" class="mdc-tab" href="#panel-7">step 1</a>
+							<a role="tab" aria-controls="panel-8" class="mdc-tab" href="#panel-8">FAQ</a>
+							<a role="tab" aria-controls="panel-9" class="mdc-tab" href="#panel-9">CONTACTS</a>
+							<span class="mdc-tab-bar__indicator"></span>
+						</nav>
+					</section>
+					<section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">
+						<button class="mdc-button unit-btn mdc-elevation--z1">Apply</button>
+					</section>
+				</div>
+			</header>
+			<!-- DESKTOP_END -->
+			<!-- MOBILE -->
+			<header class="mobile mdc-toolbar mdc-elevation--z4">
+				<div class="mdc-toolbar__row">
+					<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+						<button class="demo-menu material-icons mdc-toolbar__menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+					</section>
+					<section class="mdc-toolbar__section">
+						<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+					</section>
+					<section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+						<button class="mdc-button unit-btn mdc-elevation--z1">Apply</button>
+					</section>
+				</div>
+			</header>
+			<!-- MOBILE_END -->
+			<div class="mdc-toolbar-clear"></div>
+			<!-- MESH -->
+			<section class="mesh">
+				<div id="container-bg" class="container-bg">
+					<div class="container-text">
+						<div class="container-text-center">
+							<div class="static-text">
+								<div class="static-text__top">Ukraine National IT Factory</div>
+								<div class="static-text__down">UNIT Factory</div>
+							</div>
+							<div class="auto-text" >
+								<p><span id="typed"></span></p>
+							</div>
 						</div>
-						<div class="auto-text" >
-							<p><span id="typed"></span></p>
+					</div>
+					<div id="output" class="container-bg"></div>
+				</div>
+			</section>
+			<!-- MESH_END -->
+			<!-- WHO_ARE_WE -->
+			<section class="who_we_are">
+				<div class="mdc-layout-grid">
+					<div class="who-we-are__head">
+						<span>Who we are?</span>
+					</div>
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell--span-12 mdc-card__primary">
+							<h2 class="mdc-card__subtitle">UNIT Factory (Ukrainian National IT Factory) — єдиний в Україні навчальний заклад, що працює за стандартами інноваційної французької Школи 42. Тут навчають програмувати, працювати в команді та знаходити неординарні рішення.
+								У нас немає вчителів, конспектів або лекцій. Під час відбору не враховуються дипломи або результати ЗНО. Все залежить лише від ваших здібностей і мотивації. І навчання безкоштовне для всіх студентів.
+							</h2>
+						</div>
+						<div class=" mdc-layout-grid__cell--span-8
+							mdc-layout-grid__cell--span-12-tablet
+							mdc-card">
+							<section class="mdc-card__media video_1">
+								<div class="owl-carousel owl-theme">
+									<div class="item-video" data-merge="3"><a class="owl-video" href="https://youtu.be/ZPfNgIj2eNU"></a></div>
+									<div class="item-video" data-merge="1"><a class="owl-video" href="https://youtu.be/ZPfNgIj2eNU"></a></div>
+									<div class="item-video" data-merge="2"><a class="owl-video" href="https://youtu.be/ZPfNgIj2eNU"></a></div>
+									<div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=oy18DJwy5lI"></a></div>
+									<div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
+									<div class="item-video" data-merge="3"><a class="owl-video" href="https://www.youtube.com/watch?v=g3J4VxWIM6s"></a></div>
+									<div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=0fhoIate4qI"></a></div>
+									<div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=EF_kj2ojZaE"></a></div>
+								</div>
+								<!-- <iframe height="100%" width="100%" src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
+							</section>
+							<span class="mdc-card__title mdc-card__title--large">Title goes here</span>
+							<section class="mdc-card__supporting-text">
+								Lorem ipsum dolor sit amet,s consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. 
+							</section>
+						</div>
+						<div class=" mdc-layout-grid__cell--span-4
+							mdc-layout-grid__cell--span-12-tablet">
+							<div class="">
+								<div class="mdc-card">
+									<section class="mdc-card__media video_2">
+										<!-- <iframe height="100%" width="100%" src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
+									</section>
+									<span class="mdc-card__title mdc-card__title--large">Title goes here</span>
+									<section class="mdc-card__supporting-text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua.
+									</section>
+								</div>
+								<div class="mdc-card">
+									<section class="mdc-card__media video_3">
+										<!-- <iframe height="100%" width="100%" src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
+									</section>
+									<span class="mdc-card__title mdc-card__title--large">Title goes here</span>	
+									<section class="mdc-card__supporting-text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. 
+									</section>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+			</section>
+			<section class="test">
+				<div class="mdc-layout-grid">
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell">1</div>
+						<div class="mdc-layout-grid__cell">2</div>
+						<div class="mdc-layout-grid__cell">3</div>
+						<div class="mdc-layout-grid__cell--span-12">12</div>
+						<div class="mdc-layout-grid__cell--span-8">8</div>
+						<div class="mdc-layout-grid__cell--span-4">4</div>
+						<div class="mdc-layout-grid__cell--span-6">6</div>
+						<div class="mdc-layout-grid__cell--span-4">4</div>
+						<div class="mdc-layout-grid__cell--span-2">2</div>
+						<div class="mdc-layout-grid__cell">4</div>
+						<div class="mdc-layout-grid__cell">5</div>
+						<div class="mdc-layout-grid__cell">6</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="panels">
+					<p class="panel active" id="panel-1" role="tabpanel" aria-hidden="false">Item One</p>
+					<p class="panel" id="panel-2" role="tabpanel" aria-hidden="true">Item Two</p>
+					<p class="panel" id="panel-3" role="tabpanel" aria-hidden="true">Item Three</p>
+				</div>
+				<div class="dots">
+					<a class="dot active" data-trigger="panel-1" href="#panel-1"></a>
+					<a class="dot" data-trigger="panel-2" href="#panel-2"></a>
+					<a class="dot" data-trigger="panel-3" href="#panel-3"></a>
+				</div>
+			</section>
+			<!-- WHO_ARE_WE_END -->
 
-			  <div id="output" class="container-bg"></div>
-			  <!-- <div id="output2" class="mobile container-bg"></div> -->
-			<!-- lalka sasay -->
-			</div>
-	</main>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <script>window.mdc.autoInit();</script>
-    <script src="js/typed.min.js"></script>
-	<script src=" js/owl.carousel.min.js"></script>
-    <script src="bakground.js"></script>
-    <script src="main.js"></script>
-    <script>
-      var drawerEl = document.querySelector('.mdc-persistent-drawer');
-      var MDCPersistentDrawer = mdc.drawer.MDCPersistentDrawer;
-      var drawer = new MDCPersistentDrawer(drawerEl);
-      document.querySelector('.demo-menu').addEventListener('click', function() {
-        drawer.open = !drawer.open;
-      });
-      drawerEl.addEventListener('MDCPersistentDrawer:open', function() {
-        console.log('Received MDCPersistentDrawer:open');
-      });
-      drawerEl.addEventListener('MDCPersistentDrawer:close', function() {
-        console.log('Received MDCPersistentDrawer:close');
-      });
-    </script>
-    <script type="text/javascript">
-	    $('.owl-carousel').owlCarousel({
-	        items:1,
-	        merge:true,
-	        loop:true,
-	        margin:10,
-	        video:true,
-	        lazyLoad:true,
-	        center:true,
-	        responsive:{
-	            480:{
-	                items:2
-	            },
-	            600:{
-	                items:4
-	            }
-	        }
-	    })
-    </script>
-  </body>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+		<script>window.mdc.autoInit();</script>
+		<script src="js/typed.min.js"></script>
+		<script src=" js/owl.carousel.min.js"></script>
+		<script src="bakground.js"></script>
+		<script src="main.js"></script>
+		<script>
+			var drawerEl = document.querySelector('.mdc-persistent-drawer');
+			var MDCPersistentDrawer = mdc.drawer.MDCPersistentDrawer;
+			var drawer = new MDCPersistentDrawer(drawerEl);
+			document.querySelector('.demo-menu').addEventListener('click', function() {
+			  drawer.open = !drawer.open;
+			});
+			drawerEl.addEventListener('MDCPersistentDrawer:open', function() {
+			  console.log('Received MDCPersistentDrawer:open');
+			});
+			drawerEl.addEventListener('MDCPersistentDrawer:close', function() {
+			  console.log('Received MDCPersistentDrawer:close');
+			});
+		</script>
+		<script type="text/javascript">
+			$('.owl-carousel').owlCarousel({
+			 items:1,
+			 merge:true,
+			 loop:true,
+			 margin:10,
+			 video:true,
+			 lazyLoad:true,
+			 center:true,
+			 responsive:{
+				 480:{
+					 items:2
+				 },
+				 600:{
+					 items:4
+				 }
+			 }
+			})
+		</script>
+	</body>
 </html>
