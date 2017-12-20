@@ -1,10 +1,18 @@
 var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#dynamic-tab-bar'));
-var dots = document.querySelector('.dots');
-var panels = document.querySelector('.panels');
-
+var dots = document.querySelector('#dynamic-tab-bar .dots');
+var panels = document.querySelector('#dynamic-tab-bar .panels');
 dynamicTabBar.tabs.forEach(function(tab) {
   tab.preventDefaultOnClick = true;
 });
+
+var dynamicTabBar2 = window.dynamicTabBar2 = new mdc.tabs.MDCTabBar(document.querySelector('#toolbar-offer-bar'));
+var dots2 = document.querySelector('#toolbar-offer-bar .dots');
+var panels2 = document.querySelector('#toolbar-offer-bar .panels');
+dynamicTabBar2.tabs.forEach(function(tab) {
+  tab.preventDefaultOnClick = true;
+});
+
+
 
 function updateDot(index) {
   var activeDot = dots.querySelector('.dot.active');
@@ -33,6 +41,13 @@ dynamicTabBar.listen('MDCTabBar:change', function ({detail: tabs}) {
 
   updatePanel(nthChildIndex);
   updateDot(nthChildIndex);
+});
+
+dynamicTabBar2.listen('MDCTabBar:change', function ({detail: tabs}) {
+  var nthChildIndex = tabs.activeTabIndex;
+
+  // updatePanel(nthChildIndex);
+  // updateDot(nthChildIndex);
 });
 
 

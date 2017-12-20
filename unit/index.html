@@ -8,7 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="css/font/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-		<link rel="stylesheet" href="css/slider.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<!-- <link rel="stylesheet" href="css/slider.css"> -->
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body class="demo-body">
@@ -32,7 +33,7 @@
 		</aside>
 		<main class="demo-content">
 			<!-- DESKTOP -->
-			<header class="desktop mdc-toolbar mdc-elevation--z3">
+			<header class="desktop top-nav mdc-toolbar mdc-elevation--z3">
 				<div class="mdc-toolbar__row">
 					<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
 						<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
@@ -94,107 +95,210 @@
 			</section>
 			<!-- MESH_END -->
 			<!-- WHO_ARE_WE -->
-			<section class="who_we_are">
-				<div class="mdc-layout-grid">
-					<div class="who-we-are__head">
-						<span>Who we are?</span>
+	
+			<!-- WHO_ARE_WE_END -->
+			<section class="what_we_offer">
+				<div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell--span-12">
+							<h2>What do we offer?</h2>
+						</div>
 					</div>
 					<div class="mdc-layout-grid__inner">
-						<div class="mdc-layout-grid__cell--span-12 mdc-card__primary">
-							<h2 class="mdc-card__subtitle">UNIT Factory (Ukrainian National IT Factory) — єдиний в Україні навчальний заклад, що працює за стандартами інноваційної французької Школи 42. Тут навчають програмувати, працювати в команді та знаходити неординарні рішення.
-								У нас немає вчителів, конспектів або лекцій. Під час відбору не враховуються дипломи або результати ЗНО. Все залежить лише від ваших здібностей і мотивації. І навчання безкоштовне для всіх студентів.
-							</h2>
-						</div>
-						<div class=" mdc-layout-grid__cell--span-8
-							mdc-layout-grid__cell--span-12-tablet
-							mdc-card">
-							<section class="mdc-card__media video_1">
-								<div class="owl-carousel owl-theme">
-									<div class="item-video" data-merge="3"><a class="owl-video" href="https://youtu.be/ZPfNgIj2eNU"></a></div>
-									<div class="item-video" data-merge="1"><a class="owl-video" href="https://youtu.be/ZPfNgIj2eNU"></a></div>
-									<div class="item-video" data-merge="2"><a class="owl-video" href="https://youtu.be/ZPfNgIj2eNU"></a></div>
-									<div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=oy18DJwy5lI"></a></div>
-									<div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
-									<div class="item-video" data-merge="3"><a class="owl-video" href="https://www.youtube.com/watch?v=g3J4VxWIM6s"></a></div>
-									<div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=0fhoIate4qI"></a></div>
-									<div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=EF_kj2ojZaE"></a></div>
+						<div class="mdc-layout-grid__cell--span-12">
+							<section class="what_we_offer__carousel">
+								<div class="mdc-card">
+									<section id="toolbar-offer">
+									  <nav id="toolbar-offer-bar" class="dotsCont mdc-tab-bar">
+									    <a class="mdc-tab mdc-tab--active">FOR THE COUNTRY<div class="mdc-pos"></div></a>
+									    <a class="mdc-tab">FOR IT-COMPANIES<div class="mdc-pos"></div></a>
+									    <a class="mdc-tab">FOR YOUNG PEOPLE<div class="mdc-pos"></div></a>
+									    <a class="mdc-tab">FOR PARENTS<div class="mdc-pos"></div></a>
+									    <span class="mdc-tab-bar__indicator"></span>
+									  </nav>
+									</section>
 								</div>
-								<!-- <iframe height="100%" width="100%" src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
-							</section>
-							<span class="mdc-card__title mdc-card__title--large">Title goes here</span>
-							<section class="mdc-card__supporting-text">
-								Lorem ipsum dolor sit amet,s consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. 
 							</section>
 						</div>
-						<div class=" mdc-layout-grid__cell--span-4
-							mdc-layout-grid__cell--span-12-tablet">
-							<div class="">
-								<div class="mdc-card">
-									<section class="mdc-card__media video_2">
-										<!-- <iframe height="100%" width="100%" src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
-									</section>
-									<span class="mdc-card__title mdc-card__title--large">Title goes here</span>
-									<section class="mdc-card__supporting-text">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
-									</section>
-								</div>
-								<div class="mdc-card">
-									<section class="mdc-card__media video_3">
-										<!-- <iframe height="100%" width="100%" src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
-									</section>
-									<span class="mdc-card__title mdc-card__title--large">Title goes here</span>	
-									<section class="mdc-card__supporting-text">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. 
-									</section>
-								</div>
+					</div>
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell--span-12">
+							<div class="mdc-card owl-carousel owl-theme">
+							  <div class="offer-card">
+							  	<div class="offer-text">
+							  		<section class="mdc-card__supporting-text">
+								  		<p>One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+								  		<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
+								  	</section>
+							  	</div>
+							  	<div class="offer-img"></div>
+							  </div>
+							  <div class="offer-card">
+							  	<div class="offer-text">
+							  		<p><b>Ukrainian IT companies</b> need <b>professionals</b> with an outstanding level of training to successfully compete on international arena. Technical universities and numerous programming courses graduates often do not meet this requirement, so employers are forced to teach or re-educate them.
+							  		</p>
+							  		<p>UNIT Factory provides qualified IT professionals training that can satisfy Ukrainian companies personnel shortage. Unique project-based learning system forces it’s graduates to adapt to real-world commercial work as much as possible. We also help to form a community of young IT entrepreneurs who will glorify Ukraine in the world.</p>
+							  	</div>
+							  	<div class="offer-img"></div>
+							  </div>
+							  <div class="offer-card">
+							  	<div class="offer-text">
+							  		<p>Young people need opportunities. IT sector provides a lot of them. You only need to be persistent and purposeful while studying.</p>
+							  		<p>UNIT Factory aims to help young people to get a profession with opportunities for continuous professional development. We want out graduates to be in demand at the labor market and engaged at interesting and ambitious projects of modern digital age.</p>
+							  	</div>
+							  	<div class="offer-img"></div>
+							  </div>
+							  <div class="offer-card">
+							  	<div class="offer-text">
+							  		<p>UNIT Factory aims to help young people to get a profession with opportunities for continuous professional development. We want out graduates to be in demand at the labor market and engaged at interesting and ambitious projects of modern digital age.</p>
+							  		<p>Does programming fit your child? School grades, whatever they are, cannot be reliable. That's why before complete enrollment to UNIT Factory applicants have probation period to understand if programming and studying at UNIT Factory fits them.</p>
+							  	</div>
+							  	<div class="offer-img"></div>
+							  </div>
+							  <div class="offer-card"></div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="test">
-				<div class="mdc-layout-grid">
+			<section class="study_principles">
+				<div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
 					<div class="mdc-layout-grid__inner">
-						<div class="mdc-layout-grid__cell">1</div>
-						<div class="mdc-layout-grid__cell">2</div>
-						<div class="mdc-layout-grid__cell">3</div>
-						<div class="mdc-layout-grid__cell--span-12">12</div>
-						<div class="mdc-layout-grid__cell--span-8">8</div>
-						<div class="mdc-layout-grid__cell--span-4">4</div>
-						<div class="mdc-layout-grid__cell--span-6">6</div>
-						<div class="mdc-layout-grid__cell--span-4">4</div>
-						<div class="mdc-layout-grid__cell--span-2">2</div>
-						<div class="mdc-layout-grid__cell">4</div>
-						<div class="mdc-layout-grid__cell">5</div>
-						<div class="mdc-layout-grid__cell">6</div>
+						<div class="mdc-layout-grid__cell--span-12">
+							<h2>Study principles</h2>
+						</div>
+					</div>
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell--span-6">
+							<div class="mdc-card">
+								<section class="mdc-card__primary">
+								  <h3>Peer-2-peer</h3>
+								</section>
+								<section class="mdc-card__supporting-text">
+									<p>UNIT Factory is open for graduates and students and for those who already have a profession, but want to change it. There is only one requirement: age. You must be from 17 to 30 years old to enroll. Education is completely free of charge for all students.
+									</p><p>Our goal is to find the most talented and motivated students who may become high-level professionals. During the application process academic criteria (grades, academic degree etc.) are not taken into account. Programming skills also don’t have any decisive role. According to the experience of School 42 those students who had never developed software but had high potential quickly caught up with those who were already familiar with programming.</p>
+								 </section>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__cell--span-6">
+							<div class="mdc-card">
+								<section class="mdc-card__media"></section>
+							 </div>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section>
-				<div class="panels">
-					<p class="panel active" id="panel-1" role="tabpanel" aria-hidden="false">Item One</p>
-					<p class="panel" id="panel-2" role="tabpanel" aria-hidden="true">Item Two</p>
-					<p class="panel" id="panel-3" role="tabpanel" aria-hidden="true">Item Three</p>
-				</div>
-				<div class="dots">
-					<a class="dot active" data-trigger="panel-1" href="#panel-1"></a>
-					<a class="dot" data-trigger="panel-2" href="#panel-2"></a>
-					<a class="dot" data-trigger="panel-3" href="#panel-3"></a>
+			<section class="сurriculum">
+				<div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell--span-12">
+							<h2>Curriculum</h2>
+						</div>
+					</div>
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell--span-8">
+							<div class="mdc-card">
+								<section id="curriculum__left" class="mdc-card__media"><button class="mdc-button mdc-button--raised">Read more</button></section>
+							 </div>
+						</div>
+						<div class="mdc-layout-grid__cell--span-4">
+							<div class="mdc-card">
+								<section id="curriculum__right" class="mdc-card__media"></section>
+								<section class="mdc-card__supporting-text">
+									<p>The curriculum - aims to elaborate the development skills of high quality software. UNIT Factory prepares students to work in leading IT companies. The purpose of the curriculum, is not only acquiring technical knowledge, but also getting practical experience in programming. It covers a wide range of areas, so students can select the most interesting ones for them.</p>
+								 </section>
+							</div>
+						</div>
 				</div>
 			</section>
-			<!-- WHO_ARE_WE_END -->
-
+			<section class="result">
+				<div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell--span-12">
+							<h2>Result</h2>
+						</div>
+					</div>
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell--span-4">
+							<div class="mdc-card">
+								<section id="result" class="mdc-card__media"></section>
+								<section class="mdc-card__supporting-text">
+									<p><b>Education at UNIT Factory</b> takes up to three years.
+After graduating from UNIT Factory you will have the knowledge, skills and portfolio necessary to work at such positions:</p>
+								</section>
+							 </div>
+						</div>
+						<div class="mdc-layout-grid__cell--span-8">
+							<div class="mdc-card">
+							</div>
+						</div>
+				</div>
+			</section>
 		</main>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 		<script>window.mdc.autoInit();</script>
 		<script src="js/typed.min.js"></script>
-		<script src=" js/owl.carousel.min.js"></script>
-		<script src="bakground.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/bakground.js"></script>
+		<script src="js/main.js"></script>
 		<script src="main.js"></script>
+		<script type="text/javascript">
+			function aft(){
+				
+			}
+
+			$(document).ready(function(){
+			  $('.owl-carousel').owlCarousel({
+			  	items: 1,
+			  	loop: true,
+			  	mouseDrag: false,
+			  	touchDrag: false,
+			  	pullDrag: false,
+			  	// autoplay: true,
+			  	dotsContainer: '.dotsCont'
+			  	// dotsData: true
+			  });
+			});
+
+			$( document ).ready(function() {
+				$('.right-top').click(
+					function(){
+						$( ".active" ).animate({
+						    left: "-100%"
+						  }, {
+						    duration: 500,
+						    specialEasing: {
+						      width: "linear",
+						      height: "easeOutBounce"
+						    },
+						    done: function() {
+						      $('.active').css({"width": "30%", "height": "25vh",  "left": "100%", "opacity": "0"}).animate({"opacity": "1","left": "70%"}, 500);
+						    }
+						  });
+						$('.right-top').animate({left: "0"}
+							, {
+						    duration: 500,
+						    specialEasing: {
+						      width: "linear",
+						      height: "easeOutBounce"
+						    },
+						    done: function() {
+						      $('.right-top').animate({width: "70%", height: "50vh"}, 500);
+						      // $('.active').animate({display: "block", left: "70%"}, 1000);
+						    }
+						  });
+						// $('.active').animate({
+					 //    	left: "-100%"},
+					 //    	250
+					 //    	);
+					 //    $('.right-top').animate({left: "0", "z-index": "500"}, 1250).delay(1350).animate({width: "70%"}, 1250).animate({height: "500px"}, 1250);
+					 //    // $('.right-top').delay(250).animate({width: "70%", height: "50vh"}, 250);
+					 //    // $('.active').delay(500).animate({left: "70%",width: "30%", height: "25vh"});
+					});
+
+			});
+		</script>
 		<script>
 			var drawerEl = document.querySelector('.mdc-persistent-drawer');
 			var MDCPersistentDrawer = mdc.drawer.MDCPersistentDrawer;
@@ -208,25 +312,6 @@
 			drawerEl.addEventListener('MDCPersistentDrawer:close', function() {
 			  console.log('Received MDCPersistentDrawer:close');
 			});
-		</script>
-		<script type="text/javascript">
-			$('.owl-carousel').owlCarousel({
-			 items:1,
-			 merge:true,
-			 loop:true,
-			 margin:10,
-			 video:true,
-			 lazyLoad:true,
-			 center:true,
-			 responsive:{
-				 480:{
-					 items:2
-				 },
-				 600:{
-					 items:4
-				 }
-			 }
-			})
 		</script>
 	</body>
 </html>

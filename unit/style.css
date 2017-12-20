@@ -4,6 +4,23 @@ html {
 
 body {
 	font: 14px Arial;
+  background: #eee;
+}
+
+h2 {
+    font-size: 42pt;
+    font-family: 'Arial black';
+    color: #333333;
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+  font-size: 24pt;
+  font-family: 'Arial black';
+  color: #333333;
+  /*text-align: center;*/
+  margin: 0;
 }
 
 .demo-body {
@@ -43,6 +60,16 @@ body {
 	font-size: 1em;
 }
 
+.mdc-card {
+  background: #FFF;
+  margin: 10px 0;
+}
+
+.mdc-card__primary {
+    padding: 16px;
+    padding-bottom: 0;
+}
+
 /*head*/
 
 .fa-bars {
@@ -50,7 +77,7 @@ body {
 	color: #444;
 }
 
-.mdc-toolbar {
+.top-nav.mdc-toolbar {
     background: #eee;
     color: #5c5c5c;
     padding: 0 10px;
@@ -59,32 +86,32 @@ body {
     top: 0px;
 }
 
-.mdc-toolbar-clear {
+.top-nav.mdc-toolbar-clear {
 	height: 52px;
 }
 
-.mdc-toolbar__row {
+.top-nav .mdc-toolbar__row {
     min-height: auto;
 }
-.mdc-toolbar .mdc-tab-bar .mdc-tab {
+.top-nav.mdc-toolbar .mdc-tab-bar .mdc-tab {
 	font-size: 13px;
     color: #5c5c5c;
     font-weight: bold;
 }
 
-.mdc-toolbar .mdc-tab-bar .mdc-tab--active, .mdc-toolbar .mdc-tab-bar .mdc-tab:hover {
+.top-nav.mdc-toolbar .mdc-tab-bar .mdc-tab--active, .top-nav.mdc-toolbar .mdc-tab-bar .mdc-tab:hover {
     color: #fdb813;
 }
 
-.mdc-tab-bar__indicator {
+.top-nav .mdc-tab-bar__indicator {
 	height: 3px;
 }
 
-.mdc-tab-bar--indicator-accent.mdc-tab-bar:not(.mdc-tab-bar-upgraded) .mdc-tab:after, .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .mdc-tab-bar--theme-dark .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .mdc-tab-bar--theme-dark .mdc-toolbar .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .mdc-theme--dark .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .mdc-theme--dark .mdc-toolbar .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .mdc-toolbar .mdc-tab-bar--indicator-accent.mdc-tab-bar:not(.mdc-tab-bar-upgraded) .mdc-tab:after, .mdc-toolbar .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator {
+.top-nav .mdc-tab-bar--indicator-accent.mdc-tab-bar:not(.mdc-tab-bar-upgraded) .mdc-tab:after, .top-nav .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .mdc-tab-bar--theme-dark .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator,.mdc-tab-bar--theme-dark .top-nav.mdc-toolbar .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .mdc-theme--dark .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .mdc-theme--dark .top-nav.mdc-toolbar .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .top-nav.mdc-toolbar .mdc-tab-bar--indicator-accent.mdc-tab-bar:not(.mdc-tab-bar-upgraded) .mdc-tab:after, .top-nav.mdc-toolbar .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator {
     background-color: #fdb813;
 }
 
-.mdc-tab {
+.top-nav .mdc-tab {
 	padding: 20px 10px;
     min-width: 50px;
 }
@@ -187,15 +214,6 @@ body {
   font-weight: 800;
 }
 
-/*tuping_end*/
-
-
-/*.my-card-container .mdc-card {
-  height: 350px;
-  width: 350px;
-}*/
-
-
 .mdc-card__media {
   width: 100%;
   background-color: white;
@@ -220,10 +238,6 @@ body {
 }
 
 #owl-carousel .item{
-/*  background: #42bdc2;
-  padding: 30px 0px;
-  margin: 10px;
-  color: #FFF;*/
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -232,14 +246,10 @@ body {
   videoHeight: false, // Default false; Type: Boolean/Number
 }
 
-
-
-
 .mdc-card__title--large{
   padding-left: 3%
 
 }
-
 
 .test{
   background-color: white;
@@ -248,6 +258,107 @@ body {
   padding-top: 400px;
 
 }
+
+/*WHAT WE DO OFFER*/
+.what_we_offer__carousel {
+  position: relative;
+}
+
+#toolbar-offer-bar .mdc-tab.mdc-ripple-upgraded {
+    color: #666;
+    font-size: 22px;
+    font-family: "Arial Black";
+}
+
+#toolbar-offer-bar .mdc-tab.mdc-tab--active.mdc-ripple-upgraded.active {
+    color: #333;
+}
+
+#toolbar-offer-bar .mdc-tab-bar__indicator {
+    height: 3px;
+    background: #fdb813;
+}
+
+.mdc-pos {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.offer-card {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.offer-text {
+  margin: 20px;
+  flex: 1 40%;
+}
+.offer-img {
+  flex: 1 60%;
+  /*height: 100%;*/
+  background: url('http://placehold.it/800x200/008CBA/FFFFFF/&text=3') no-repeat center;
+  background-size: cover;
+}
+
+/*WHAT WE DO OFFER END*/
+/*STUDY principles*/
+
+.study_principles .mdc-card {
+  height: 100%;
+  margin: 0;
+}
+
+ .study_principles .mdc-card__media {
+  background-image: url("img/p2p.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+/*STUDY PRINCIPLES END*/
+/*STUDY СURRICULUM*/
+
+.сurriculum .mdc-card {
+  height: 100%;
+  margin: 0;
+}
+
+#curriculum__left.mdc-card__media {
+  background-image: url("img/curr.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#curriculum__right.mdc-card__media {
+  background-image: url("img/curr2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 240px;
+}
+
+.сurriculum button.mdc-button.mdc-button--raised {
+    background: #abcc58;
+    width: 115px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*STUDY СURRICULUM END*/
+/*RESULT*/
+#result.mdc-card__media {
+  background-image: url("img/result.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 275px;
+}
+/*RESULT END*/
+
 
 @media (max-width: 1200px) {
 	.desktop {
