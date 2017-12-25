@@ -13,6 +13,7 @@ h2 {
     color: #333333;
     text-align: center;
     margin: 0;
+    margin-bottom: 50px;
 }
 
 h3 {
@@ -20,6 +21,14 @@ h3 {
   font-family: 'Arial black';
   color: #333333;
   /*text-align: center;*/
+  margin: 0;
+}
+
+h4 {
+  font-size: 20pt;
+  font-family: 'Arial black';
+  color: #333333;
+  /*line-height: 1.5rem;*/
   margin: 0;
 }
 
@@ -66,7 +75,7 @@ h3 {
 }
 
 .mdc-card__primary {
-    padding: 16px;
+    padding: 10px 30px;
     padding-bottom: 0;
 }
 
@@ -247,7 +256,7 @@ h3 {
 }
 
 .mdc-card__title--large{
-  padding-left: 3%
+  padding: 5px 30px; 
 
 }
 
@@ -279,6 +288,13 @@ h3 {
     background: #fdb813;
 }
 
+.owl-carousel .owl-item {
+  font-size: .875rem;
+  font-weight: 400;
+  letter-spacing: .04em;
+  line-height: 1.25rem;
+}
+
 .mdc-pos {
   position: absolute;
   right: 0;
@@ -298,6 +314,7 @@ h3 {
 .offer-text {
   margin: 20px;
   flex: 1 40%;
+  line-height: 1.25rem;
 }
 .offer-img {
   flex: 1 60%;
@@ -342,11 +359,10 @@ h3 {
   height: 240px;
 }
 
-.сurriculum button.mdc-button.mdc-button--raised {
-    background: #abcc58;
-    width: 115px;
-    text-align: center;
-    margin: 0 auto;
+.сurriculum .mdc-button--raised{
+  background: #abcc58;
+  font-weight: 900;
+  text-transform: none;
 }
 
 /*STUDY СURRICULUM END*/
@@ -355,9 +371,241 @@ h3 {
   background-image: url("img/result.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 275px;
+  height: 325px;
 }
+
+.result-card {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.entry-card{
+   display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.entry-card .mdc-card{
+  width: 18%;
+  margin: 10px auto;
+  padding: 10px;
+  transition: all .5s;
+}
+
+.result-card .mdc-card{
+  width: 22%;
+  margin: 10px auto;
+  transition: all .5s;
+}
+
+.result-card .mdc-card__supporting-text{
+  text-align: center;
+  height: 75px;
+  align-items: center;
+}
+
+.entry-card .mdc-card__supporting-text{
+  text-align: center;
+  height: 75px;
+  align-items: center;
+}
+
+.entry-card .mdc-card__media {
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  background-image: url("img/result.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mdc-card__prev {
+    margin: 0 auto;
+    margin-bottom: 0;
+    width: 140px;
+    height: 140px;
+    font-size: 65px;
+    display: flex;
+    box-shadow: inset 0 3px 20px rgba(0,0,0,0.49);
+    border-radius: 50%;
+    background: #fbb900;
+    text-align: center;
+}
+
+/*.result-card .mdc-card:hover .mdc-card__prev{
+  box-shadow: inset 0 -3px 20px rgba(0,0,0,0.69);
+}*/
+
+.result-card .mdc-card:hover {
+  transform: scale(1.02);
+  -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  transition: all .3s;
+}
+
+.mdc-card__prev [class^="icon-"], .mdc-card__prev [class*=" icon-"] {
+  display: block;
+  margin: auto;
+}
+
 /*RESULT END*/
+/*HOW TO APPLY*/
+.how_to_apply .offer-img{
+  background-image: url(img/apply.png);
+}
+
+.apply-text {
+  margin: 5px;
+    flex: 1 40%;
+}
+
+.mdc-linear-progress {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    height: 10px;
+    border-radius: 25px;
+}
+
+.mdc-linear-progress .mdc-linear-progress__bar-inner {
+    background-color: #fbb900;
+}
+
+/*HOW TO APPLY END*/
+/*JOIN US*/
+.join_us .mdc-button--raised{
+  background: #fbb900;
+  font-weight: 900;
+  text-transform: none;
+}
+
+.join_us .offer-img {
+  background-image: url(img/join.png);
+}
+
+/*JOIN US END*/
+/*FAQ*/
+
+#faq-left.mdc-card__media {
+  background-image: url("img/faq.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 225px;
+}
+
+#faq-right.mdc-card__media {
+  background-image: url("img/telega.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 312px;
+}
+
+.faq .mdc-button--raised {
+  text-transform: none;
+  font-weight: 900;
+  background: #abcb58;
+}
+
+.telega.mdc-button {
+  border: 1px solid #2fa7dd;
+  color: #2fa7dd;
+  border-radius: 35px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/*FAQ END*/
+/*CONTACT*/
+.contact .mdc-card{
+  background: #fbb900;
+}
+
+.contact .mdc-card__primary {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.contact-list {
+  margin-bottom: 0;
+  padding: 10px;
+  -webkit-padding-start: 0px;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+.contact-item {
+  list-style: none;
+}
+.contact-link {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2px 0px;
+}
+
+.phone {
+  /*font-family: 'Arial Black';*/
+  font-size: 22px;
+}
+
+.contact-link .fa {
+  width: 20px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.social-list {
+  margin: 0;
+  padding: 10px;
+  -webkit-padding-start: 0px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.social-item {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+}
+
+.social-link:hover {
+  /*transform: scale();*/
+}
+
+/*CONTACT END*/
 
 
 @media (max-width: 1200px) {
@@ -402,4 +650,10 @@ h3 {
 	}
 }
 
+.who_we_text{
+  padding: 0% 30% 2% 30%;
+}
 
+.mdc-card__supporting-text{
+  padding: 5px 30px;
+}
