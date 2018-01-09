@@ -10,29 +10,10 @@
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
-		<!-- <link rel="stylesheet" href="css/slider.css"> -->
+		<link rel="stylesheet" href="css/rocket.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
-	<body class="demo-body">
-		<aside class="mdc-persistent-drawer">
-			<nav class="mdc-persistent-drawer__drawer">
-				<div class="mdc-persistent-drawer__toolbar-spacer"></div>
-				<div class="mdc-list-group">
-					<nav class="mdc-list">
-						<a class="mdc-list-item mdc-persistent-drawer--selected" href="#panel-1">WHO ARE WE?</a>
-						<a class="mdc-list-item" href="#panel-2">WHAT DO WE OFFER?</a>
-						<a class="mdc-list-item" href="#panel-3">PRINCIPLES</a>
-						<a class="mdc-list-item" href="#panel-4">CURRICULUM</a>
-						<a class="mdc-list-item" href="#panel-5">RESULT</a>
-						<a class="mdc-list-item" href="#panel-6">HOW TO ENROLL?</a>
-						<a class="mdc-list-item" href="#panel-7">STEP 1</a>
-						<a class="mdc-list-item" href="#panel-9">FAQ</a>
-						<a class="mdc-list-item" href="#panel-10">CONTACTS</a>
-					</nav>
-				</div>
-			</nav>
-		</aside>
-		<main class="demo-content">
+	<body>
 			<!-- DESKTOP -->
 			<header class="desktop top-nav mdc-toolbar mdc-elevation--z3">
 				<div class="mdc-toolbar__row">
@@ -61,21 +42,6 @@
 				</div>
 			</header>
 			<!-- DESKTOP_END -->
-			<!-- MOBILE -->
-			<header class="mobile mdc-toolbar mdc-elevation--z4">
-				<div class="mdc-toolbar__row">
-					<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-						<button class="demo-menu material-icons mdc-toolbar__menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
-					</section>
-					<section class="mdc-toolbar__section">
-						<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-					</section>
-					<section class="mdc-toolbar__section mdc-toolbar__section--align-end">
-						<button class="mdc-button unit-btn mdc-elevation--z1">Apply</button>
-					</section>
-				</div>
-			</header>
-			<!-- MOBILE_END -->
 			<div class="mdc-toolbar-clear"></div>
 			<!-- MESH -->
 			<section class="mesh">
@@ -106,11 +72,11 @@
 							<h2>Who we are?</h2>
 						</div>
 					</div>
-					<div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
+					<div class="mdc-layout-grid mdc-layout-grid--fixed-column-width" style="padding-top: 0; padding-bottom: 0">
 						<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell--span-12">
 							<!--   <section class="mdc-card__supporting-text"> -->
-							  	<div class="mdc-card">
+							  	<div class="mdc-card" id="fisrt-text">
 							    <h2 class="mdc-card__subtitle" style="padding: 40px;">UNIT Factory (Ukrainian National IT Factory) — єдиний в Україні навчальний заклад, що працює за стандартами інноваційної французької Школи 42. Тут навчають програмувати, працювати в команді та знаходити неординарні рішення.
 								У нас немає вчителів, конспектів або лекцій. Під час відбору не враховуються дипломи або результати ЗНО. Все залежить лише від ваших здібностей і мотивації. І навчання безкоштовне для всіх студентів.
 								</h2>
@@ -120,7 +86,17 @@
 						</div>
 					</div>
 					</div>
+					<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 						<style type="text/css">
+							#fisrt-text{
+								transform:translate(-120%, 0%) ;
+								transition: 2s;
+							}
+							.new_style{
+								transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(0%, 0%) scale3d(1, 1, 1);
+								transition: 2s;
+							}
 							.container{
 								position: relative;
 								height: 50vh;
@@ -154,76 +130,166 @@
 							.change-active{
 								left: -100%;
 								bottom: 0;
-
 							}
 							.videoWrapper {
 								position: relative;
-								height: 100vh;
+								height: 500px;
 							}
 							.videoWrapper iframe {
 								position: absolute;
-								top: 2%;
-								left: 2%;
-								width: 94%;
-								height: 94%;
+								
+								width: 100%;
+								height: 100%;
+							}
+							.start-video{
+								height: 50vh;
+							}
+							#owl-carousel-video {
+							  width: 100%;
+							}
+
+							.item-video {
+								height: 600px;
+								background-color: blue;								
+							}
+							@font-face {
+							  font-family: 'Material Icons';
+							  font-style: normal;
+							  font-weight: 400;
+							  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+							  src: local('Material Icons'),
+							    local('MaterialIcons-Regular'),
+							    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+							    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+							    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+							}
+						
+							.material-icons{
+								position: absolute;
+							}
+							.arr-left{
+								position: absolute;
+							    left: 0%;
+							    top: 35%;
+							    z-index: 1;
+							    color: rgba(255, 255, 255, 0.7);
+							    font-size: 70px;
+							}
+							.arr-right{
+								position: absolute;
+							    left: 91%;
+							    top: 35%;
+							    z-index: 1;
+							    color: rgba(255, 255, 255, 0.7);
+							    font-size: 70px;
 							}
 						</style>
-					
-						<div class="container mdc-layout-grid mdc-layout-grid--fixed-column-width">
+
+
+						 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.css">	
+						  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.css">
+						  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  	
+						  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
+						<div class=" mdc-layout-grid mdc-layout-grid--fixed-column-width" style="padding-top: 0; padding-bottom: 0">
 							<div class="mdc-layout-grid__inner">
-							<div class="mdc-layout-grid__cell--span-12">
-							<!-- <div style="background: red" class=""> -->
-								<div class="mdc-card start active_vidos video-block">
-									<section class="mdc-card__media">
-									<div class="videoWrapper">
+								<div class="mdc-layout-grid__cell--span-8 start-video">
+								<!-- <div style="background: red" class=""> -->
+									<div class="mdc-card" style="position: relative;">
+										  	<div id="owl-carousel-video" class="owl-carousel owl-theme owl-center owl-loaded">
+										  	   <div class="item">
+												   <section class="mdc-card__media">
+													<div class="videoWrapper">
+														<iframe height="500px" width="100%" src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+													</div>
+													</section>
+									  				<span class="mdc-card__title mdc-card__title--large">Title goes here</span>
+													  <section class="mdc-card__supporting-text media-subs-text">
+													    Lorem ipsum dolor sit amet,s consectetur adipisicing elit, sed do eiusmod
+													    tempor incididunt ut labore et dolore magna aliqua.
+													</section>
+												</div>
+												<div class="item">
+												   <section class="mdc-card__media">
+													<div class="videoWrapper">
+														<iframe height="500px" width="100%" src="https://www.youtube.com/embed/Vl0FAkQttRI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+													</div>
+													</section>
+									  				<span class="mdc-card__title mdc-card__title--large">Title goes here</span>
+													  <section class="mdc-card__supporting-text media-subs-text">
+													    Lorem ipsum dolor sit amet,s consectetur adipisicing elit, sed do eiusmod
+													    tempor incididunt ut labore et dolore magna aliqua.
+													</section>
+												</div>
+											</div> 
+											<i class="material-icons arr-left">keyboard_arrow_left</i>
+											<i class="material-icons arr-right">keyboard_arrow_right</i>
+											</div>
+											
+											 
+											
+											
+										</div>
+								<script  type="text/javascript">
+											    $(document).ready(function($) {
+											        $('#owl-carousel-video').owlCarousel({
+											        items:1,
+											        merge:true,
+											        loop:true,
+											        margin:0,
+											        lazyLoad:true,
+											        center:true,
+											        dotsContainer: '.dots_video',
+											        responsive:{
+											            480:{
+											                items:1
+											            },
+											            600:{
+											                items:1
+											            }
+											        }
+											      });
+											    });
 
-										<iframe height="1000px" width="100%" src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+											  </script>
+								<div class="mdc-layout-grid__cell--span-4">
+								<div class="">
+								<!-- <div style="background: red" class=""> -->
+									<div class="mdc-card">
+										<section class="mdc-card__media">
+										<div class="" style="min-height: 153px;
+						    background: url(http://tseh.com.ua/wp-content/uploads/2017/05/IMG_0922-Edit.png);
+						    background-size: cover;
+						    background-repeat: no-repeat;">
+																	
+																</div>
+										</section>
+						  				<span class="mdc-card__title mdc-card__title--large">Title goes here</span>
+										  <section class="mdc-card__supporting-text media-subs-text">
+										    Lorem ipsum dolor sit amet,s consectetur adipisicing elit, sed do eiusmod   ....
+										  </section>
 									</div>
-									</section>
-					  				<span class="mdc-card__title mdc-card__title--large">Title goes here</span>
-									  <section class="mdc-card__supporting-text">
-									    Lorem ipsum dolor sit amet,s consectetur adipisicing elit, sed do eiusmod
-									    tempor incididunt ut labore et dolore magna aliqua. 
-									  </section>
 								</div>
-							<!-- </div> -->
-							<div class="mdc-card right-top video-block">
-									<section class="mdc-card__media">
-										<div class="videoWrapper">
-
-										<iframe height="1000px" width="100%" src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+								<div class="">
+								<!-- <div style="background: red" class=""> -->
+									<div class="mdc-card">
+										<section class="mdc-card__media">
+										<div class="" style="min-height: 153px;
+    background: url(http://tseh.com.ua/wp-content/uploads/2017/05/3-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;">
+											
+										</div>
+										</section>
+						  				<span class="mdc-card__title mdc-card__title--large">Title goes here</span>
+										  <section class="mdc-card__supporting-text media-subs-text">
+										     Lorem ipsum dolor sit amet,s consectetur adipisicing elit, sed do eiusmod   ....
+										  </section>
 									</div>
-									</section>
-					  				<span class="mdc-card__title mdc-card__title--large">Title goes here</span>
-									  <section class="mdc-card__supporting-text">
-									    Lorem ipsum dolor sit amet,s consectetur adipisicing elit, sed do eiusmod
-									    tempor incididunt ut labore et dolore magna aliqua. 
-									  </section>
 								</div>
-							<!-- <div style="background: blue;" class="right-top video-block">
-								<p>UNIT Factory (Ukrainian National IT Factory) — єдиний в Україні навчальний заклад, що працює за стандартами інноваційної французької Школи 42. Тут навчають програмувати, працювати в команді та знаходити неординарні рішення.
-								У нас немає вчителів, конспектів або лекцій. Під час відбору не враховуються дипломи або результати ЗНО. Все залежить лише від ваших здібностей і мотивації. І навчання безкоштовне для всіх студентів.</p>
-							</div> -->
-							<div class="mdc-card right-bottom video-block">
-									<section class="mdc-card__media">
-										<div class="videoWrapper">
-
-										<iframe height="1000px" width="100%" src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-									</div>
-									</section>
-					  				<span class="mdc-card__title mdc-card__title--large">Title goes here</span>
-									  <section class="mdc-card__supporting-text">
-									    Lorem ipsum dolor sit amet,s consectetur adipisicing elit, sed do eiusmod
-									    tempor incididunt ut labore et dolore magna aliqua. 
-									  </section>
 								</div>
-							<!-- <div style="background: green" class="right-bottom video-block">
-								<p>UNIT Factory (Ukrainian National IT Factory) — єдиний в Україні навчальний заклад, що працює за стандартами інноваційної французької Школи 42. Тут навчають програмувати, працювати в команді та знаходити неординарні рішення.
-								У нас немає вчителів, конспектів або лекцій. Під час відбору не враховуються дипломи або результати ЗНО. Все залежить лише від ваших здібностей і мотивації. І навчання безкоштовне для всіх студентів.</p>
-							</div> -->
+							</div>
 						</div>
-					</div>
-					</div>
+
 					</div>
 
 			</section>
@@ -286,34 +352,38 @@
 					</div>
 					<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell--span-12">
-							<div class="mdc-card owl-carousel owl-theme">
+							<div class="mdc-card owl-carousel owl-theme" id="what_wee_do_carusel">
 							  <div class="offer-card">
 							  	<div class="offer-text">
-							  		<p>1One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+							  		<p>One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+							  		<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
 							  		<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
 							  	</div>
-							  	<div class="offer-img"></div>
+							  	<div class="offer-img country"></div>
 							  </div>
 							  <div class="offer-card">
 							  	<div class="offer-text">
-							  		<p>1One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+							  		<p>One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+							  		<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
 							  		<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
 							  	</div>
-							  	<div class="offer-img"></div>
+							  	<div class="offer-img company"></div>
 							  </div>
 							  <div class="offer-card">
 							  	<div class="offer-text">
-							  		<p>1One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+							  		<p>One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+							  		<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
 							  		<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
 							  	</div>
-							  	<div class="offer-img"></div>
+							  	<div class="offer-img young"></div>
 							  </div>
 							  <div class="offer-card">
 							  	<div class="offer-text">
-							  		<p>1One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+							  		<p>One of the main advantages of Ukraine - it's human potential. To realize this potential it is necessary to educate young generation of professionals who are in great demand at the labor market nowadays, and will be even in bigger demand in 5-10 years. Experts of the labor market and futurists believe that the most promising professions are related to digital technologies.</p>
+							  		<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
 							  		<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
 							  	</div>
-							  	<div class="offer-img"></div>
+							  	<div class="offer-img parrent"></div>
 							  </div>
 							</div>
 						</div>
@@ -336,6 +406,7 @@
 								<section class="mdc-card__supporting-text">
 									<p>UNIT Factory is open for graduates and students and for those who already have a profession, but want to change it. There is only one requirement: age. You must be from 17 to 30 years old to enroll. Education is completely free of charge for all students.
 									</p><p>Our goal is to find the most talented and motivated students who may become high-level professionals. During the application process academic criteria (grades, academic degree etc.) are not taken into account. Programming skills also don’t have any decisive role. According to the experience of School 42 those students who had never developed software but had high potential quickly caught up with those who were already familiar with programming.</p>
+									<p>UNIT Factory aims to give young people opportunity of getting well-paid jobs, thus help Ukraine to develop an innovative economy in condition of tough competition with other countries.</p>
 								 </section>
 							</div>
 						</div>
@@ -357,7 +428,7 @@
 					<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell--span-8">
 							<div class="mdc-card">
-								<section id="curriculum__left" class="mdc-card__media"><button class="mdc-button mdc-button--raised">Read more</button></section>
+								<section id="curriculum__left" class="mdc-card__media"><button class="mdc-button mdc-button--unelevated">Read more</button></section>
 							 </div>
 						</div>
 						<div class="mdc-layout-grid__cell--span-4">
@@ -385,7 +456,7 @@
     				transition:  2s;
 				}
 			</style>
-			<section class="result" id="panel-5" >
+						<section class="result" id="panel-5" >
 				<div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
 					<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell--span-12">
@@ -395,7 +466,52 @@
 					<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell--span-4">
 							<div class="mdc-card">
-								<section id="result" class="mdc-card__media"></section>
+								<section id="result" class="mdc-card__media">
+									<div class="laptop">
+										<div class="screen">
+
+											<div class="cloud c-l1l c11"></div>
+											<div class="cloud c-l1l c12"></div>
+											<div class="cloud c-l1l c13"></div>
+											<div class="cloud c-l1l c14"></div>
+											
+											<div class="cloud c-l1r c11"></div>
+											<div class="cloud c-l1r c12"></div>
+											<div class="cloud c-l1r c13"></div>
+											<div class="cloud c-l1r c14"></div>
+
+											<div class="cloud c-l2l c21"></div>
+											<div class="cloud c-l2l c22"></div>
+											<div class="cloud c-l2l c23"></div>
+											<div class="cloud c-l2l c24"></div>
+											
+											<div class="cloud c-l2r c21"></div>
+											<div class="cloud c-l2r c22"></div>
+											<div class="cloud c-l2r c23"></div>
+											<div class="cloud c-l2r c24"></div>
+											
+											<div class="spaceship">
+												<div class="cloud-0"></div>
+												<div class="wing-l1"></div>
+												<div class="wing-r1"></div>
+												<div class="wing-l2"></div>
+												<div class="wing-r2"></div>
+												<div class="part-1"></div>
+												<div class="part-2"></div>
+												<div class="part-3">
+												<div class="logo_rocket">
+													<img src="img/logo-orange.svg" alt="" width="13px" height="13px">
+													<p class="logo_rocket--text">UNIT</p>
+												</div>
+												</div>
+											</div>
+											
+										</div>
+										
+										<div class="keyboard">
+											<div class="mouse"></div>
+										</div>
+								</section>
 								<section class="mdc-card__supporting-text">
 									<p><b>Education at UNIT Factory</b> takes up to three years.
 After graduating from UNIT Factory you will have the knowledge, skills and portfolio necessary to work at such positions:</p>
@@ -404,57 +520,69 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 						</div>
 						<div class="result-card mdc-layout-grid__cell--span-8">
 							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-admin"></span></section>
-								<section class="mdc-card__supporting-text">
-									<b>Technical Lead</b>
+								<section class="mdc-card__prev"><img src="https://www.flaticon.com/premium-icon/icons/svg/284/284641.svg" width="100%" height="100%">
 								</section>
-							</div>
-							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-lead"></span></section>
-								<section class="mdc-card__supporting-text">
-									<b>Network Systems Administrator</b>
-								</section>
-							</div>
-							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-network"></span></section>
-								<section class="mdc-card__supporting-text">
-									<b>Networks Architect</b>
-								</section>
-							</div>
-							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-software"></span></section>
 								<section class="mdc-card__supporting-text">
 									<b>Software Architect</b>
 								</section>
 							</div>
 							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-admin"></span></section>
+								<section class="mdc-card__prev">
+									<img src="https://www.flaticon.com/premium-icon/icons/svg/296/296386.svg" width="100%" height="100%">
+								</section>
 								<section class="mdc-card__supporting-text">
 									<b>Technical Lead</b>
 								</section>
 							</div>
 							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-lead"></span></section>
+								<section class="mdc-card__prev">
+									<img src="https://www.flaticon.com/premium-icon/icons/svg/284/284293.svg" width="100%" height="100%">
+								</section>
 								<section class="mdc-card__supporting-text">
 									<b>Network Systems Administrator</b>
 								</section>
 							</div>
 							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-network"></span></section>
+								<section class="mdc-card__prev">
+									<img src="https://www.flaticon.com/premium-icon/icons/svg/284/284292.svg" width="100%" height="100%">
+								</section>
 								<section class="mdc-card__supporting-text">
 									<b>Networks Architect</b>
 								</section>
 							</div>
+
 							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-software"></span></section>
+								<section class="mdc-card__prev"><img src="https://www.flaticon.com/premium-icon/icons/svg/284/284284.svg" width="100%" height="100%"></section>
 								<section class="mdc-card__supporting-text">
-									<b>Software Architect</b>
+									<b>Web developer</b>
+								</section>
+							</div>
+							<div class="mdc-card">
+								<section class="mdc-card__prev"><img src="https://image.flaticon.com/icons/svg/214/214304.svg" width="100%" height="100%"></section>
+								<section class="mdc-card__supporting-text">
+									<b>Game developer</b>
+								</section>
+							</div>
+							<div class="mdc-card">
+								<section class="mdc-card__prev">
+									<img src="https://www.flaticon.com/premium-icon/icons/svg/284/284661.svg" width="100%" height="100%">
+								</section>
+								<section class="mdc-card__supporting-text">
+									<b>Specialist in IT security</b>
+								</section>
+							</div>
+							<div class="mdc-card">
+								<section class="mdc-card__prev"><img src="https://www.flaticon.com/premium-icon/icons/svg/284/284038.svg" width="100%" height="100%"></section>
+								<section class="mdc-card__supporting-text">
+									<b>Mobile app developer</b>
 								</section>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
+			
 			<section class="how_to_apply" id="panel-6">
 				<div class="mdc-layout-grid mdc-layout-grid--fixed-column-width">
 					<div class="mdc-layout-grid__inner">
@@ -488,55 +616,67 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 							<h2>Entry steps</h2>
 						</div>
 					</div>
-					<div class="entry-card mdc-layout-grid__cell--span-12">
-							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-admin"></span></section>
-								<section class="mdc-card__supporting-text">
-									<b>STEP1</b>
-									<p>Do some</p>
-								</section>
-							</div>
-							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-lead"></span></section>
-								<section class="mdc-card__supporting-text">
-									<b>STEP2</b>
-									<p>Do some</p>
-								</section>
-							</div>
-							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-network"></span></section>
-								<section class="mdc-card__supporting-text">
-									<b>STEP3</b>
-									<p>Do some</p>
-								</section>
-							</div>
-							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-software"></span></section>
-								<section class="mdc-card__supporting-text">
-									<b>STEP4</b>
-									<p>Do some</p>
-								</section>
-							</div>
-							<div class="mdc-card">
-								<section class="mdc-card__prev"><span class="icon-admin"></span></section>
-								<section class="mdc-card__supporting-text">
-									<b>STEP5</b>
-									<p>Do some</p>
-								</section>
-							</div>
-						</div>
+					<style type="text/css">
+
+					</style>
 					<div class="mdc-layout-grid__inner">
-						<div class="mdc-layout-grid__cell--span-12">
-							<div class="mdc-card">
-						  		<section class="mdc-card__supporting-text">
+						<div class="mdc-layout-grid__cell--span-12 mdc-card">
+								<div class="entry-card">
+									<div class=" mdc-icon-cell">
+										<div class="entry-card__prev" style="background: url(img/1.svg) center/cover" />
+											<!-- <img style="max-width: 100%;" src="file:///Users/mkaliber/Downloads/%D0%A1%D0%BB%D0%BE%D0%B8%CC%86%205.svg"> -->
+										</div>
+										<section class="mdc-card__supporting-text">
+											<b>STEP1</b>
+											<p>Do some</p>
+										</section>
+									</div>
+									<div class=" mdc-icon-cell">
+										<div class="entry-card__prev" style="background: url(img/2.svg) center/cover" />
+											<!-- <img style="max-width: 100%;" src="file:///Users/mkaliber/Downloads/%D0%A1%D0%BB%D0%BE%D0%B8%CC%86%205.svg"> -->
+										</div>
+										<section class="mdc-card__supporting-text">
+											<b>STEP1</b>
+											<p>Do some</p>
+										</section>
+									</div>
+									<div class=" mdc-icon-cell">
+										<div class="entry-card__prev" style="background: url(img/3.svg) center/cover" />
+											<!-- <img style="max-width: 100%;" src="file:///Users/mkaliber/Downloads/%D0%A1%D0%BB%D0%BE%D0%B8%CC%86%205.svg"> -->
+										</div>
+										<section class="mdc-card__supporting-text">
+											<b>STEP1</b>
+											<p>Do some</p>
+										</section>
+									</div>
+									<div class=" mdc-icon-cell">
+										<div class="entry-card__prev" style="background: url(img/44.svg) center/cover" />
+											<!-- <img style="max-width: 100%;" src="file:///Users/mkaliber/Downloads/%D0%A1%D0%BB%D0%BE%D0%B8%CC%86%205.svg"> -->
+										</div>
+										<section class="mdc-card__supporting-text">
+											<b>STEP1</b>
+											<p>Do some</p>
+										</section>
+									</div>
+									<div class=" mdc-icon-cell">
+										<div class="entry-card__prev" style="background: url(img/5.svg) center/cover" />
+											<!-- <img style="max-width: 100%;" src="file:///Users/mkaliber/Downloads/%D0%A1%D0%BB%D0%BE%D0%B8%CC%86%205.svg"> -->
+										</div>
+										<section class="mdc-card__supporting-text">
+											<b>STEP1</b>
+											<p>Do some</p>
+										</section>
+									</div>							
+								</div>
+						  		<!-- <section class="mdc-card__supporting-text">
 						  			<p><b>UNIT Factory</b> is open for graduates and students and for those who already have a profession, but want to change it. There is only one requirement: age.</p>
 						  			<p>You must be from 17 to 30 years old to enroll. Education is completely free of charge for all students.</p>
-						  		 </section>
+						  		 </section> -->
 						  		 <section class="mdc-card__supporting-text">
 						  		 	<div role="progressbar" class="mdc-linear-progress">
 						  		 	  <div class="mdc-linear-progress__buffering-dots"></div>
 						  		 	  <div class="mdc-linear-progress__buffer"></div>
-						  		 	  <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+						  		 	  <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar" id="step_line" style="transform: scaleX(0);">
 						  		 	    <span class="mdc-linear-progress__bar-inner"></span>
 						  		 	  </div>
 						  		 	  <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
@@ -565,7 +705,7 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 							  			<p><b>UNIT Factory</b> is open for graduates and students and for those who already have a profession, but want to change it. There is only one requirement: age.</p>
 							  			<p>You must be from 17 to 30 years old to enroll. Education is completely free of charge for all students.</p>
 							  		 </section>
-							  		 <section class="mdc-card__media"><button class="mdc-button mdc-button--raised">Apply</button></section>
+							  		 <section class="mdc-card__media"><button class="mdc-button mdc-button--unelevated">Apply</button></section>
 							  	</div>
 							  	<div class="offer-img"></div>
 							  </div>
@@ -591,7 +731,7 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 									<p>“Pool” is a trial period of study lasting one month. Students who have successfully passed the “Pool” are enlisted to UNIT Factory. You won’t have to swim in it but you'll definitely have to dive into programming.
 									</p><p>On the one hand the “Pool” will select the most talented and motivated students for UNIT Factory. On the other - during this month you will understand if the programming and education at UNIT Factory in particular fits you in general.</p>
 								 </section>
-								 <section class="mdc-card__media"><button class="mdc-button mdc-button--raised">Read more</button></section>
+								 <section class="mdc-card__media"><button class="mdc-button mdc-button--stroked">Read more</button></section>
 							</div>
 						</div>
 						<div class="mdc-layout-grid__cell--span-4">
@@ -600,7 +740,7 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 								<section class="mdc-card__supporting-text">
 									<p>“Pool” is a trial period of study lasting one month. Students who have successfully passed the “Pool” are enlisted to UNIT Factory. You won’t have to swim in it but you'll definitely have to dive into programming.</p>
 								 </section>
-								 <section class="mdc-card__media"><button class="mdc-button telega"><span class="icon-tl"></span>TELEGRAM</button></section>
+								 <section class="mdc-card__media"><button class=" mdc-button mdc-button--stroked telega"><img class="logo_tg" src="img/telegram-logo.svg" width="12px" height="12px">TELEGRAM</button></section>
 							</div>
 						</div>
 					</div>
@@ -619,6 +759,9 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 								<!-- <section class="mdc-card__actions"> -->
 								<section class="mdc-card__primary">
 									<div class="contact-left">
+										<img class="contact-logo" src="img/UNIT-LOGO-White-vertical.png" >
+										<!-- <img class="contact-logo" src="img/logo-orange.svg" width="100px" height="100px"> -->
+
 										<ul class="contact-list">
 											<li class="contact-item">
 												<a href="#" class="contact-link"><i class="fa fa-envelope" aria-hidden="true"></i><span>born2code@unit.ua</span></a>
@@ -639,7 +782,7 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 										</ul>
 									</div>
 									<div class="contact-right">
-										
+										<div id="map" class="map_class"></div>
 									</div>
 							    </section>
 							</div>
@@ -647,7 +790,46 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 					</div>
 				</div>
 			</section>
-		</main>
+
+
+		<script>
+
+<<<<<<< HEAD
+		function initMap() {
+			// Styles a map in night mode.
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 50.468818, lng: 30.4600373},
+				zoom: 15,
+				styles:
+				[
+				{
+				     "featureType": "administrative.country",
+				     "elementType": "geometry.fill",
+				     "stylers": [
+				         {
+				             "visibility": "on"
+				         }
+				     ]
+				 }
+				 ]
+
+			});
+			var marker = new google.maps.Marker({
+		          position: {lat: 50.468818, lng: 30.4600373},
+		          map: map,
+		          title: 'UNIT Factory!'
+        	});
+		}
+=======
+		
+>>>>>>> 9ae09dba3381d9218a4d51dd4c88d25d07c45b8d
+	</script>
+	        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpg7O8NqmhW5wqIbzrlUlHoRoqSpIbNes&callback=initMap">
+    </script>
+		 <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpg7O8NqmhW5wqIbzrlUlHoRoqSpIbNes&callback=initMap">
+    </script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 		<script>window.mdc.autoInit();</script>
@@ -694,103 +876,130 @@ After graduating from UNIT Factory you will have the knowledge, skills and portf
 			           el_start = 0;
 			    });
 			  
-			  $('.go-to').click( function(){ // ловим клик по ссылке с классом go_to
-		            var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
-		            if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
-		            $('html, body').animate({ scrollTop: $(scroll_el).offset().top - w_height/4}, 1000); // анимируем скроолинг к элементу scroll_el
-		            }
-		            return false; // выключаем стандартное действие
-		        });
-			function aft(){
-				
-			}
-			var determinates = document.querySelectorAll('.mdc-linear-progress');
-			      for (var i = 0, determinate; determinate = determinates[i]; i++) {
-			        var linearProgress = mdc.linearProgress.MDCLinearProgress.attachTo(determinate);
-			        linearProgress.progress = 0.5;
-			        if (determinate.dataset.buffer) {
-			          linearProgress.buffer = 0.75;
-			        }
-			      }
-			$(document).ready(function(){
-			  $('.owl-carousel').owlCarousel({
-			  	items: 1,
-			  	loop: true,
-			  	mouseDrag: false,
-			  	touchDrag: false,
-			  	pullDrag: false,
-			  	autoplay: true,
-				dotsContainer: '.dotsCont'
-			  	// dotsData: true
-			  });
-			});
-			$(document).ready(function(){
-			   id = "#tab_car" + 2;
-			   $('.mdc-pos').remove();
-				   $('.mdc-posd').remove();
-			    $(id).append('<div class="mdc-pos"></div><div class="mdc-posd"></div>');
-			     $('.mdc-pos').animate({'width': '100%'}, 5000);
-			   console.log(id);
-			  $('.owl-carousel').owlCarousel({
-			  	items: 1,
-			  	loop: true,
-			  	mouseDrag: false,
-			  	touchDrag: false,
-			  	pullDrag: false,
-			  	autoplay: true,
-			  	dotsContainer: '.dotsCont',
-			  	dotsData: true,
-			  });
-			  $('.owl-carousel').on('changed.owl.carousel', function(e) {
-				   var element   = e.item.index;
-				   id = "#tab_car" + element;
-				   $('.mdc-pos').remove();
-				   $('.mdc-posd').remove();
-				   $(id).append('<div class="mdc-pos"></div><div class="mdc-posd"></div>');
-				   $('.mdc-pos').animate({'width': '100%'}, 5000);
-			  });
-			});
-
+				  $('.go-to').click( function(){ // ловим клик по ссылке с классом go_to
+			            var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+			            if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+			            $('html, body').animate({ scrollTop: $(scroll_el).offset().top - w_height/4}, 1000); // анимируем скроолинг к элементу scroll_el
+			            }
+			            return false; // выключаем стандартное действие
+			        });
+					var determinates = document.querySelectorAll('.mdc-linear-progress');
+					      for (var i = 0, determinate; determinate = determinates[i]; i++) {
+					        var linearProgress = mdc.linearProgress.MDCLinearProgress.attachTo(determinate);
+					        linearProgress.progress = 0.5;
+					        if (determinate.dataset.buffer) {
+					          linearProgress.buffer = 0.75;
+					        }
+					      }
 			
-
-			$( document ).ready(function() {
-				$('.right-top').click(
-					function(){
-						$( ".active_vidos" ).animate({
-						    left: "-100%"
-						  }, {
-						    duration: 500,
-						    specialEasing: {
-						      width: "linear",
-						      height: "easeOutBounce"
-						    },
-						    done: function() {
-						      $('.active_vidos').css({"width": "30%", "height": "24vh",  "left": "100%", "opacity": "0"}).animate({"opacity": "1","left": "71%"}, 500);
-						      $(".videoWrapper").css({"height": "100vh"})
-						    }
-						  });
-						$('.right-top').animate({left: "0"}
-							, {
-						    duration: 500,
-						    specialEasing: {
-						      width: "linear",
-						      height: "easeOutBounce"
-						    },
-						    done: function() {
-						      $('.right-top').animate({width: "70%", height: "50vh"}, 500);
-						      // $('.active').animate({display: "block", left: "70%"}, 1000);
-						    }
-						  });
-						// $('.active').animate({
-					 //    	left: "-100%"},
-					 //    	250
-					 //    	);
-					 //    $('.right-top').animate({left: "0", "z-index": "500"}, 1250).delay(1350).animate({width: "70%"}, 1250).animate({height: "500px"}, 1250);
-					 //    // $('.right-top').delay(250).animate({width: "70%", height: "50vh"}, 250);
-					 //    // $('.active').delay(500).animate({left: "70%",width: "30%", height: "25vh"});
+					$(document).ready(function(){
+					   $('#fisrt-text').css({"transform": "translate(0%, 0%)"});
+					   id = "#tab_car" + 2;
+					   $('.mdc-pos').remove();
+						   $('.mdc-posd').remove();
+					    $(id).append('<div class="mdc-pos"></div><div class="mdc-posd"></div>');
+					     $('.mdc-pos').animate({'width': '100%'}, 5000);
+					   console.log(id);
+					  $('#what_wee_do_carusel').owlCarousel({
+					  	items: 1,
+					  	loop: true,
+					  	mouseDrag: false,
+					  	touchDrag: false,
+					  	pullDrag: false,
+					  	autoplay: true,
+					  	dotsContainer: '.dotsCont',
+					  	dotsData: true,
+					  });
+					  $('#what_wee_do_carusel').on('changed.owl.carousel', function(e) {
+						   var element   = e.item.index;
+						   id = "#tab_car" + element;
+						   $('.mdc-pos').remove();
+						   $('.mdc-posd').remove();
+						   $(id).append('<div class="mdc-pos"></div><div class="mdc-posd"></div>');
+						   $('.mdc-pos').animate({'width': '100%'}, 5000);
+					  });
 					});
 
+				$( document ).ready(function() {
+					$('#step_line').css({'transform': 'scaleX(' + 0 + ')'});
+					$('.right-top').click(
+						function(){
+							$( ".active_vidos" ).animate({
+							    left: "-100%"
+							  }, {
+							    duration: 500,
+							    specialEasing: {
+							      width: "linear",
+							      height: "easeOutBounce"
+							    },
+							    done: function() {
+							      $('.active_vidos').css({"width": "30%", "height": "24vh",  "left": "100%", "opacity": "0"}).animate({"opacity": "1","left": "71%"}, 500);
+							      $(".videoWrapper").css({"height": "100vh"})
+							    }
+							  });
+							$('.right-top').animate({left: "0"}
+								, {
+							    duration: 500,
+							    specialEasing: {
+							      width: "linear",
+							      height: "easeOutBounce"
+							    },
+							    done: function() {
+							      $('.right-top').animate({width: "70%", height: "50vh"}, 500);
+							      // $('.active').animate({display: "block", left: "70%"}, 1000);
+							    }
+							  });
+							// $('.active').animate({
+						 //    	left: "-100%"},
+						 //    	250
+						 //    	);
+						 //    $('.right-top').animate({left: "0", "z-index": "500"}, 1250).delay(1350).animate({width: "70%"}, 1250).animate({height: "500px"}, 1250);
+						 //    // $('.right-top').delay(250).animate({width: "70%", height: "50vh"}, 250);
+						 //    // $('.active').delay(500).animate({left: "70%",width: "30%", height: "25vh"});
+						});
+
+					 var time = 2000;
+					 var scale = 0.2;
+					 $( '.entry-card__prev').each(function(index){
+					 	var element = $(this);
+					 	setTimeout(function(){
+					 		// console.log(data);
+					 		 $( '.entry-card__prev').removeClass('active__prev');
+					 		 element.addClass('active__prev');
+					 		 $('#step_line').css({'transform': 'scaleX(' + scale + ')'});
+					 		 scale += 0.2;
+					 	}, time);
+					 	time += 2000;
+					 	
+	          		  });
+					
+				});
+			function initMap() {
+			// Styles a map in night mode.
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 50.468818, lng: 30.4600373},
+				zoom: 15,
+				styles:
+				[
+				{
+				     "featureType": "administrative.country",
+				     "elementType": "geometry.fill",
+				     "stylers": [
+				         {
+				             "visibility": "on"
+				         }
+				     ]
+				 }
+				 ]
+
 			});
+			// var image = ('img/logo.png');
+			// var markerFactory = new google.maps.Marker({
+			// 	position: {lat: 50.519454, lng: 30.5108188},
+			// 	map: map,
+			// 	icon: image,
+			// });
+		}
 		</script>
 		<script>
 			var drawerEl = document.querySelector('.mdc-persistent-drawer');

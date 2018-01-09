@@ -1,9 +1,9 @@
 html {
-	width: 100%;
+  width: 100%;
 }
 
 body {
-	font: 14px Arial;
+  font: 14px Arial;
   background: #eee;
 }
 
@@ -56,17 +56,17 @@ h4 {
 }
 
 .mobile {
-	display: none;
+  display: none;
 }
 
 .logo {
-	font-size: 1em;
+  font-size: 1em;
 }
 
 .logo img{
-	padding: 10px;
-	width: 100%;
-	font-size: 1em;
+  padding: 10px;
+  width: 100%;
+  font-size: 1em;
 }
 
 .mdc-card {
@@ -82,8 +82,8 @@ h4 {
 /*head*/
 
 .fa-bars {
-	font-size: 24pt;
-	color: #444;
+  font-size: 24pt;
+  color: #444;
 }
 
 .top-nav.mdc-toolbar {
@@ -96,14 +96,14 @@ h4 {
 }
 
 .top-nav.mdc-toolbar-clear {
-	height: 52px;
+  height: 52px;
 }
 
 .top-nav .mdc-toolbar__row {
     min-height: auto;
 }
 .top-nav.mdc-toolbar .mdc-tab-bar .mdc-tab {
-	font-size: 13px;
+  font-size: 13px;
     color: #5c5c5c;
     font-weight: bold;
 }
@@ -113,7 +113,7 @@ h4 {
 }
 
 .top-nav .mdc-tab-bar__indicator {
-	height: 3px;
+  height: 3px;
 }
 
 .top-nav .mdc-tab-bar--indicator-accent.mdc-tab-bar:not(.mdc-tab-bar-upgraded) .mdc-tab:after, .top-nav .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .mdc-tab-bar--theme-dark .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator,.mdc-tab-bar--theme-dark .top-nav.mdc-toolbar .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .mdc-theme--dark .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .mdc-theme--dark .top-nav.mdc-toolbar .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator, .top-nav.mdc-toolbar .mdc-tab-bar--indicator-accent.mdc-tab-bar:not(.mdc-tab-bar-upgraded) .mdc-tab:after, .top-nav.mdc-toolbar .mdc-tab-bar--indicator-accent .mdc-tab-bar__indicator {
@@ -121,21 +121,21 @@ h4 {
 }
 
 .top-nav .mdc-tab {
-	padding: 20px 10px;
+  padding: 20px 10px;
     min-width: 50px;
 }
 
 .mdc-button.unit-btn {
-	background: #fbb900;
-	color: white;
-	font-weight: bold;
+  background: #fbb900;
+  color: white;
+  font-weight: bold;
 }
 
 /*moblie*/
 .mdc-persistent-drawer .mdc-list-item {
-	font-family: 'Arial';
-	font-weight: 900;
-	color: #444;
+  font-family: 'Arial';
+  font-weight: 900;
+  color: #444;
 }
 
 .mdc-persistent-drawer .mdc-persistent-drawer--selected {
@@ -160,31 +160,31 @@ h4 {
 }
 
 .container-text {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	bottom: 0px;
-	right: 0px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
 }
 
 .container-text-center {
-	margin: auto;
-	min-width: 42%;
+  margin: auto;
+  min-width: 42%;
 }
 
 .static-text{
-	font-size: 3.8em;
-	font-family: "Arial Black";
-	color: #444;
+  font-size: 3.8em;
+  font-family: "Arial Black";
+  color: #444;
 }
 
 .static-text__down {
-	text-align: right;
+  text-align: right;
 }
 
 .auto-text  p{
@@ -201,7 +201,7 @@ h4 {
 }
 
 .yellow {
-	color: #fbb900;
+  color: #fbb900;
 }
 
 .auto-text .typed-cursor{
@@ -212,15 +212,24 @@ h4 {
   to{opacity: .0;}
 }
 
+/*WHO WE ARE*/
+
 .who_we_are{
-	padding-top: 0px;
   height: 100vh;
+}
+
+.who_we_text{
+  padding: 0% 30% 2% 30%;
 }
 
 .who-we-are__head{
   text-align: center;
   font-size: 40px;
   font-weight: 800;
+}
+
+.media-subs-text{
+    height: 100px;
 }
 
 .mdc-card__media {
@@ -267,6 +276,7 @@ h4 {
   padding-top: 400px;
 
 }
+/*WHO WE ARE END*/
 
 /*WHAT WE DO OFFER*/
 .what_we_offer__carousel {
@@ -323,6 +333,26 @@ h4 {
   background-size: cover;
 }
 
+.country {
+  background: url('https://media.giphy.com/media/l0HTYYlAuOo2bTBUA/giphy.gif') no-repeat center;
+  background-size: cover;
+}
+
+.company {
+  background: url('https://media.giphy.com/media/xT1R9Q1WdbI1vXtFde/giphy.gif') no-repeat center;
+  background-size: cover;
+}
+
+.young {
+  background: url('https://i.pinimg.com/originals/b5/21/ff/b521ff42f5b2ba7309334b57c9acd29a.gif') no-repeat center;
+  background-size: cover;
+}
+
+.parrent {
+  background: url('https://media.giphy.com/media/3oFzmggTiHX1sGwvrq/giphy.gif') no-repeat center;
+  background-size: cover;
+}
+
 /*WHAT WE DO OFFER END*/
 /*STUDY principles*/
 
@@ -332,7 +362,7 @@ h4 {
 }
 
  .study_principles .mdc-card__media {
-  background-image: url("img/p2p.png");
+  background-image: url("https://i.pinimg.com/originals/50/a8/57/50a857a7bbe36010c73c07792f1004f4.gif");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -359,19 +389,34 @@ h4 {
   height: 240px;
 }
 
-.сurriculum .mdc-button--raised{
-  background: #abcc58;
+.сurriculum .mdc-button--unelevated{
+  background: #fdb813;
   font-weight: 900;
   text-transform: none;
+  color: #fff;
+  border: none;
+  margin: 0 auto;
+  padding-bottom: 0px;
+  /*width: 30%;*/
 }
+
+
+/*.сurriculum .mdc-button--stroked:hover{
+  background: rgba(255, 255, 255, 1);
+  color: #fdb813;
+
+}*/
+
 
 /*STUDY СURRICULUM END*/
 /*RESULT*/
 #result.mdc-card__media {
-  background-image: url("img/result.png");
+/*  background-image: url("img/result.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+  position: relative;
   height: 325px;
+  width: 100%
 }
 
 .result-card {
@@ -388,16 +433,13 @@ h4 {
 }
 
 .entry-card{
-   display: -webkit-flex;
+  padding: 20px;
+  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
-  flex-wrap: wrap;
+  align-content: center;
 }
 
 .entry-card .mdc-card{
@@ -414,8 +456,8 @@ h4 {
 }
 
 .result-card .mdc-card__supporting-text{
-  text-align: center;
   height: 75px;
+  text-align: center;
   align-items: center;
 }
 
@@ -425,13 +467,38 @@ h4 {
   align-items: center;
 }
 
-.entry-card .mdc-card__media {
+.entry-card .mdc-icon-cell{
+  margin: auto;  /* Magic! */
+}
+
+/*.entry-card .mdc-card__media {
   width: 140px;
   height: 140px;
   margin: auto;
   background-image: url("img/result.png");
   background-size: cover;
   background-repeat: no-repeat;
+}*/
+
+
+.entry-card__prev {
+    margin: 0 auto;
+    margin-bottom: 0;
+    width: 140px;
+    height: 140px;
+    font-size: 65px;
+    display: flex;
+    border: 5px solid silver;
+    border-radius: 50%;
+    text-align: center;
+    transform: scale(0.8);
+    transition: 2s;
+}
+
+.active__prev{
+  border-color: #fbb900;
+  transition: 2s;
+  transform: scale(1);
 }
 
 .mdc-card__prev {
@@ -441,10 +508,9 @@ h4 {
     height: 140px;
     font-size: 65px;
     display: flex;
-    box-shadow: inset 0 3px 20px rgba(0,0,0,0.49);
+    /* box-shadow: inset 0 3px 20px rgba(0,0,0,0.49); */
     border-radius: 50%;
-    background: #fbb900;
-    text-align: center;
+    background: #eeeeee;
 }
 
 /*.result-card .mdc-card:hover .mdc-card__prev{
@@ -459,6 +525,7 @@ h4 {
 }
 
 .mdc-card__prev [class^="icon-"], .mdc-card__prev [class*=" icon-"] {
+  color: #fcba00;
   display: block;
   margin: auto;
 }
@@ -488,11 +555,31 @@ h4 {
 
 /*HOW TO APPLY END*/
 /*JOIN US*/
-.join_us .mdc-button--raised{
+/*.join_us .mdc-button--raised{
   background: #fbb900;
   font-weight: 900;
   text-transform: none;
+  margin: auto;
+}*/
+
+#curriculum__right.mdc-card__media {
+  background-image: url("img/curr2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 240px;
 }
+
+.join_us .mdc-button--unelevated{
+  background: #fdb813;
+  font-weight: 900;
+  text-transform: none;
+  color: #fff;
+  border: none;
+  margin: 0 auto;
+}
+
+
+
 
 .join_us .offer-img {
   background-image: url(img/join.png);
@@ -521,18 +608,38 @@ h4 {
   background: #abcb58;
 }
 
-.telega.mdc-button {
-  border: 1px solid #2fa7dd;
-  color: #2fa7dd;
-  border-radius: 35px;
+
+.faq .mdc-button--stroked{
+  /*background: rgba(255, 255, 255, 1);*/
+  font-weight: 900;
+  text-transform: none;
+  color: #fdb813;
+  border: 1px solid #fdb813;
+  margin: 0 auto;
+  padding-bottom: 0px;
+  /*width: 30%;*/
+}
+
+.logo_tg{
+  padding-right: 5px;
+  /*padding-bottom: -5px;*/
+}
+
+.telega{
+  border: 1px solid #0088cc!important;
+  color: #0088cc!important;
   width: 50%;
   margin: 0 auto;
 }
+
+
 
 /*FAQ END*/
 /*CONTACT*/
 .contact .mdc-card{
   background: #fbb900;
+  /*background: #fff;*/
+
 }
 
 .contact .mdc-card__primary {
@@ -543,11 +650,24 @@ h4 {
   display: flex;
 }
 
+.contact-left{
+  width: 70%;
+  text-align: center;
+  padding-top: 125px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.contact-logo{
+  padding-bottom:50px;
+}
+
 .contact-list {
-  margin-bottom: 0;
-  padding: 10px;
   -webkit-padding-start: 0px;
+  /*border-bottom: 2px solid #fbb900;*/
   border-bottom: 2px solid white;
+
   width: 100%;
 }
 
@@ -562,6 +682,8 @@ h4 {
   display: flex;
   text-decoration: none;
   color: white;
+  /*color: #fbb900;*/
+
   font-size: 18px;
   font-weight: bold;
   margin: 2px 0px;
@@ -598,6 +720,7 @@ h4 {
 .social-link {
   text-decoration: none;
   color: white;
+  /*color: #fbb900;*/
   font-size: 32px;
 }
 
@@ -605,55 +728,72 @@ h4 {
   /*transform: scale();*/
 }
 
+.contact-right{
+  width: 100%;
+  height: 500px;
+}
+
+.map_class{
+  /*position: relative;*/
+  width: 100%;
+  height: 500px;
+}
+
+.contact .mdc-card__primary{
+  padding: 0px;
+}
+
+.contact .mdc-card__primary:last-child {
+    padding-bottom: 0px;
+}
+
+
 /*CONTACT END*/
 
 
 @media (max-width: 1200px) {
-	.desktop {
-		display: none;
-	}
-	.mobile {
-		display: block;
-	}
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 
 }
 
 @media screen and (max-width: 959px) { 
-	body {
-		font-size: 12px;
-	}
+  body {
+    font-size: 12px;
+  }
 
-	.static-text{
-		font-size: 2.8em;
-	}
+  .static-text{
+    font-size: 2.8em;
+  }
 
-	.auto-text  p{
-	  font-size: 22px;
-	}
+  .auto-text  p{
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 459px) {
-	.logo {
-		display: none;
-	}
+  .logo {
+    display: none;
+  }
 
-	body {
-		font-size: 10px;
-	}
+  body {
+    font-size: 10px;
+  }
 
-	.static-text{
-		font-size: 2.2em;
-	}
+  .static-text{
+    font-size: 2.2em;
+  }
 
-	.auto-text  p{
-	  font-size: 14px;
-	}
-}
-
-.who_we_text{
-  padding: 0% 30% 2% 30%;
+  .auto-text  p{
+    font-size: 14px;
+  }
 }
 
 .mdc-card__supporting-text{
   padding: 5px 30px;
+
 }
