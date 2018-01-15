@@ -1,0 +1,28 @@
+
+.header {
+	background: #fbb900;
+}
+
+.logo {
+
+}
+
+.nav-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	background: #fbb900;
+}
+
+.btn-nav {
+	align-self: center;
+	background: white;
+	color: #444;
+}
+.btn-nav:hover {
+	background: #eee;
+}
