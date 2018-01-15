@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>Unit</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
 		<!-- Compiled and minified CSS -->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -12,31 +13,43 @@
 	</head>
 	<body>
 		<header class="header">
-			<nav>
-			   <div class="nav-wrapper">
-			     <a href="#" data-activates="mobile-demo" class="button"><i class="material-icons">menu</i></a>
-			     <a href="#!" class="logo">Logo</a>
-			     <a class="waves-effect waves-light btn btn-nav">APPLY</a>
-			     <ul class="side-nav" id="mobile-demo">
-			     	<li><a href="#lol">WHO ARE WE?</a></li>
-			     	<li><a href="#lol">WHAT DO WE OFFER?</a></li>
-			     	<li><a href="#lol">PRINCIPLES</a></li>
-			     	<li><a href="#lol">CURRICULUM</a></li>
-			     	<li><a href="#lol">RESULT</a></li>
-			     	<li><a href="#lol">HOW TO ENROLL?</a></li>
-			     	<li><a href="#lol">STEP 1</a></li>
-			     	<li><a href="#lol">FAQ</a></li>
-			     	<li><a href="#lol">CONTACTS</a></li>
-			     </ul>
-			   </div>
-			 </nav>
+			<div class="navbar-fixed">
+				<nav>
+				   <div class="nav-wrapper">
+				     <a href="#" data-activates="mobile-demo" class="button"><i class="material-icons">menu</i></a>
+				     <a href="#" class="brand-logo center logo-hidden"><img src="img/logo.png" alt=""></a>
+
+				     <a class="waves-effect waves-light btn btn-nav">APPLY</a>
+				     <ul class="side-nav" id="mobile-demo">
+				     	<li><a href="#lol">WHO ARE WE?</a></li>
+				     	<li><a href="#lol">WHAT DO WE OFFER?</a></li>
+				     	<li><a href="#lol">PRINCIPLES</a></li>
+				     	<li><a href="#lol">CURRICULUM</a></li>
+				     	<li><a href="#lol">RESULT</a></li>
+				     	<li><a href="#lol">HOW TO ENROLL?</a></li>
+				     	<li><a href="#lol">STEP 1</a></li>
+				     	<li><a href="#lol">FAQ</a></li>
+				     	<li><a href="#lol">CONTACTS</a></li>
+				     </ul>
+				   </div>
+				 </nav>
+			 </div>
 			<div class="container">
-				<div class="row card-panel">
-				    <div class="col s7 push-s5"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div>
-				    <div class="col s5 pull-s7"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div>
+				<div class="row">
+					<div class="valign-wrapper">
+						<div class="col s12">
+							<div class="auto-text">
+								<p><span id="typed"></span></p>
+							</div>
+							<div class="logo"><img src="img/logo.png" alt=""></div>
+						</div>
+					</div>
 				  </div>
 			</div>
 		</header>
+		<main class="main">
+			
+		</main>
 		<div class="container">
 			<div class="row card-panel">
 			    <div class="col s7 push-s5"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div>
@@ -115,6 +128,7 @@
 		<!-- Compiled and minified JavaScript -->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script src="js/typed.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

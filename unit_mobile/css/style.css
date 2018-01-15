@@ -1,10 +1,39 @@
 
+img {
+	width: 100%;
+}
+
 .header {
 	background: #fbb900;
+	background: url('../img/pattern.png') no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .logo {
+	width: 266px;
+	margin: 0 auto;
+}
 
+nav .logo-hidden {
+	display: none;
+	width: 120px;
+}
+
+nav {
+	background: rgba(0,0,0,0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-fixed {
+	z-index: 998;
+}
+
+.navbar-fixed:after {
+	content: " ";
+	display: block;
+	height: 56px;
 }
 
 .nav-wrapper {
@@ -16,7 +45,16 @@
 	justify-content: space-between;
 	-webkit-box-pack: justify;	-ms-flex-pack: justify;	justify-content: space-between;
 	padding: 0 20px;
+	background: rgba(0,0,0,0);
+	box-shadow: none;
+	transition: all .2s;
+}
+
+.nav-bottom {
 	background: #fbb900;
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+	    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+	transition: all .2s;
 }
 
 .btn-nav {
@@ -26,4 +64,10 @@
 }
 .btn-nav:hover {
 	background: #eee;
+}
+
+.auto-text {
+	text-align: center;
+	color: white;
+	font-size: 2em;
 }
