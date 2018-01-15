@@ -14,6 +14,7 @@
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	-webkit-box-pack: justify;	-ms-flex-pack: justify;	justify-content: space-between;
 	padding: 0 20px;
 	background: #fbb900;
 }
