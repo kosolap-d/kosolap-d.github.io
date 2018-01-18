@@ -553,17 +553,13 @@ h4 {
 
 /*RESULT END*/
 /*HOW TO APPLY*/
-.how_to_apply .offer-img{
-  background-image: url(img/apply.png);
-}
+/*.how_to_apply .offer-img{*/
+  /*background-image: url(img/apply.png);*/
+/*}*/
 
 .apply-text {
   margin: 5px;
     flex: 1 40%;
-}
-
-.apply-text .mdc-card__supporting-text {
-  margin-top: 100px;
 }
 
 .mdc-linear-progress {
