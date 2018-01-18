@@ -361,12 +361,12 @@ h4 {
   margin: 0;
 }
 
- .study_principles .mdc-card__media {
-  background-image: url("https://i.pinimg.com/originals/50/a8/57/50a857a7bbe36010c73c07792f1004f4.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-}
+ /*.study_principles .mdc-card__media {*/
+  /*background-image: url("https://i.pinimg.com/originals/50/a8/57/50a857a7bbe36010c73c07792f1004f4.gif");*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  /*height: 100%;*/
+/*}*/
 /*STUDY PRINCIPLES END*/
 /*STUDY СURRICULUM*/
 
@@ -438,6 +438,10 @@ h4 {
 
 .offer-video-spec {
   transform: scale(1.02) translateX(50px) translateY(3px);
+}
+
+.principles-video {
+  transform: scale(1.32) translateY(-33px) translateX(-5px);
 }
 
 .result-card {
