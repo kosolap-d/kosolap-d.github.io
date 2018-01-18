@@ -3,6 +3,11 @@ img {
 	width: 100%;
 }
 
+body {
+  font: 12px Arial;
+  background: #eee;
+}
+
 .header {
 	background: #fbb900;
 	background: url('../img/pattern.png') no-repeat center;
@@ -24,6 +29,15 @@ nav {
 	background: rgba(0,0,0,0);
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+h2{
+	font-size: 24pt;
+    font-family: 'Arial black';
+    color: #333333;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .navbar-fixed {
@@ -70,4 +84,177 @@ nav {
 	text-align: center;
 	color: white;
 	font-size: 2em;
+}
+
+.result ol{
+	/*text-align: center;*/
+	list-style-position: inside;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;
+	list-style-type:none;
+
+}
+
+.result li {
+	padding: 2%;
+}
+
+label {
+    font-size: .8rem;
+    color: #444;
+}
+
+
+[type="checkbox"].filled-in:checked+label:after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    /* border: 2px solid #fbb900; */
+    background-color: #fbb900;
+    z-index: 0;
+}
+
+
+[type="checkbox"].filled-in:checked+label:after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #fbb900;
+    z-index: 0;
+}
+
+[type="checkbox"].filled-in:not(:checked)+label:after {
+    border: 1px solid #fbb900;
+
+}
+
+.btn, .btn-large {
+    text-decoration: none;
+    color: #fff;
+    background-color: #fbb900;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.faq-card_2{
+
+}
+
+.btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #fbb900;
+}
+
+.faq .btn {
+	background-color: transparent;
+	border: 1px solid #0088cc;
+	color: #0088cc;
+}
+
+.faq .fab{
+	padding-right: 7px;
+}
+
+.faq .z-depth-1-half, .faq .btn:hover{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.faq  .z-depth-1-half, .faq .btn{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.contacts .card{
+	background-color: #fbb900;
+}
+
+.contacts .logo{
+	width: 50px;
+	height: auto;
+}
+
+.
+.contact-list {
+  -webkit-padding-start: 0px;
+  /*border-bottom: 2px solid #fbb900;*/
+  border-bottom: 2px solid white;
+
+  width: 100%;
+}
+
+.contact-item {
+  list-style: none;
+}
+.contact-link {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  /*color: #fbb900;*/
+
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2px 0px;
+}
+
+.phone {
+  /*font-family: 'Arial Black';*/
+  font-size: 22px;
+}
+
+.contact-link .fa {
+  width: 20px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.social-list {
+  margin: 0;
+  padding: 10px;
+  -webkit-padding-start: 0px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.social-item {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: white;!important;
+  /*color: #fbb900;*/
+  font-size: 32px;
+}
+
+.contacts .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+     color: white;
+    margin-right: 24px;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+    text-transform: uppercase;
+}
+
+.contacts .card .card-action {
+    position: relative;
+    background-color: inherit;
+    border-top: 1px solid white;
+	text-align: center;
+	width: 100%;
+    padding: 16px 24px;
 }

@@ -25,3 +25,16 @@ $(window).on("scroll touchmove", function() {
 			// $('.logo').css("width") = $('.logo').css("width") - ($(document).scrollTop() - $(".main").position().top);
 		}
 });
+
+
+			$(document).ready(function(){
+			  $(".owl-carousel").owlCarousel({
+				  items: 1,
+				  itemsDesktop : false,
+				itemsDesktopSmall : false,
+				itemsTablet: false,
+				itemsMobile : false,
+				animateOut: 'fadeOut',
+				  margin: 40,
+			  });
+			});
