@@ -329,27 +329,27 @@ h4 {
 .offer-img {
   flex: 1 60%;
   /*height: 100%;*/
-  background: url('http://placehold.it/800x200/008CBA/FFFFFF/&text=3') no-repeat center;
+  /*background: url('http://placehold.it/800x200/008CBA/FFFFFF/&text=3') no-repeat center;*/
   background-size: cover;
 }
 
 .country {
-  background: url('https://media.giphy.com/media/l0HTYYlAuOo2bTBUA/giphy.gif') no-repeat center;
+  /*background: url('https://media.giphy.com/media/l0HTYYlAuOo2bTBUA/giphy.gif') no-repeat center;*/
   background-size: cover;
 }
 
 .company {
-  background: url('https://media.giphy.com/media/xT1R9Q1WdbI1vXtFde/giphy.gif') no-repeat center;
+  /*background: url('https://media.giphy.com/media/xT1R9Q1WdbI1vXtFde/giphy.gif') no-repeat center;*/
   background-size: cover;
 }
 
 .young {
-  background: url('https://i.pinimg.com/originals/b5/21/ff/b521ff42f5b2ba7309334b57c9acd29a.gif') no-repeat center;
+  /*background: url('https://i.pinimg.com/originals/b5/21/ff/b521ff42f5b2ba7309334b57c9acd29a.gif') no-repeat center;*/
   background-size: cover;
 }
 
 .parrent {
-  background: url('https://media.giphy.com/media/3oFzmggTiHX1sGwvrq/giphy.gif') no-repeat center;
+  /*background: url('https://media.giphy.com/media/3oFzmggTiHX1sGwvrq/giphy.gif') no-repeat center;*/
   background-size: cover;
 }
 
@@ -415,8 +415,29 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;*/
   position: relative;
+  overflow: hidden;
   height: 325px;
   width: 100%
+}
+
+.result-video {
+  transform: scale(1.8) translateY(-3px);
+}
+
+.join-video {
+  transform: scale(1.1) translateX(25px);
+}
+
+.faq-video {
+  transform: scale(1.7) translateY(5px);
+}
+
+.offer-video {
+  transform: scale(1.1) translateX(22px) translateY(10px);
+}
+
+.offer-video-spec {
+  transform: scale(1.02) translateX(50px) translateY(3px);
 }
 
 .result-card {
@@ -541,6 +562,10 @@ h4 {
     flex: 1 40%;
 }
 
+.apply-text .mdc-card__supporting-text {
+  margin-top: 100px;
+}
+
 .mdc-linear-progress {
     position: relative;
     width: 60%;
@@ -581,25 +606,26 @@ h4 {
 
 
 
-.join_us .offer-img {
-  background-image: url(img/join.png);
-}
+/*.join_us .offer-img {*/
+  /*background-image: url(img/join.png);*/
+/*}*/
 
 /*JOIN US END*/
 /*FAQ*/
 
 #faq-left.mdc-card__media {
-  background-image: url("img/faq.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 225px;
+  /*background-image: url("img/faq.png");*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  overflow: hidden;
+  height: 290px;
 }
 
 #faq-right.mdc-card__media {
   background-image: url("img/telega.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 312px;
+  height: 375px;
 }
 
 .faq .mdc-button--raised {
