@@ -32,12 +32,20 @@ nav {
 }
 
 h2{
-	font-size: 24pt;
+     font-size: 24pt;
+     font-family: 'Arial black';
+     color: #333333;
+     text-align: center;
+     margin: 0;
+     margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 18pt;
     font-family: 'Arial black';
     color: #333333;
     text-align: center;
     margin: 0;
-    margin-bottom: 30px;
 }
 
 .navbar-fixed {
@@ -258,3 +266,46 @@ label {
 	width: 100%;
     padding: 16px 24px;
 }
+
+
+/* read more styles  */
+.read-more-target .hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.read-more-target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* read more styles END */
+
+.entry-card .card-image {
+    height: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.step-1 {
+    background-image: url("../img/1.svg");
+}
+
+.step-2 {
+    background-image: url("../img/2.svg");
+}
+
+.step-3 {
+    background-image: url("../img/3.svg");
+}
+
+.step-4 {
+    background-image: url("../img/44.svg");
+}
+
+.step-5 {
+    background-image: url("../img/5.svg");
+}
+
+
