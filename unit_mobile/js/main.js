@@ -74,6 +74,18 @@ $(document).ready(function(){
             }
         }
     });
+    $('.photo-carousel').owlCarousel({
+        items: 1,
+        loop:true,
+    });
+    $('.video-carousel').owlCarousel({
+        items: 1,
+        video: true
+    });
+    $('.city-carousel').owlCarousel({
+        items: 1,
+        video: true,
+    });
 
 
 	$('.read-more-button').click(function(event) {
