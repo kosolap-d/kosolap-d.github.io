@@ -16,13 +16,28 @@ body {
 }
 
 .logo {
-	width: 266px;
-	margin: 0 auto;
+	width: 200px;
+	margin: 10px auto;
+}
+
+.apply {
+  /*font-size: 24px;*/
+}
+
+.apply.btn, .btn-large, .btn-flat {
+    padding: 0 1rem;
+  }
+.apply.btn, .btn-large {
+    color: #fff;
+    background-color: #fbb90000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 nav .logo-hidden {
 	display: none;
-	width: 120px;
+  width: 83px;
+  margin: 7px auto;
 }
 
 nav {
