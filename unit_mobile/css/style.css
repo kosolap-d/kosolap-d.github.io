@@ -10,7 +10,7 @@ body {
 
 .header {
 	background: #fbb900;
-	background: url('../img/pattern.png') no-repeat center;
+	background: url('../img/pattern-min.png') no-repeat center;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
