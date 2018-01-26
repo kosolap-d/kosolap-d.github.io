@@ -3,6 +3,10 @@ img {
 	width: 100%;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 body {
   font: 12px Arial;
   background: #eee;
