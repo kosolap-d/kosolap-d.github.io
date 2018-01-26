@@ -8,11 +8,11 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
 		<!-- Compiled and minified CSS -->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-			<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.css">
 			<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<link rel="stylesheet" href="css/style.css">
 
 		<!--<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">-->
 	</head>
@@ -41,13 +41,15 @@
 				 </nav>
 			 </div>
 			<div class="container">
+			<div class="empty-header"></div>
 				<div class="row">
 					<div class="valign-wrapper">
 						<div class="col s12">
 							<div class="auto-text">
+							  	<h1 class="title-header">UNIT Factory</h1>
 								<p><span id="typed"></span></p>
 							</div>
-							<div class="logo"><img src="img/logo-white.png" alt=""></div>
+							<!-- <div class="logo"><img src="img/logo-white.png" alt=""></div> -->
 						</div>
 					</div>
 				  </div>
@@ -89,7 +91,7 @@
 					  	<div class="photo-carousel owl-carousel owl-theme">
 					  		<div class="item">
 						    	<div class="card-image">
-					    	    	<img class="activator" src="img/curr2.png">
+						    		<div class="img-info" style="background: url('img/curr2.png') no-repeat center center; background-size: cover"></div>
 					    	    </div>
 							  <div class="unit-info card-content grey lighten-4">
 							  	<span class="card-title">Card Title</span>
@@ -98,10 +100,11 @@
 					  		</div>
 			  		  		<div class="item">	
 			  			    	<div class="card-image">
-			  		    	    	<img class="activator" src="img/curr2.png">
+			  		    	    	<div class="img-info" style="background: url('img/curr.png') no-repeat center center; background-size: cover"></div>
 			  		    	    </div>
 			  				  <div class="unit-info card-content grey lighten-4">
 			  				  	<span class="card-title">Card Title</span>
+			  				  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis atque deserunt ipsa sed recusandae quos architecto officia in labore quasi!</p>
 			  				  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis atque deserunt ipsa sed recusandae quos architecto officia in labore quasi!</p>
 			  				  </div>
 			  		  		</div>
@@ -111,9 +114,11 @@
 			  		  	<div class="video-carousel owl-carousel owl-theme">
 			  		  		<div class="item">
 			  			    	<div class="card-image">
-			  			    		<iframe height="190px" width="100%"
+			  			    		<div>
+			  			    		<iframe height="250px" width="100%"
 			  			    		        src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0"
 			  			    		        gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			  			    		</div>
 			  		    	    </div>
 			  				  <div class="unit-info card-content grey lighten-4">
 			  				  	<span class="card-title">Card Title</span>
@@ -122,7 +127,7 @@
 			  		  		</div>
 			    		  		<div class="item">	
 			    			    	<div class="card-image">
-			    			    		<iframe height="190px" width="100%"
+			    			    		<iframe height="250px" width="100%"
 			    			    		        src="https://www.youtube.com/embed/Vl0FAkQttRI" frameborder="0"
 			    			    		        gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 			    		    	    </div>
@@ -137,7 +142,7 @@
 			  		  	<div class="city-carousel owl-carousel owl-theme">
 			  		  		<div class="item">
 			  			    	<div class="card-image">
-			  			    		<img class="activator" src="img/curr2.png">
+			  			    		<div class="img-info" style="background: url('img/curr2.png') no-repeat center center; background-size: cover"></div>
 			  		    	    </div>
 			  				  <div class="unit-info card-content grey lighten-4">
 			  				  	<span class="card-title">Card Title</span>
@@ -146,7 +151,7 @@
 			  		  		</div>
 			    		  		<div class="item">	
 			    			    	<div class="card-image">
-			    			    		<iframe height="190px" width="100%"
+			    			    		<iframe height="250px" width="100%"
 			    			    		        src="https://www.youtube.com/embed/Vl0FAkQttRI" frameborder="0"
 			    			    		        gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 			    		    	    </div>

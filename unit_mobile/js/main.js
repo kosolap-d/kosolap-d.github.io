@@ -10,21 +10,21 @@ var typed = new Typed('#typed', {
   backSpeed: 80
 });
 
-var		sroll = $('.logo').width();
+// var		sroll = $('.logo').width();
 
-$(window).on("scroll touchmove", function() {
-		if ($(document).scrollTop() >= ($(".main").position().top - 78)) {
-				$('.nav-wrapper').addClass('nav-bottom').animate();
-			$('.logo-hidden').css("display", "block");
-		};
-		if ($(document).scrollTop() < $(".main").position().top - 78) {
-			$('.logo-hidden').css("display", "none");
-			$('.nav-wrapper').removeClass('nav-bottom');
-			// console.log(sroll - $(document).scrollTop());
-			$('.logo').css("width", sroll - $(document).scrollTop());
-			// $('.logo').css("width") = $('.logo').css("width") - ($(document).scrollTop() - $(".main").position().top);
-		}
-});
+// $(window).on("scroll touchmove", function() {
+// 		if ($(document).scrollTop() >= ($(".main").position().top - 78)) {
+// 				$('.nav-wrapper').addClass('nav-bottom').animate();
+// 			$('.logo-hidden').css("display", "block");
+// 		};
+// 		if ($(document).scrollTop() < $(".main").position().top - 78) {
+// 			$('.logo-hidden').css("display", "none");
+// 			$('.nav-wrapper').removeClass('nav-bottom');
+// 			// console.log(sroll - $(document).scrollTop());
+// 			$('.logo').css("width", sroll - $(document).scrollTop());
+// 			// $('.logo').css("width") = $('.logo').css("width") - ($(document).scrollTop() - $(".main").position().top);
+// 		}
+// });
 
 
 $(document).ready(function(){
@@ -77,14 +77,23 @@ $(document).ready(function(){
     $('.photo-carousel').owlCarousel({
         items: 1,
         loop:true,
+        nav:true,
+        navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+        // autoWidth: true
     });
     $('.video-carousel').owlCarousel({
         items: 1,
-        video: true
+        loop:true,
+        nav:true,
+        navText : [" <i class='material-icons'>chevron_left</i>"," <i class='material-icons'>chevron_right</i>"]
+
     });
     $('.city-carousel').owlCarousel({
         items: 1,
         video: true,
+        loop:true,
+        nav:true,
+        navText : [" <i class='material-icons'>chevron_left</i>"," <i class='material-icons'>chevron_right</i>"]
     });
 
 
