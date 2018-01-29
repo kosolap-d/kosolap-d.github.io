@@ -383,23 +383,12 @@ label {
 }
 
 .step-1 {
-    background-image: url("../img/1.svg");
+    margin: 10px;
+    margin-right: 0;
 }
 
-.step-2 {
-    background-image: url("../img/2.svg");
+.collection .collection-item.avatar p {
+    margin: 0;
+    line-height: 1rem;
 }
-
-.step-3 {
-    background-image: url("../img/3.svg");
-}
-
-.step-4 {
-    background-image: url("../img/44.svg");
-}
-
-.step-5 {
-    background-image: url("../img/5.svg");
-}
-
 
