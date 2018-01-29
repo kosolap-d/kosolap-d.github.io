@@ -392,3 +392,13 @@ label {
     line-height: 1rem;
 }
 
+.carousel {
+    height: 510px;
+    margin-top: -160px;
+}
+
+.carousel .card-image {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0px;
+}

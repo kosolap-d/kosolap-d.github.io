@@ -26,6 +26,9 @@ var typed = new Typed('#typed', {
 // 		}
 // });
 
+$(document).ready(function(){
+     $('.carousel').carousel();
+   });
 
 $(document).ready(function(){
 	$(".owl-one").owlCarousel({
@@ -102,3 +105,4 @@ $(document).ready(function(){
         console.log('click');
     });
 });
+
