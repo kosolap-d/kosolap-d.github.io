@@ -383,7 +383,7 @@ h4 {
 }
 
 #curriculum__right.mdc-card__media {
-  background-image: url("img/curr2.png");
+  background-image: url("https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Spell_Book-512.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 240px;
@@ -588,10 +588,11 @@ h4 {
 }*/
 
 #curriculum__right.mdc-card__media {
-  background-image: url("img/curr2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 240px;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Spell_Book-512.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 240px;
 }
 
 .join_us .mdc-button--unelevated{
