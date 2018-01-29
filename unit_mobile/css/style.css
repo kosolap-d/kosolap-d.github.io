@@ -382,6 +382,14 @@ label {
     background-position: center;
 }
 
+.fb {
+  color: #fbb900;
+}
+
+.apply-btn {
+  width: 100%;
+}
+
 .step-1 {
     margin: 10px;
     margin-right: 0;
