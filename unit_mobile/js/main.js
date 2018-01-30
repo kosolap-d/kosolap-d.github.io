@@ -54,7 +54,7 @@ $(document).ready(function(){
 
     $(".owl-three").owlCarousel({
         items: 5,
-		loop: false,
+		loop: true,
 
         itemsDesktop : false,
         itemsDesktopSmall : false,
@@ -80,14 +80,14 @@ $(document).ready(function(){
     $('.photo-carousel').owlCarousel({
         items: 1,
         loop:true,
-        nav:true,
+        // nav:true,
         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
         // autoWidth: true
     });
     $('.video-carousel').owlCarousel({
         items: 1,
         loop:true,
-        nav:true,
+        // nav:true,
         navText : [" <i class='material-icons'>chevron_left</i>"," <i class='material-icons'>chevron_right</i>"]
 
     });
@@ -95,7 +95,7 @@ $(document).ready(function(){
         items: 1,
         video: true,
         loop:true,
-        nav:true,
+        // nav:true,
         navText : [" <i class='material-icons'>chevron_left</i>"," <i class='material-icons'>chevron_right</i>"]
     });
 
