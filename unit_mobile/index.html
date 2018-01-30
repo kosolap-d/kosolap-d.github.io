@@ -8,8 +8,8 @@
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
 	  <!-- Compiled and minified CSS -->
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.css">
-	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.css">
+	  <link rel="stylesheet" type="text/css" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+	  <link rel="stylesheet" type="text/css" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
 	  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	  <link rel="stylesheet" href="css/style.css">
@@ -80,8 +80,8 @@
 			   <div class="card unit-info-card">
 				  <div class="card-tabs">
 					 <ul class="tabs tabs-fixed-width">
-						<li class="tab"><a class="active" href="#unit-photo">UNIT Photo</a></li>
-						<li class="tab"><a href="#unit-video">UNIT Video</a></li>
+						<li class="tab"><a href="#unit-photo">UNIT Photo</a></li>
+						<li class="tab"><a class="active" href="#unit-video">UNIT Video</a></li>
 						<li class="tab"><a href="#unit-city">UNIT city</a></li>
 					 </ul>
 				  </div>
@@ -108,15 +108,15 @@
 						</div>
 					 </div>
 				  </div>
+				  <!-- HERE -->
 				  <div class="card card-info " id="unit-video">
 					 <div class="video-carousel owl-carousel owl-theme">
 						<div class="item">
 						   <div class="card-image">
-							  <div>
-								 <iframe height="250px" width="100%"
+							  	<a class="owl-video" href="https://www.youtube.com/embed/VCH9T0ypfK4"></a>
+<!-- 								 <iframe height="250px" width="100%"
 									src="https://www.youtube.com/embed/VCH9T0ypfK4" frameborder="0"
-									gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-							  </div>
+									gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
 						   </div>
 						   <div class="unit-info card-content grey lighten-4">
 							  <span class="card-title">Card Title</span>
@@ -125,9 +125,11 @@
 						</div>
 						<div class="item">
 						   <div class="card-image">
-							  <iframe height="250px" width="100%"
+							  	<a class="owl-video" href="https://www.youtube.com/embed/Vl0FAkQttRI"></a>
+
+<!-- 							  <iframe height="250px" width="100%"
 								 src="https://www.youtube.com/embed/Vl0FAkQttRI" frameborder="0"
-								 gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+								 gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
 						   </div>
 						   <div class="unit-info card-content grey lighten-4">
 							  <span class="card-title">Card Title</span>
@@ -136,6 +138,7 @@
 						</div>
 					 </div>
 				  </div>
+				  <!-- HERE -->
 				  <div class="card card-info " id="unit-city">
 					 <div class="city-carousel owl-carousel owl-theme">
 						<div class="item">
@@ -600,12 +603,12 @@
 			<div class="col s12 offset-m1 m10 ">
 			   <h2>FAQ</h2>
 			   <div class="owl-two owl-carousel owl-theme ">
-				  <div class="card  faq-card">
+				  <div class="card faq-card">
 				  	 <div class="card-image">
 				  		<img src="img/faq.png">
 				  	 </div>
 					 <div class="card-content">
-					 	<spn class="card-title">Should I know how to swim to get to UNIT Factory through “Pool”?</spn>
+					 	<span class="card-title faq-title">Should I know how to swim to get to UNIT Factory through “Pool”?</span>
 						<p>“Pool” is a trial period of study lasting one month. Students who have successfully passed the “Pool” are enlisted to UNIT Factory. You won’t have to swim in it but you'll definitely have to dive into programming.</p>
 						<p>On the one hand the “Pool” will select the most talented and motivated students for UNIT Factory. On the other - during this month you will understand if the programming and education at UNIT Factory in particular fits you in general.</p>
 					 </div>

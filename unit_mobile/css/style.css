@@ -407,6 +407,11 @@ label {
     background-position: center;
 }
 
+.card .card-image {
+    position: relative;
+    height: 250px;
+}
+
 .fb {
   color: #fbb900;
 }
@@ -433,4 +438,9 @@ label {
   width: 80%;
   margin: 0 auto;
   padding: 10px 0px;
+}
+
+.card .card-content .card-title.faq-title {
+  font-size: 18px;
+  line-height: 1.5rem;
 }

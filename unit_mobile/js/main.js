@@ -44,6 +44,7 @@ $(document).ready(function(){
 
     $(".owl-two").owlCarousel({
         items: 1,
+		loop: true,
         itemsDesktop : false,
         itemsDesktopSmall : false,
         itemsTablet: false,
@@ -54,7 +55,7 @@ $(document).ready(function(){
 
     $(".owl-three").owlCarousel({
         items: 5,
-		loop: true,
+        loop: true,
 
         itemsDesktop : false,
         itemsDesktopSmall : false,
