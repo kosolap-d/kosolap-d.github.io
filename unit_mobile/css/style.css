@@ -38,16 +38,40 @@ body {
     box-shadow: none;
 }
 
-nav .logo-hidden {
-	/*display: none;*/
-  width: 83px;
-  margin: 7px auto;
-}
-
 nav {
 	background: rgba(0,0,0,0);
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+nav .logo-hidden {
+  /*display: none;*/
+  width: 83px;
+  margin: 7px auto;
+}
+
+.nav-empty {
+  height: 48px;
+}
+
+.side-nav li:first-child {
+  border-bottom: 0;
+}
+
+.side-nav li>a{
+  /*border-bottom: 1px solid lightgray;*/
+  font-size: 16px;
+  font-weight: 800;
+  color: rgba(0,0,0,.67);
+}
+
+.side-nav li:last-child {
+  border-bottom: 0;
+}
+
+.side-nav .active {
+  color: #fbb900;
+  background: rgba(0,0,0,.03);
 }
 
 h2{
@@ -253,7 +277,7 @@ label {
     background-color: #fbb900;
 }
 
-.faq .btn {
+.telegram .btn {
 	background-color: transparent;
 	border: 1px solid #0088cc;
 	color: #0088cc;
@@ -285,14 +309,13 @@ label {
 .
 .contact-list {
   -webkit-padding-start: 0px;
-  /*border-bottom: 2px solid #fbb900;*/
   border-bottom: 2px solid white;
-
   width: 100%;
 }
 
 .contact-item {
   list-style: none;
+  margin: 10px 0;
 }
 .contact-link {
   display: -webkit-flex;
@@ -315,14 +338,12 @@ label {
 }
 
 .contact-link .fa {
-  width: 20px;
-  text-align: center;
+  width: 10px;
   margin-right: 20px;
 }
 
 .social-list {
   margin: 0;
-  padding: 10px;
   -webkit-padding-start: 0px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -375,6 +396,10 @@ label {
 }
 
 /* read more styles END */
+
+.card-content.white-text {
+  padding: 10px 24px;
+}
 
 .entry-card .card-image {
     height: 130px;
